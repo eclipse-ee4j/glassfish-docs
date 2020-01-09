@@ -1,0 +1,67 @@
+list-batch-runtime-conasadminユ
+
+名前
+       list-batch-runtime-configuration - バッチ実行時の構成を表示します
+
+概要
+           list-batch-runtime-configuration [--help]
+           [--target target]
+           [--output output]
+           [--header={false|true}]
+
+説明
+       list-batch-runtime-configurationサブコマンドは、バッチ実行時の構成を表示します。バッチ実行時の構成データは、domain.xmlのconfig要素に格納されます。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+       --target
+           バッチ実行時の構成をリストするターゲットを指定します。有効な値は次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンスserverのバッチ実行時の構成をリストします。これがデフォルト値です。
+
+           cluster-name
+               クラスタ内のすべてのサーバー・インスタンスのバッチ実行時の構成をリストします。
+
+           instance-name
+               特定のサーバー・インスタンスのバッチ実行時の構成をリストします。
+
+       --output, -o
+           バッチ実行時の構成の特定の詳細を表示します。表示する詳細とその順序を指定するには、カンマ区切りのリストを使用します。この値では大文字と小文字が区別されません。datasourcelookupnameおよびexecutorservicelookupnameの列ヘッダーは、デフォルトで表示されます。
+
+           使用可能な値は次のとおりです:
+
+           datasourcelookupname
+               ジョブ情報の格納に使用されるデータ・ソースのJNDIルックアップ名。デフォルトでは、バッチ実行時はデフォルトのデータ・ソースjdbc/__TimerPoolを使用します。
+
+           executorservicelookupname
+               ジョブへのスレッドの提供に使用される管理対象エグゼキュータ・サービスのJNDIルックアップ名。デフォルトでは、バッチ実行時はデフォルトの管理対象エグゼキュータ・サービスconcurrent/__defaultManagedExecutorServiceを使用します。
+
+       --header, -h
+           --longオプションが使用されている場合に、列ヘッダーを表示するかどうかを指定します。デフォルト値はtrueです。ヘッダーを表示しないようにするには、--headerオプションをfalseに設定します。
+
+例
+       例 1, バッチ実行時の構成のリスト
+           次の例では、デフォルトのサーバー・インスタンスのバッチ実行時の構成をリストします。
+
+               asadmin> list-batch-runtime-configuration
+               DATASOURCELOOKUPNAME     EXECUTORSERVICELOOKUPNAME
+               jdbc/_default            concurrent/__defaultManagedExecutorService
+               Command list-batch-runtime-configuration executed successfully.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       set-batch-runtime-configuration(1), list-batch-jobs(1),
+       list-batch-job-executions(1), list-batch-job-steps(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月1list-batch-runtime-configuration(1)

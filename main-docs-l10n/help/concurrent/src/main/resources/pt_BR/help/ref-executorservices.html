@@ -1,0 +1,101 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-executorservices" name="ref-executorservices"></a></p>
+
+<h4>Servi&ccedil;os do Executor Gerenciado<a id="sthref21" name="sthref21"></a><a id="sthref22" name="sthref22"></a></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Os servi&ccedil;os de executor gerenciado s&atilde;o usados por aplica&ccedil;&otilde;es para executar tarefas submetidas de forma ass&iacute;ncrona. As tarefas s&atilde;o executadas em threads que s&atilde;o iniciados e gerenciados pelo cont&ecirc;iner. O contexto do cont&ecirc;iner &eacute; propagado para o thread que executa a tarefa.</p>
+<p>Use a p&aacute;gina Servi&ccedil;os do Executor Gerenciado para configurar os recursos de servi&ccedil;o do executor gerenciado.</p>
+<p>Para cada recurso de servi&ccedil;o do executor gerenciado, as informa&ccedil;&otilde;es a seguir s&atilde;o fornecidas.</p>
+<dl>
+<dt>Nome JNDI</dt>
+<dd>
+<p>Um nome exclusivo que identifica o recurso.</p>
+</dd>
+<dt>Nome L&oacute;gico JNDI</dt>
+<dd>
+<p>O nome l&oacute;gico JNDI para o recurso. Consulte <a href="../../../common/en/help/ref-logicaljndinames.html">Nomes L&oacute;gicos JNDI</a> para obter mais informa&ccedil;&otilde;es.</p>
+</dd>
+<dt>Ativado</dt>
+<dd>
+<p>(Esta coluna s&oacute; ser&aacute; exibida se a inst&acirc;ncia do servidor default, <code>server</code>, existir no dom&iacute;nio.)</p>
+<p>Exibe uma marca de sele&ccedil;&atilde;o se o recurso estiver ativado ou um X se o recurso estiver desativado.</p>
+</dd>
+<dt>Status</dt>
+<dd>
+<p>(Esta coluna s&oacute; ser&aacute; exibida se os clusters ou inst&acirc;ncias standalone tiverem sido criadas no dom&iacute;nio.)</p>
+<p>O n&uacute;mero de clusters e inst&acirc;ncias independentes ao qual o recurso est&aacute; direcionado e em quantos desses o recurso est&aacute; ativado. Por exemplo, "Ativado em 2 de 4 Alvos" significa que o recurso est&aacute; direcionado para quatro clusters e inst&acirc;ncias standalone e que est&aacute; ativado em dois desses quatro alvos.</p>
+</dd>
+<dt>Informa&ccedil;&otilde;es de Contexto</dt>
+<dd>
+<p>Os contextos do cont&ecirc;iner propagados para threads.</p>
+</dd>
+<dt>Prioridade do Thread</dt>
+<dd>
+<p>A prioridade designada aos threads.</p>
+</dd>
+<dt>Descri&ccedil;&atilde;o</dt>
+<dd>
+<p>Uma descri&ccedil;&atilde;o do recurso.</p>
+</dd>
+</dl>
+<p>A tabela Servi&ccedil;os do Executor Gerenciado tamb&eacute;m cont&eacute;m as seguintes op&ccedil;&otilde;es.</p>
+<dl>
+<dt>Novo</dt>
+<dd>
+<p>Bot&atilde;o utilizado para criar um novo recurso.</p>
+</dd>
+<dt>Deletar</dt>
+<dd>
+<p>Bot&atilde;o utilizado para deletar um ou mais recursos selecionados.</p>
+</dd>
+<dt>Ativar</dt>
+<dd>
+<p>Bot&atilde;o utilizado para ativar um ou mais recursos selecionados.</p>
+</dd>
+<dt>Desativar</dt>
+<dd>
+<p>Bot&atilde;o utilizado para desativar um ou mais recursos selecionados.</p>
+</dd>
+</dl>
+<a id="sthref23" name="sthref23"></a>
+<h5>Tarefas Relacionadas</h5>
+<ul>
+<li>
+<p><a href="task-managedexecutorservicecreate.html">Para Criar um Servi&ccedil;o de Executor Gerenciado</a></p>
+</li>
+<li>
+<p><a href="task-managedexecutorserviceedit.html">Para Editar um Servi&ccedil;o de Executor Gerenciado</a></p>
+</li>
+<li>
+<p><a href="task-managedexecutorservicedelete.html">Para Deletar um Servi&ccedil;o de Executor Gerenciado</a></p>
+</li>
+</ul>
+<a id="GHCON140" name="GHCON140"></a>
+<h5>Comandos asadmin Relacionados</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM840"><code>create-managed-executor-service</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM871"><code>list-managed-executor-services</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM848"><code>delete-managed-executor-service</code>(1)</a></p>
+</li>
+</ul>
+
+
+  

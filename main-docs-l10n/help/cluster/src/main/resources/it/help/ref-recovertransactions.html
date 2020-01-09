@@ -1,0 +1,53 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-recovertransactions" name="ref-recovertransactions"></a></p>
+
+<h4><a id="sthref280" name="sthref280"></a>Recupera transazioni</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Utilizzare la pagina Recupera transazioni per recuperare le transazioni per un'istanza di GlassFish Server.</p>
+<p>Se l'istanza &egrave; in esecuzione, la pagina Recupera transazioni contiene solo il testo <b>Il recupero viene eseguito dallo stesso server in esecuzione</b> e il pulsante OK.</p>
+<p>Se l'istanza non &egrave; in esecuzione, la pagina Recupera transazioni contiene le opzioni riportate di seguito.</p>
+<dl>
+<dt>Nome istanza</dt>
+<dd>
+<p>Il nome assegnato all'istanza quando &egrave; stata creata. Questo campo &egrave; di sola lettura.</p>
+</dd>
+<dt>Server di destinazione</dt>
+<dd>
+<p>Un'altra istanza in grado di recuperare le transazioni nell'istanza corrente.</p>
+</dd>
+<dt>Directory log delle transazioni</dt>
+<dd>
+<p>La directory in cui sono memorizzati i log delle transazioni. L'impostazione predefinita &egrave; <code>/logs/tx</code> nella directory del dominio.</p>
+<p>I log delle transazioni vengono conservati nella sottodirectory <code>tx</code> della directory specificata dall'impostazione Posizione log delle transazioni del servizio transazioni per la configurazione del cluster. Il valore Posizione log delle transazioni predefinito &egrave; la directory specificata nel campo Radice log della pagina Attributi dominio, situata nella scheda Avanzate del nodo GlassFish Server.</p>
+</dd>
+</dl>
+<a id="sthref281" name="sthref281"></a>
+<h5>Task correlati</h5>
+<ul>
+<li>
+<p><a href="task-recovertransactions.html">Per recuperare le transazioni per un'istanza di GlassFish Server in cluster</a></p>
+</li>
+<li>
+<p><a href="task-recovertransactions-standalone-instance.html">Per recuperare le transazioni per un'istanza standalone di GlassFish Server</a></p>
+</li>
+</ul>
+<a id="sthref282" name="sthref282"></a>
+<h5>Comandi secondari asadmin equivalenti</h5>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00216"><code>recover-transactions</code>(1)</a></p>
+
+
+
+  

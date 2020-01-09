@@ -1,0 +1,76 @@
+list-batch-runtime-configuraasadmin 实用程序
+
+名称
+       list-batch-runtime-configuration - 显示批处理运行时的配置
+
+提要
+           list-batch-runtime-configuration [--help]
+           [--target target]
+           [--output output]
+           [--header={false|true}]
+
+说明
+       list-batch-runtime-configuration
+       子命令可显示批处理运行时的配置。批处理运行时配置数据存储在 domain.xml
+       的 config 元素中。
+
+选项
+       --help, -?
+           显示子命令的帮助文本。
+
+       --target
+           指定要列出其批处理运行时配置的目标。有效值如下：
+
+           server
+               列出默认服务器实例 server 的批处理运行时配置，这是默认值。
+
+           cluster-name
+               列出集群中每个服务器实例的批处理运行时配置。
+
+           instance-name
+               列出特定服务器实例的批处理运行时配置。
+
+       --output, -o
+           显示有关批处理运行时配置的特定详细信息。使用逗号分隔的列表指定要显示的详细信息及其顺序。值不区分大小写。默认情况下显示
+           datasourcelookupname 和 executorservicelookupname 列标题。
+
+           可能的值如下：
+
+           datasourcelookupname
+               用于存储作业信息的数据源的 JNDI
+               查找名称。默认情况下，批处理运行时使用默认的数据源
+               jdbc/__TimerPool。
+
+           executorservicelookupname
+               用于将线程提供给作业的托管执行程序服务的 JNDI
+               查找名称。默认情况下，批处理运行时使用默认的托管执行程序服务
+               concurrent/__defaultManagedExecutorService。
+
+       --header, -h
+           指定在使用 --long
+           选项时是否显示列标题。默认值为真
+           选项设置为假
+
+示例
+       Example 1, 列出批处理运行时配置
+           以下示例列出默认服务器实例的批处理运行时的配置。
+
+               asadmin> list-batch-runtime-configuration
+               DATASOURCELOOKUPNAME     EXECUTORSERVICELOOKUPNAME
+               jdbc/_default            concurrent/__defaultManagedExecutorService
+               Command list-batch-runtime-configuration executed successfully.
+
+退出状态
+       0
+           已成功执行子命令
+
+       1
+           执行子命令时出现错误
+
+另请参阅
+       set-batch-runtime-configuration(1), list-batch-jobs(1),
+       list-batch-job-executions(1), list-batch-job-steps(1)
+
+       asadmin(1M)
+
+Java EE 7                     2013 年 2 月 list-batch-runtime-configuration(1)

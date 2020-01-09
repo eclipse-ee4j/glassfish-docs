@@ -1,0 +1,79 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="ex&#233;cution de batch">
+    <indexitem text="configuration (t&#226;che)" target="tasks-topic-group004"></indexitem>
+  </indexitem>
+  <indexitem text="ex&#233;cutions de traitement batch">
+    <indexitem text="affichage (t&#226;che)" target="tasks-topic-group002"></indexitem>
+  </indexitem>
+  <indexitem text="fabriques d'objets de ressource">
+    <indexitem text="cr&#233;ation (t&#226;che)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="cr&#233;ation (r&#233;f&#233;rence)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="modification (r&#233;f&#233;rence)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="modification (t&#226;che)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="suppression" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="visualisation et configuration" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="Java Naming and Directory Interface">
+    <indexitem text="&lt;em&gt;Voir &lt;/em&gt;JNDI">
+    </indexitem>
+  </indexitem>
+  <indexitem text="ressources externes">
+    <indexitem text="&lt;em&gt;Voir &lt;/em&gt;ressources JNDI externes">
+    </indexitem>
+  </indexitem>
+  <indexitem text="ressources externes JNDI">
+    <indexitem text="cr&#233;ation (t&#226;che)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="cr&#233;ation (r&#233;f&#233;rence)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="modification (r&#233;f&#233;rence)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="modification (t&#226;che)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="suppression" target="task-jndiexternalresourcedelete"></indexitem>
+    <indexitem text="visualisation et configuration" target="ref-jndiexternalresources"></indexitem>
+  </indexitem>
+  <indexitem text="ressources JNDI externes">
+    <indexitem text="cr&#233;ation (t&#226;che)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="cr&#233;ation (r&#233;f&#233;rence)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="modification (r&#233;f&#233;rence)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="modification (t&#226;che)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="suppression" target="task-jndiexternalresourcedelete"></indexitem>
+    <indexitem text="visualisation et configuration" target="ref-jndiexternalresources"></indexitem>
+  </indexitem>
+  <indexitem text="ressources personnalis&#233;es">
+    <indexitem text="cr&#233;ation (t&#226;che)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="cr&#233;ation (r&#233;f&#233;rence)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="modification (r&#233;f&#233;rence)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="modification (t&#226;che)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="suppression" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="visualisation et configuration" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="ressources personnalis&#233;es JNDI">
+    <indexitem text="cr&#233;ation (t&#226;che)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="cr&#233;ation (r&#233;f&#233;rence)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="modification (r&#233;f&#233;rence)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="modification (t&#226;che)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="suppression" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="visualisation et configuration" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="sessions JavaMail">
+    <indexitem text="cr&#233;ation (t&#226;che)" target="task-javamailsessioncreate"></indexitem>
+    <indexitem text="cr&#233;ation (r&#233;f&#233;rence)" target="ref-javamailsessioncreate"></indexitem>
+    <indexitem text="modification (r&#233;f&#233;rence)" target="ref-javamailsessionsedit"></indexitem>
+    <indexitem text="modification (t&#226;che)" target="task-javamailsessionsedit"></indexitem>
+    <indexitem text="suppression" target="task-javamailsessionsdelete"></indexitem>
+    <indexitem text="visualisation et configuration" target="ref-javamailsessions"></indexitem>
+  </indexitem>
+</index>

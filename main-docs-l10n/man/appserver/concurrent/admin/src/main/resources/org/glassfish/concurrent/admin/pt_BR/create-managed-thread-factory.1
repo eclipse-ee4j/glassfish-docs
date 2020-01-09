@@ -1,0 +1,104 @@
+create-managed-thread-faSubcomandos do utilitácreate-managed-thread-factory(1)
+
+NOME
+       create-managed-thread-factory - Cria um recurso de fábrica do thread
+       gerenciado
+
+SINOPSE
+           create-managed-thread-factory [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+DESCRIçãO
+       O subcomando create-managed-thread-factory cria um recurso de fábrica
+       do thread gerenciado.
+
+       Esse subcomando só é suportado no modo remoto.
+
+OPçõES
+       --help, -?
+           Exibe o texto de ajuda do subcomando.
+
+       --enabled
+           Determina se a fábrica de threads gerenciados está ativada no
+           runtime. O valor default é verdadeiro.
+
+       --contextinfoenabled
+           Determina se contextos de contêiner são propagados a threads. Se a
+           opção estiver definida como true, os contextos especificados na
+           opção --contextinfo serão propagados. Se a opção for definida como
+           false, nenhum contexto será propagado e a opção --contextinfo será
+           ignorada. O valor default é verdadeiro.
+
+       --contextinfo
+           Especifica contextos de contêiner individuais a serem propagados a
+           threads. Os valores válidos são Classloader; JNDI, Security e
+           WorkArea. Os valores são especificados em uma lista separada por
+           vírgulas e fazem distinção entre maiúsculas e minúsculas. Todos os
+           contextos são propagados por default.
+
+       --threadpriority
+           Especifica a prioridade a ser designada a threads criados. O valor
+           default é 5.
+
+       --description
+           Detalhes descritivos sobre o recurso.
+
+       --property
+           Pares opcionais do valor/nome do atributo para configurar o
+           recurso.
+
+           O ProductName; não define propriedades adicionais para este
+           recurso. Além disso, este recurso não usa atualmente propriedades
+           adicionais.
+
+       --target
+           Especifica o alvo para o qual você está criando o recurso. Os alvos
+           válidos são:
+
+           server
+               Cria o recurso para a instância de servidor default. Este é o
+               valor default.
+
+           domain
+               Cria o recurso para o domínio.
+
+           cluster_name
+               Cria o recurso para cada instância do servidor no cluster
+               especificado.
+
+           instance_name
+               Cria o recurso para a instância de servidor especificada.
+
+OPERANDOS
+       jndi_name
+           Nome da JNDI deste recurso.
+
+EXEMPLOS
+       Example 1, Criando um Recurso da Fábrica de Threads Gerenciados
+           Este exemplo cria um recurso de fábrica de threads gerenciados
+           denominado concurrent/myThreadFactory.
+
+               asadmin> create-managed-thread-factory concurrent/myThreadFactory
+               Managed thread factory concurrent/myThreadFactory created successfully.
+               Command create-managed-thread-factory executed successfully.
+
+STATUS DE SAíDA
+       0
+           subcomando executado com sucesso
+
+       1
+           erro na execução do subcomando
+
+CONSULTE TAMBéM
+       delete-managed-thread-factory(1), list-managed-thread-factories(1)
+
+       asadmin(1M)
+
+Java EE 7                   9 de fevereiro de create-managed-thread-factory(1)

@@ -1,0 +1,35 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-pamrealmprop" name="ref-pamrealmprop"></a></p>
+
+<h4><a id="sthref211" name="sthref211"></a><a id="sthref212" name="sthref212"></a>Propriet&agrave; specifiche della classe <code>PamRealm</code></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Per un realm Pam &egrave; obbligatoria la propriet&agrave; riportata di seguito.</p>
+<dl>
+<dt>Contesto JAAS</dt>
+<dd>
+<p>Il contesto JAAS (Java Authentication and Authorization Service): l'identificativo del modulo di login da utilizzare per questo realm. L'unico valore valido &egrave; <code>pamRealm</code>.</p>
+</dd>
+</dl>
+<p>Per un realm PAM &egrave; disponibile la propriet&agrave; opzionale riportata di seguito.</p>
+<dl>
+<dt>Gruppi di assegnazione</dt>
+<dd>
+<p>Lista separata da virgole di nomi di gruppi. Tutti i client con certificati validi vengono assegnati ai gruppi, ad esempio <code>employee,manager</code>, dove questi sono i nomi di gruppi di utenti.</p>
+</dd>
+</dl>
+
+
+  

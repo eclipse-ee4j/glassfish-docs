@@ -1,0 +1,87 @@
+create-managed-thread-asadminユ
+
+名前
+       create-managed-thread-factory -
+       管理対象スレッド・ファクトリ・リソースを作成します
+
+概要
+           create-managed-thread-factory [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+説明
+       create-managed-thread-factoryサブコマンドは、管理対象スレッド・ファクトリ・リソースを作成します。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+       --enabled
+           管理対象スレッド・ファクトリが実行時に有効かどうかを判断します。デフォルト値はtrueです。
+
+       --contextinfoenabled
+           コンテナ・コンテキストがスレッドに伝播されるかどうかを判断します。trueに設定された場合、--contextinfoオプションで指定されたコンテキストが伝播されます。falseに設定された場合、コンテキストは伝播されず、--contextinfoオプションは無視されます。デフォルト値はtrueです。
+
+       --contextinfo
+           スレッドに伝播する個々のコンテナ・コンテキストを指定します。有効な値はClassloader、JNDI、SecurityおよびWorkAreaです。値をカンマ区切りリストで指定し、大文字と小文字は区別されません。デフォルトでは、すべてのコンテキストが伝播されます。
+
+       --threadpriority
+           作成されたスレッドに割り当てる優先度を指定します。デフォルト値は5です。
+
+       --description
+           リソースの詳細を説明します。
+
+       --property
+           リソースを構成するための属性名と値のペア(オプション)。
+
+           GlassFish
+           Serverはこのリソースの追加プロパティを定義しません。また、このリソースは、現在追加プロパティを使用しません。
+
+       --target
+           リソースを作成するターゲットを指定します。有効なターゲットは次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンスにリソースを作成します。これがデフォルト値です。
+
+           domain
+               ドメインにリソースを作成します。
+
+           cluster_name
+               指定したクラスタ内のすべてのサーバー・インスタンスにリソースを作成します。
+
+           instance_name
+               指定したサーバー・インスタンスにリソースを作成します。
+
+オペランド
+       jndi_name
+           リソースのJNDI名。
+
+例
+       例 1, 管理対象スレッド・ファクトリ・リソースの作成
+           この例では、concurrent/myThreadFactoryという管理対象スレッド・ファクトリ・リソースを作成します。
+
+               asadmin> create-managed-thread-factory concurrent/myThreadFactory
+               Managed thread factory concurrent/myThreadFactory created successfully.
+               Command create-managed-thread-factory executed successfully.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       delete-managed-thread-factory(1), list-managed-thread-factories(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月9日 create-managed-thread-factory(1)

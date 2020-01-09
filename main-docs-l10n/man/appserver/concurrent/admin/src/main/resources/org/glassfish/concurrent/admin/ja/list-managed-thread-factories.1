@@ -1,0 +1,58 @@
+list-managed-thread-faasadminユ
+
+名前
+       list-managed-thread-factories -
+       管理対象スレッド・ファクトリ・リソースをリストします
+
+概要
+           list-managed-thread-factories [--help]
+           [target]
+
+説明
+       list-managed-thread-factoriesサブコマンドは、管理対象スレッド・ファクトリ・リソースをリストします。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+オペランド
+       target
+           管理対象スレッド・ファクトリ・リソースをリストするターゲットを指定します。有効なターゲットは次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンス上のリソースをリストします。これがデフォルト値です。
+
+           domain
+               ドメインのリソースをリストします。
+
+           cluster-name
+               指定したクラスタにあるすべてのサーバー・インスタンスのリソースをリストします。
+
+           instance-name
+               指定したサーバー・インスタンスのリソースをリストします。
+
+例
+       例 1, 管理対象スレッド・ファクトリ・リソースのリスト
+           この例では、デフォルトのサーバー・インスタンスの管理対象スレッド・ファクトリ・リソースをリストします。
+
+               asadmin> list-managed-thread-factories
+               concurrent/__defaultManagedThreadFactory
+               concurrent/myThreadFactory1
+               concurrent/myThreadFactory2
+               Command list-managed-thread-factories executed successfully.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       create-managed-thread-factory(1), delete-managed-thread-factory(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月9日 list-managed-thread-factories(1)

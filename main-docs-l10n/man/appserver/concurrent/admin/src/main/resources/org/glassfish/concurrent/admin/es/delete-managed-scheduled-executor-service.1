@@ -1,0 +1,69 @@
+delete-managed-scheduledSubcomandodelete-managed-scheduled-executor-service(1)
+
+NOMBRE DE REFERENCIA
+       delete-managed-scheduled-executor-service - Elimina un recurso de
+       servicio de ejecutor programado gestionado con el nombre de JNDI
+       especificado.
+
+SINOPSIS
+           delete-managed-scheduled-executor-service [--help]
+           [--target target]
+           managed_scheduled_executor_service_name
+
+DESCRIPCIÓN
+       El subcomando delete-managed-scheduled-executor-service elimina un
+       recurso de servicio de ejecutor programado gestionado con el nombre de
+       JNDI especificado.
+
+       Este subcomando sólo está soportado en modo remoto.
+
+OPCIONES
+       --help, -?
+           Muestra el texto de ayuda para el subcomando.
+
+       --target
+           Especifica el destino del que se va a suprimir el recurso. Los
+           destinos válidos son:
+
+           server
+               Suprime el recurso de la instancia de servidor por defecto.
+               Este es el valor por defecto.
+
+           domain
+               Suprime el recurso del dominio.
+
+           cluster_name
+               Suprime el recurso de todas las instancias de servidor del
+               cluster especificado.
+
+           instance_name
+               Suprime el recurso de la instancia de servidor especificada.
+
+OPERANDOS
+       managed_scheduled_executor_service_name
+           Nombre de JNDI del recurso que se va a suprimir.
+
+EJEMPLOS
+       Ejemplo 1, Supresión de un recurso de servicio de ejecutor programado
+       gestionado
+           En este ejemplo se suprime el recurso de servicio de ejecutor
+           programado gestionado denominado concurrent/myScheduledExecutor.
+
+               asadmin> delete-managed-scheduled-executor-service concurrent/myScheduledExecutor
+               Managed scheduled executor service concurrent/myScheduledExecutor deleted successfully.
+               Command delete-managed-scheduled-executor-service executed successfully.
+
+ESTADO DE SALIDA
+       0
+           Comando ejecutado correctamente
+
+       1
+           Error al ejecutar el comando
+
+CONSULTE TAMBIÉN
+       create-managed-scheduled-executor-service(1),
+       list-managed-scheduled-executor-services(1)
+
+       asadmin(1M)
+
+Java EE 7                    09 dedelete-managed-scheduled-executor-service(1)

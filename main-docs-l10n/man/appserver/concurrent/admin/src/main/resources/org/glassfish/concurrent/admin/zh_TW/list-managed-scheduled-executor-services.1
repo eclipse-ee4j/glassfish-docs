@@ -1,0 +1,60 @@
+list-managed-scheduled-execuasadminlist-managed-scheduled-executor-services(1)
+
+參考名
+       list-managed-scheduled-executor-services -
+       列出受管理排定的執行程式服務資源
+
+概要
+           list-managed-scheduled-executor-services [--help]
+           [target]
+
+描述
+       list-managed-scheduled-executor-services
+       子命令會列出受管理排定的執行程式服務資源。
+
+       只有遠端模式支援這個子命令。
+
+選項
+       --help, -?
+           顯示子命令的說明文字。
+
+運算元
+       target
+           指定要列出受管理排定的執行程式服務資源的目標。有效目標包括：
+
+           server
+               列出預設伺服器執行處理中的資源。此為預設值。
+
+           domain
+               列出網域的資源。
+
+           cluster-name
+               列出指定叢集中所有伺服器執行處理的資源。
+
+           instance-name
+               列出指定伺服器執行處理的資源。
+
+範例
+       範例 1, 列出受管理排定的執行程式服務資源
+           此範例會列出預設伺服器執行處理中的受管理排定的執行程式服務資源。
+
+               asadmin> list-managed-scheduled-executor-services
+               concurrent/__defaultManagedScheduledExecutorService
+               concurrent/myScheduledExecutor1
+               concurrent/myScheduledExecutor2
+               Command list-managed-scheduled-executor-services executed successfully.
+
+結束狀態
+       0
+           已成功執行子命令
+
+       1
+           執行子命令時發生錯誤
+
+另請參閱
+       create-managed-scheduled-executor-service(1),
+       delete-managed-scheduled-executor-service(1)
+
+       asadmin(1M)
+
+Java EE 7                      2013list-managed-scheduled-executor-services(1)

@@ -1,0 +1,89 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-configurationsystemproperties" name="ref-configurationsystemproperties"></a></p>
+
+<h4><a id="sthref243" name="sthref243"></a><a id="sthref244" name="sthref244"></a>Propriet&agrave; di sistema</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Nella pagina Propriet&agrave; di sistema viene visualizzata la lista delle propriet&agrave; di sistema Java definite nella configurazione denominata selezionata. Le propriet&agrave; di sistema Java vengono passate al launcher dell'applicazione Java tramite la relativa opzione <code>-D</code> all'avvio di GlassFish Server.</p>
+<p>Queste propriet&agrave; definiscono i valori predefiniti delle impostazioni delle porte per tutte le istanze GlassFish Server che fanno riferimento alla configurazione.</p>
+<p>Per informazioni sulle impostazioni predefinite delle porte in una configurazione, vedere <a href="ref-predefinedconfigsysproperties.html">Propriet&agrave; di sistema predefinite</a>.</p>
+<p>Per ogni propriet&agrave; vengono visualizzate le informazioni riportate di seguito.</p>
+<dl>
+<dt>Nome variabile istanza</dt>
+<dd>
+<p>Il nome della propriet&agrave; di sistema.</p>
+</dd>
+<dt>Valore predefinito</dt>
+<dd>
+<p>Il valore impostato per la propriet&agrave; nella configurazione denominata a cui fa riferimento l'istanza. Questo campo &egrave; di sola lettura.</p>
+</dd>
+<dt>Valori istanza</dt>
+<dd>
+<p>Il collegamento alla pagina <a href="ref-sysinstancevalues.html">Valori istanza</a> per la propriet&agrave;.</p>
+</dd>
+</dl>
+<p>La tabella Propriet&agrave; aggiuntive contiene inoltre le opzioni riportate di seguito.</p>
+<dl>
+<dt>Aggiungi propriet&agrave;</dt>
+<dd>
+<p>Pulsante che consente di aggiungere una propriet&agrave;. Se si fa clic su questo pulsante, viene aggiunta una riga alla tabella Propriet&agrave; aggiuntive.</p>
+</dd>
+<dt>Elimina propriet&agrave;</dt>
+<dd>
+<p>Pulsante che consente di eliminare una o pi&ugrave; propriet&agrave; selezionate. L'eliminazione comporta il ripristino del valore predefinito della propriet&agrave;. Se il valore predefinito non &egrave; stato impostato, la propriet&agrave; rimane non definita.</p>
+</dd>
+</dl>
+<p>La pagina Propriet&agrave; di sistema contiene inoltre le opzioni riportate di seguito.</p>
+<dl>
+<dt>Nome configurazione</dt>
+<dd>
+<p>Il nome della configurazione a cui si applicano le impostazioni presenti in questa pagina. Questo campo &egrave; di sola lettura.</p>
+</dd>
+<dt>Riconfigurazione dinamica</dt>
+<dd>
+<p>Se questa opzione &egrave; abilitata, le modifiche apportate alla configurazione vengono applicate alle istanze che fanno riferimento ad essa senza che sia necessario riavviare le istanze.</p>
+</dd>
+<dt>Cluster e/o istanze che utilizzano la configurazione</dt>
+<dd>
+<p>La lista dei cluster e delle istanze che fanno riferimento alla configurazione con un'indicazione relativa all'eventuale esecuzione di ciascun cluster o istanza:</p>
+<ul>
+<li>
+<p>se il cluster o l'istanza &egrave; in esecuzione, viene visualizzato un segno di spunta (&#10003;);</p>
+</li>
+<li>
+<p>se il cluster o l'istanza &egrave; arrestata, viene visualizzato un punto esclamativo (<code>!</code>).</p>
+</li>
+</ul>
+</dd>
+</dl>
+<a id="GHCOM478" name="GHCOM478"></a>
+<h5>Task correlati</h5>
+<p>Per impostare i valori predefiniti per le propriet&agrave; di configurazione</p>
+<a id="GHCOM479" name="GHCOM479"></a>
+<h5>Comandi secondari asadmin equivalenti</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00059"><code>create-system-properties</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00110"><code>delete-system-property</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00203"><code>list-system-properties</code>(1)</a></p>
+</li>
+</ul>
+
+
+  

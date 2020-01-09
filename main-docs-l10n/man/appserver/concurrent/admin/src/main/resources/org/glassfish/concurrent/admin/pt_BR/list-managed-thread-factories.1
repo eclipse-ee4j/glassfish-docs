@@ -1,0 +1,63 @@
+list-managed-thread-factSubcomandos do utilitálist-managed-thread-factories(1)
+
+NOME
+       list-managed-thread-factories - lista recursos de fábrica de threads
+       gerenciados
+
+SINOPSE
+           list-managed-thread-factories [--help]
+           [target]
+
+DESCRIçãO
+       O subcomando list-managed-thread-factories lista recursos de fábrica de
+       threads gerenciados.
+
+       Esse subcomando só é suportado no modo remoto.
+
+OPçõES
+       --help, -?
+           Exibe o texto de ajuda do subcomando.
+
+OPERANDOS
+       target
+           Especifica o alvo cujos recursos de fábrica de threads gerenciados
+           devem ser listados. Os alvos válidos são:
+
+           server
+               Lista os recursos na instância default do servidor. Este é o
+               valor default.
+
+           domain
+               Lista os recursos do domínio.
+
+           cluster-name
+               Lista os recursos em todas as instâncias de servidor do cluster
+               especificado.
+
+           instance-name
+               Lista os recursos em uma instância de servidor especificada.
+
+EXEMPLOS
+       Example 1, Listando Recursos de Fábrica de Threads Gerenciados
+           Este exemplo lista recursos de fábrica de threads gerenciados na
+           instância de servidor default.
+
+               asadmin> list-managed-thread-factories
+               concurrent/__defaultManagedThreadFactory
+               concurrent/myThreadFactory1
+               concurrent/myThreadFactory2
+               Command list-managed-thread-factories executed successfully.
+
+STATUS DE SAíDA
+       0
+           subcomando executado com sucesso
+
+       1
+           erro na execução do subcomando
+
+CONSULTE TAMBéM
+       create-managed-thread-factory(1), delete-managed-thread-factory(1)
+
+       asadmin(1M)
+
+Java EE 7                   9 de fevereiro de list-managed-thread-factories(1)

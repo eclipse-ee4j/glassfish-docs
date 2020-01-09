@@ -1,0 +1,104 @@
+create-managed-thread-faUnterbefehle des asadmcreate-managed-thread-factory(1)
+
+NAME
+       create-managed-thread-factory - erstellt eine verwaltete
+       Thread-Factory-Ressource
+
+ZUSAMMENFASSUNG
+           create-managed-thread-factory [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+BESCHREIBUNG
+       Der Unterbefehl create-managed-thread-factory erstellt eine verwaltete
+       Thread-Factory-Ressource.
+
+       Dieser Unterbefehl wird nur im Remote-Modus unterstützt.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+       --enabled
+           Legt fest, ob die Managed Thread-Factory zur Laufzeit aktiviert
+           ist. Der Standardwert ist true.
+
+       --contextinfoenabled
+           Legt fest, ob Containerkontexte an Threads propagiert werden. Ist
+           diese Option auf true gesetzt, werden die über die Option
+           --contextinfo angegebenen Kontexte propagiert. Ist diese Option auf
+           false gesetzt, werden keine Kontexte propagiert, und die Option
+           --contextinfo wird ignoriert. Der Standardwert ist true.
+
+       --contextinfo
+           Gibt an, ob einzelne Containerkontexte an Threads propagiert werden
+           sollen. Gültige Werte sind Class Loader, JNDI, Sicherheit und
+           WorkArea. Werte werden in einer durch Komma getrennten Liste unter
+           Beachtung der Groß- und Kleinschreibung angegeben. Standardmäßig
+           werden alle Kontexte propagiert.
+
+       --threadpriority
+           Gibt die Priorität an, die erstellten Threads zugewiesen werden
+           soll. Der Standardwert ist 5.
+
+       --description
+           Einzelheiten zur Ressource.
+
+       --property
+           Optionale Name/Wert-Paare für Attribute zum Konfigurieren der
+           Ressource.
+
+           In GlassFish Server werden keine weiteren Eigenschaften für diese
+           Ressource definiert. Darüber hinaus verwendet diese Ressource
+           derzeit keine weiteren Eigenschaften.
+
+       --target
+           Gibt das Ziel an, für das Sie die Ressource erstellen. Gültige
+           Ziele sind:
+
+           server
+               Erstellt die Ressource für die standardmäßige Serverinstanz.
+               Dies ist der Standardwert.
+
+           domain
+               Erstellt die Ressource für die Domain.
+
+           cluster_name
+               Erstellt die Ressource für jede Serverinstanz im angegebenen
+               Cluster.
+
+           instance_name
+               Erstellt die Ressource für die angegebene Serverinstanz.
+
+OPERANDEN
+       jndi_name
+           Der JNDI-Name dieser Ressource.
+
+BEISPIELE
+       Beispiel 1, Verwaltete Thread-Factory-Ressourcen erstellen
+           In diesem Beispiel wird eine Managed Thread-Factory-Ressource mit
+           dem Namen concurrent/myThreadFactory erstellt.
+
+               asadmin> create-managed-thread-factory concurrent/myThreadFactory
+               Managed thread factory concurrent/myThreadFactory created successfully.
+               Command create-managed-thread-factory executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       delete-managed-thread-factory(1), list-managed-thread-factories(1)
+
+       asadmin(1M)
+
+Java EE 7                        09. Feb. 2013create-managed-thread-factory(1)

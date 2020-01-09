@@ -1,0 +1,84 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-lifecyclemodules" name="ref-lifecyclemodules"></a></p>
+
+<h4><a id="sthref185" name="sthref185"></a>M&oacute;dulos de Ciclo de Vida</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Utilice la p&aacute;gina M&oacute;dulos de Ciclo de Vida para configurar los m&oacute;dulos de ciclo de vida.</p>
+<p>Un m&oacute;dulo de ciclo de vida realiza tareas cuando lo dispara uno o m&aacute;s eventos del ciclo de vida del servidor. Los posibles eventos del servidor que pueden dispararlo son: inicializaci&oacute;n, inicio, listo para atender solicitudes y apagado. Los m&oacute;dulos de ciclo de vida no forman parte de la especificaci&oacute;n de Java EE, sino que son una mejora de GlassFish Server.</p>
+<p>Se proporciona la siguiente informaci&oacute;n para cada m&oacute;dulo de ciclo de vida.</p>
+<dl>
+<dt>Nombre</dt>
+<dd>
+<p>Nombre del m&oacute;dulo de ciclo de vida.</p>
+</dd>
+<dt>Activado o Estado</dt>
+<dd>
+<p>Una marca de control si la aplicaci&oacute;n est&aacute; activada o una X si est&aacute; desactivada, en el caso de que s&oacute;lo exista la instancia de servidor por defecto, <code>server</code>.</p>
+<p>Si existen clusters u otras instancias de servidores independientes, seleccione Activado en Todos los Destinos para ver los destinos en los que est&aacute; desplegada la aplicaci&oacute;n.</p>
+</dd>
+<dt>Orden de Carga</dt>
+<dd>
+<p>Valor que especifica el orden relativo en el que el m&oacute;dulo de ciclo de vida se debe cargar.</p>
+</dd>
+</dl>
+<p>La tabla M&oacute;dulos de Ciclo de Vida tambi&eacute;n contiene las siguientes opciones.</p>
+<dl>
+<dt>Nuevo</dt>
+<dd>
+<p>Bot&oacute;n para crear un nuevo m&oacute;dulo de ciclo de vida.</p>
+</dd>
+<dt>Suprimir</dt>
+<dd>
+<p>Bot&oacute;n para suprimir uno o m&aacute;s m&oacute;dulos de ciclo de vida seleccionados.</p>
+</dd>
+<dt>Activar</dt>
+<dd>
+<p>Bot&oacute;n para activar uno o m&aacute;s m&oacute;dulos de ciclo de vida seleccionados. S&oacute;lo est&aacute; presente si existe la instancia de servidor por defecto, <code>server</code>.</p>
+</dd>
+<dt>Desactivar</dt>
+<dd>
+<p>Bot&oacute;n para desactivar uno o m&aacute;s m&oacute;dulos de ciclo de vida seleccionados. S&oacute;lo est&aacute; presente si existe la instancia de servidor por defecto, <code>server</code>.</p>
+</dd>
+</dl>
+<a id="GHCOM391" name="GHCOM391"></a>
+<h5>Tareas relacionadas</h5>
+<ul>
+<li>
+<p><a href="task-lifecyclemodulenew.html">Crear un m&oacute;dulo de ciclo de vida</a></p>
+</li>
+<li>
+<p><a href="task-lifecyclemoduleedit.html">Editar un m&oacute;dulo de ciclo de vida</a></p>
+</li>
+<li>
+<p><a href="task-lifecyclemoduledelete.html">Suprimir un m&oacute;dulo de ciclo de vida</a></p>
+</li>
+</ul>
+<a id="GHCOM392" name="GHCOM392"></a>
+<h5>Comandos asadmin Relacionados</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00043"><code>create-lifecycle-module</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00181"><code>list-lifecycle-modules</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00095"><code>delete-lifecycle-module</code>(1)</a></p>
+</li>
+</ul>
+
+
+  

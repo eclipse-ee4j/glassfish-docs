@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.glassfish.docs.man</groupId>
+        <artifactId>manpages</artifactId>
+        <version>4.2-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>    
+
+   <artifactId>manpages-nucleus</artifactId>
+   <name>Man Pages for nucleus</name>
+   <packaging>pom</packaging>
+   <version>4.2-SNAPSHOT</version>
+   <modules>
+      <module>admin/cli</module>
+      <module>admin/config-api</module>
+      <module>admin/monitor</module>
+      <module>admin/server-mgmt</module>
+      <module>admin/util</module>
+      <module>cluster/admin</module>
+      <module>cluster/cli</module>
+    <!-- don't build cluster-gms-adapter-manpage; it's empty now -->
+<!--      <module>cluster/gms-adapter</module> -->
+      <module>core/kernel</module>
+      <module>core/logging</module>
+      <module>deployment/admin</module>
+      <module>flashlight/framework</module>
+      <module>osgi-platforms/osgi-cli-interactive</module>
+      <module>osgi-platforms/osgi-cli-remote</module>
+      <module>security/core</module>
+    </modules>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>2.5</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>2.2.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

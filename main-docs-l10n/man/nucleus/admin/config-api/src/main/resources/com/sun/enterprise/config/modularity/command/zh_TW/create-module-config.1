@@ -1,0 +1,70 @@
+create-module-config(1)     asadmin 公用程式子命令     create-module-config(1)
+
+參考名
+       create-module-config - 將模組的預設組態新增至 domain.xml
+
+概要
+           create-module-config [--help]
+           [--dryrun={false|true}]
+           [--all={false|true}]
+           [--target target]
+           service_name
+
+描述
+       create-module-config 子命令會將模組的預設組態新增至 domain.xml。
+
+       只有遠端模式支援這個子命令。
+
+選項
+       --help, -?
+           顯示子命令的說明文字。
+
+       --dryrun
+           顯示模組的預設組態，但不將其新增至 domain.xml。預設值為 false。
+
+       --all
+           將模組的所有預設組態新增至 domain.xml (如果原本沒有的話)。預設值為
+           false。
+
+       --target
+           指定要新增預設組態的目標。
+
+           可能值如下：
+
+           server
+               將預設組態新增至預設伺服器執行處理。此為預設值。
+
+           domain
+               將預設組態新增至預設網域。
+
+           cluster-name
+               將預設組態新增至指定叢集。
+
+           instance-name
+               將預設組態新增至指定執行處理。
+
+運算元
+       service_name
+           要新增預設組態的模組名稱。
+
+範例
+       範例 1, 新增預設組態至 domain.xml
+           此範例會將 Web 容器模組的預設組態新增至 server-config (預設組態)
+           中的 domain1。您可以使用 --dryrun 選項在新增組態之前先預覽組態。
+
+               asadmin> create-module-config web-container
+               Command create-module-config executed successfully.
+
+結束狀態
+       0
+           已成功執行子命令
+
+       1
+           執行子命令時發生錯誤
+
+另請參閱
+       delete-module-config(1), get-active-module-config(1)
+
+       asadmin(1M)
+
+Java EE 7                      2013 年 2 月 6 日       create-module-config(1)

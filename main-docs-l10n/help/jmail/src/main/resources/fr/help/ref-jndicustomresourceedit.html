@@ -1,0 +1,82 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-jndicustomresourceedit" name="ref-jndicustomresourceedit"></a></p>
+
+<h4><a id="sthref42" name="sthref42"></a><a id="sthref43" name="sthref43"></a><a id="sthref44" name="sthref44"></a>Modifier une ressource personnalis&eacute;e</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La page Modifier une ressource personnalis&eacute;e permet de modifier une ressource JNDI personnalis&eacute;e.</p>
+<p>Elle contient les options ci-apr&egrave;s.</p>
+<dl>
+<dt>Nom JNDI</dt>
+<dd>
+<p>Nom unique identifiant la ressource. Le champ Nom JNDI est en lecture seule. Vous ne pouvez sp&eacute;cifier le nom JNDI qu'&agrave; la cr&eacute;ation d'une ressource personnalis&eacute;e.</p>
+</dd>
+<dt>Type de ressource</dt>
+<dd>
+<p>D&eacute;finition qualifi&eacute;e compl&egrave;te du type de la ressource.</p>
+</dd>
+<dt>Classe de fabrique</dt>
+<dd>
+<p>Nom de classe de fabrique sp&eacute;cifi&eacute; par l'utilisateur. Cette classe impl&eacute;mente l'interface <code>javax.naming.spi.ObjectFactory</code>.</p>
+</dd>
+<dt>Ordre de d&eacute;ploiement</dt>
+<dd>
+<p>Ordre de d&eacute;ploiement de la ressource personnalis&eacute;e.</p>
+</dd>
+<dt>Description</dt>
+<dd>
+<p>Description de cette ressource personnalis&eacute;e.</p>
+</dd>
+<dt>Statut</dt>
+<dd>
+<p>Indique si la ressource est disponible lors de l'ex&eacute;cution.</p>
+<p>Si seule l'instance de serveur par d&eacute;faut <code>server</code>, existe dans le domaine, la disponibilit&eacute; d'ex&eacute;cution de la ressource peut &ecirc;tre activ&eacute;e ou d&eacute;sactiv&eacute;e. La disponibilit&eacute; d'ex&eacute;cution est activ&eacute;e par d&eacute;faut.</p>
+<p>Si des clusters ou des instances autonomes ont &eacute;t&eacute; cr&eacute;&eacute;s dans le domaine, utilisez l'onglet Cible pour contr&ocirc;ler la disponibilit&eacute; d'ex&eacute;cution de la ressource sur ses cibles.</p>
+</dd>
+<dt>Autres propri&eacute;t&eacute;s</dt>
+<dd>
+<p>Propri&eacute;t&eacute;s suppl&eacute;mentaires de la ressource personnalis&eacute;e. GlassFish Server ne d&eacute;finit aucune autre propri&eacute;t&eacute; pour les ressources personnalis&eacute;es.</p>
+</dd>
+</dl>
+<a id="GHJML129" name="GHJML129"></a>
+<h5>T&acirc;ches connexes</h5>
+<ul>
+<li>
+<p><a href="task-jndicustomresourcenew.html">Cr&eacute;ation d'une ressource JNDI personnalis&eacute;e</a></p>
+</li>
+<li>
+<p><a href="task-jndicustomresourceedit.html">Modification d'une ressource JNDI personnalis&eacute;e</a></p>
+</li>
+<li>
+<p><a href="task-jndicustomresourcedelete.html">Suppression d'une ressource JNDI personnalis&eacute;e</a></p>
+</li>
+</ul>
+<a id="GHJML130" name="GHJML130"></a>
+<h5>Commandes asadmin connexes</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00022"><code>create-custom-resource</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00162"><code>list-custom-resources</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00074"><code>delete-custom-resource</code>(1)</a></p>
+</li>
+</ul>
+
+
+
+  

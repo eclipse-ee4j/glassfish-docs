@@ -1,0 +1,47 @@
+list-jobs(1)          asadminユーティリティのサブコマンド         list-jobs(1)
+
+名前
+       list-jobs - asadmin
+       --detachを使用して起動されたサブコマンドまたは進捗情報を含むサブコマンドに関する情報をリストします
+
+概要
+           list-jobs [--help]
+           [job_id]
+
+説明
+       list-jobsサブコマンドは、asadminユーティリティ・オプション--detachを使用して起動されたサブコマンドまたは進捗情報を含むサブコマンドに関する情報をリストします。--detachオプションを使用すると、長時間実行中のサブコマンドはデタッチされ、デタッチ・モードでバックグラウンドで実行されます。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+オペランド
+       job_id
+           情報をリストするジョブのID。
+
+例
+       例 1, ジョブ・ステータスの確認
+           この例では、asadmin
+           --detachを使用して起動されたサブコマンドまたは進捗情報を含むサブコマンドに関する情報を提供します。
+
+               asadmin> list-jobs
+               JOB ID     COMMAND           STATE       EXIT CODE TIME OF COMPLETION
+               1          create-cluster    COMPLETED   SUCCESS   2013-02-15 16:16:16 PST
+               2          deploy            COMPLETED   FAILURE   2013-02-15 18:26:30 PST
+               Command list-jobs executed successfully
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       configure-managed-jobs(1), attach(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月6日                     list-jobs(1)

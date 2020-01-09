@@ -1,0 +1,74 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-jmxconnectoredit" name="ref-jmxconnectoredit"></a></p>
+
+<h4><a id="sthref238" name="sthref238"></a>JMX-Connector bearbeiten</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Verwenden Sie die Seite "JMX-Connector bearbeiten", um den mit JSR 360-konformen JMX-Connector zu bearbeiten.</p>
+<p>Die Seite "JMX-Connector bearbeiten" enth&auml;lt die folgenden Optionen.</p>
+<dl>
+<dt>Name der Konfiguration</dt>
+<dd>
+<p>Der Name der Konfiguration, f&uuml;r die die Einstellungen auf dieser Seite angewendet werden. Dieses Feld ist schreibgesch&uuml;tzt.</p>
+</dd>
+<dt>Name</dt>
+<dd>
+<p>Der Name des JMX-Connectors. Dies ist ein schreibgesch&uuml;tztes Feld.</p>
+</dd>
+<dt>JMX-Protokoll</dt>
+<dd>
+<p>Der Name des Protokolls, das dieser JMX-Connector unterst&uuml;tzt. Dies ist ein schreibgesch&uuml;tztes Feld.</p>
+</dd>
+<dt>JMXServiceURL</dt>
+<dd>
+<p>Die JMX-Service-URL. Dies ist ein schreibgesch&uuml;tztes Feld.</p>
+</dd>
+<dt>Sicherheit</dt>
+<dd>
+<p>Bei aktiviertem Kontrollk&auml;stchen "Aktiviert" ist die JMX-Daten&uuml;bertragung verschl&uuml;sselt. Diese Option ist standardm&auml;&szlig;ig deaktiviert.</p>
+</dd>
+<dt>Adresse</dt>
+<dd>
+<p>Die IP-Adresse des Naming Service, in dem der Stub des JMX-Connector-Servers registriert ist. Dies ist nicht der Port des Server-Sockets, der die eigentliche JMX-Daten&uuml;bertragung &uuml;bernimmt. Dies ist die Adresse der Netzwerkschnittstelle, in der die RMI-Registry gestartet wird. Falls Ihr System mehrere Netzwerkschnittstellen besitzt, &auml;ndern Sie diesen Wert so, dass nur eine bestimmte Schnittstelle ausgew&auml;hlt wird. Der Standardwert ist <code>0.0.0.0</code>.</p>
+</dd>
+<dt>Port</dt>
+<dd>
+<p>Die Nummer des Ports, auf dem der Naming Service (RMI-Registry) auf RMI-Clientverbindungen horcht. Die einzige Verwendung dieses Naming Service besteht darin, die RMI-Stubs herunterzuladen. Falls der Standardport besetzt ist, wird ein freier Port verwendet. G&uuml;ltige Werte sind 1 - 65535. Bei UNIX-Systemen erfordert das Erstellen von Sockets, die auf den Ports 1 - 1024 horchen, Superuser-Berechtigungen. Der Standardwert ist 8686.</p>
+</dd>
+<dt>Realm-Name</dt>
+<dd>
+<p>Der Name, der die spezielle Administrations-Realm darstellt. Alle Authentifizierungsvorg&auml;nge werden von dieser Realm abgewickelt. Der Standardwert ist <code>admin-realm</code> .</p>
+</dd>
+<dt>Weitere Eigenschaften</dt>
+<dd>
+<p>Weitere Eigenschaften f&uuml;r den JMX-Connector. Verschiedene Eigenschaften werden durch Standardwerte konfiguriert.</p>
+</dd>
+</dl>
+<a id="GHCOM471" name="GHCOM471"></a>
+<h5>Verwandte Aufgaben</h5>
+<ul>
+<li>
+<p><a href="task-jmxconnectoredit.html">So wird der JMX-Connector bearbeitet</a></p>
+</li>
+<li>
+<p><a href="task-jmxconnectorssledit.html">So werden SSL-Einstellungen f&uuml;r den JMX-Connector bearbeitet</a></p>
+</li>
+</ul>
+<a id="GHCOM472" name="GHCOM472"></a>
+<h5>Zugeh&ouml;rige asadmin-Befehle</h5>
+<p>Kein.</p>
+
+
+  

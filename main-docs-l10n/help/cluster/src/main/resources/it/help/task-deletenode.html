@@ -1,0 +1,80 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-deletenode" name="task-deletenode"></a></p>
+
+<h4><a id="sthref228" name="sthref228"></a>Per eliminare i nodi</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>L'eliminazione comporta la rimozione del nodo dalla configurazione del server di amministrazione del dominio (DAS). Le directory e i file del nodo vengono eliminati quando viene eliminata l'ultima istanza di GlassFish Server residente nel nodo.</p>
+<p>&Egrave; inoltre possibile scegliere di disinstallare il software di GlassFish Server dall'host del nodo all'eliminazione del nodo.</p>
+<a id="sthref229" name="sthref229"></a>
+<h5>Prima di iniziare</h5>
+<p>Assicurarsi che il nodo da eliminare non contenga istanze di GlassFish Server.</p>
+<ol>
+<li>
+<p>Selezionare il nodo Nodi nell'albero di navigazione.</p>
+<p>Viene visualizzata la pagina Nodi.</p>
+</li>
+<li>
+<p>Per ogni nodo da eliminare, selezionare la casella di controllo in corrispondenza del nodo nella tabella Nodi.</p>
+
+<hr>
+<p><b>Nota:</b></p>
+Non &egrave; possibile eliminare il nodo predefinito <code>localhost-</code><i>domain</i>.
+<hr>
+
+</li>
+<li>
+<p>Fare clic sul pulsante per eliminare i nodi oppure eliminare i nodi e disinstallare il software di GlassFish Server dagli host del nodo.</p>
+<ul>
+<li>
+<p>Per eliminare i nodi senza disinstallare il software di GlassFish Server, fare clic su Elimina.</p>
+<p>Viene richiesto di confermare l'eliminazione dei nodi.</p>
+</li>
+<li>
+<p>Per eliminare i nodi e disinstallare il software di GlassFish Server, fare clic su Elimina e disinstalla.</p>
+<p>Viene richiesto di confermare l'eliminazione dei nodi e la disinstallazione del software di GlassFish Server dagli host del nodo.</p>
+
+<hr>
+<p><b>Nota:</b></p>
+Il software di GlassFish Server non viene disinstallato da alcun host rappresentato da un nodo di tipo CONFIG. Viene eliminato solo il nodo.
+<hr>
+
+</li>
+</ul>
+</li>
+<li>
+<p>Confermare che si desidera eliminare i nodi o eliminare i nodi e disinstallare il software di GlassFish Server dagli host del nodo.</p>
+<p>I nodi vengono eliminati e rimossi dalla tabella dei nodi della pagina Nodi. Se si &egrave; fatto clic su Elimina e disinstalla, viene eseguita anche la disinstallazione del software di GlassFish Server dagli host del nodo.</p>
+</li>
+</ol>
+<a id="sthref230" name="sthref230"></a>
+<h5>Vedere anche</h5>
+<ul>
+<li>
+<p><a href="task-createnode.html">Per creare un nodo</a></p>
+</li>
+<li>
+<p><a href="task-listnodes.html">Per elencare tutti i nodi del dominio corrente</a></p>
+</li>
+<li>
+<p><a href="task-pingnode.html">Per verificare se un nodo &egrave; raggiungibile</a></p>
+</li>
+<li>
+<p><a href="task-editnode.html">Per modificare un nodo</a></p>
+</li>
+</ul>
+
+
+  

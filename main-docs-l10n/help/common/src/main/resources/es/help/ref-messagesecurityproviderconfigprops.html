@@ -1,0 +1,44 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-messagesecurityproviderconfigprops" name="ref-messagesecurityproviderconfigprops"></a></p>
+
+<h4><a id="sthref232" name="sthref232"></a><a id="sthref233" name="sthref233"></a>Propiedades espec&iacute;ficas de configuraciones de proveedores de seguridad de mensajes</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Las siguientes propiedades est&aacute;n disponibles para la configuraci&oacute;n del proveedor de seguridad de mensajes.</p>
+<dl>
+<dt><code>server.config</code></dt>
+<dd>
+<p>Directorio y nombre de archivo de un archivo XML que contiene la informaci&oacute;n de configuraci&oacute;n del servidor. El valor por defecto es domain-dir<code>/config/wss-server-config-1.0.xml</code>.</p>
+</dd>
+<dt><code>debug</code></dt>
+<dd>
+<p>Si se define en <code>true</code>, se producir&aacute; el volcado de mensajes de depuraci&oacute;n del proveedor del servidor en el log del servidor. El valor por defecto es <code>false</code>.</p>
+</dd>
+<dt><code>dynamic.username.password</code></dt>
+<dd>
+<p>Si se define en <code>true</code>, se&ntilde;ala el tiempo de ejecuci&oacute;n del proveedor para recopilar el nombre de usuario y la contrase&ntilde;a de <code>CallbackHander</code> para cada solicitud. Si est&aacute; configurado en false, el nombre de usuario y la contrase&ntilde;a para <code>wsse:UsernameToken(s)</code> se recopila una vez, durante la inicializaci&oacute;n del m&oacute;dulo. Esta propiedad es aplicable &uacute;nicamente para <code>ClientAuthModule</code>. El valor por defecto es <code>false</code>.</p>
+</dd>
+<dt><code>encryption.key.alias</code></dt>
+<dd>
+<p>Especifica la clave de cifrado utilizada por el proveedor. Esta clave se identifica por su alias <code>keystore</code>. El valor por defecto es <code>s1as</code>.</p>
+</dd>
+<dt><code>signature.key.alias</code></dt>
+<dd>
+<p>Especifica la clave de firma utilizada por el proveedor. Esta clave se identifica por su alias <code>keystore</code>. El valor por defecto es <code>s1as</code>.</p>
+</dd>
+</dl>
+
+
+  

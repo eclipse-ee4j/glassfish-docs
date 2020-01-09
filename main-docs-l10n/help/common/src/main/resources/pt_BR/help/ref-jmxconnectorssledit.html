@@ -1,0 +1,77 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-jmxconnectorssledit" name="ref-jmxconnectorssledit"></a></p>
+
+<h4><a id="sthref239" name="sthref239"></a><a id="sthref240" name="sthref240"></a><a id="sthref241" name="sthref241"></a>SSL</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Use a p&aacute;gina SSL para modificar as defini&ccedil;&otilde;es SSL do conector JMX.</p>
+<p>As defini&ccedil;&otilde;es nesta p&aacute;gina tem significado apenas se a seguran&ccedil;a estiver ativada para o conector JMX na p&aacute;gina Editar Conector JMX.</p>
+<p>A p&aacute;gina SSL cont&eacute;m as seguintes op&ccedil;&otilde;es.</p>
+<dl>
+<dt>Nome da Configura&ccedil;&atilde;o</dt>
+<dd>
+<p>O nome da configura&ccedil;&atilde;o &agrave; qual as defini&ccedil;&otilde;es nesta p&aacute;gina se aplicam. Este campo &eacute; somente para leitura.</p>
+</dd>
+<dt>SSL3</dt>
+<dd>
+<p>Se a caixa de sele&ccedil;&atilde;o estiver marcada, o protocolo SSL3 estar&aacute; dispon&iacute;vel para o conector JMX. Por default, a op&ccedil;&atilde;o est&aacute; ativada.</p>
+</dd>
+<dt>TLS</dt>
+<dd>
+<p>Se a caixa de sele&ccedil;&atilde;o estiver marcada, o protocolo TLS estar&aacute; dispon&iacute;vel para o conector JMX. Por default, a op&ccedil;&atilde;o est&aacute; ativada.</p>
+</dd>
+<dt>Autentica&ccedil;&atilde;o do Cliente</dt>
+<dd>
+<p>Se a caixa de sele&ccedil;&atilde;o estiver marcada, os clientes dever&atilde;o identificar-se para o servidor a cada solicita&ccedil;&atilde;o. Por default, essa op&ccedil;&atilde;o est&aacute; desativada.</p>
+</dd>
+<dt>Apelido do Certificado</dt>
+<dd>
+<p>O apelido do certificado do servidor no banco de dados de certificado ou o token PKCS#11. No certificado, o formato de nome &eacute;<i>tokenname</i><code>:</code><i>nickname</i>. Inclusive o <i>tokenname</i><code>:</code> parte do nome neste atributo &eacute; opcional.</p>
+</dd>
+<dt>Armazenamento de Chave</dt>
+<dd>
+<p>O nome do arquivo de armazenamento de chave (por exemplo, <code>keystore.jks</code>).</p>
+</dd>
+<dt>Algoritmo de Confiabilidade</dt>
+<dd>
+<p>O nome do algoritmo de gerenciamento confi&aacute;vel (por exemplo, PKIX) a ser utilizado para valida&ccedil;&atilde;o do caminho de certifica&ccedil;&atilde;o.</p>
+</dd>
+<dt>Tamanho M&aacute;ximo do Certificado</dt>
+<dd>
+<p>O n&uacute;mero m&aacute;ximo de certificados intermedi&aacute;rios n&atilde;o emitidos automaticamente que podem existir em um caminho de certifica&ccedil;&atilde;o. Esse campo &eacute; usado apenas se o campo Algoritmo de Confiabilidade estiver definido como PKIX. O valor 0 indica que o caminho pode conter somente um certificado. O valor -1 indica que o comprimento do caminho n&atilde;o &eacute; restrito (n&atilde;o existe m&aacute;ximo). A defini&ccedil;&atilde;o de um valor menor que -1 gera uma exce&ccedil;&atilde;o.</p>
+</dd>
+<dt>Armazenamento Confi&aacute;vel</dt>
+<dd>
+<p>O nome do arquivo de armazenamento confi&aacute;vel (por exemplo, <code>cacerts.jks</code>).</p>
+</dd>
+<dt>Conjuntos Criptogr&aacute;ficos</dt>
+<dd>
+<p>Uma &aacute;rea onde &eacute; poss&iacute;vel adicionar ou remover conjuntos criptogr&aacute;ficos. Se voc&ecirc; n&atilde;o adicionar conjuntos criptogr&aacute;ficos, todos os conjuntos criptogr&aacute;ficos ser&atilde;o usados.</p>
+</dd>
+</dl>
+<a id="GHCOM473" name="GHCOM473"></a>
+<h5>Tarefas Relacionadas</h5>
+<ul>
+<li>
+<p><a href="task-jmxconnectoredit.html">Para Editar o Conector JMX</a></p>
+</li>
+<li>
+<p><a href="task-jmxconnectorssledit.html">Para Editar as Defini&ccedil;&otilde;es de SSL para o Conector JMX</a></p>
+</li>
+</ul>
+
+
+
+  

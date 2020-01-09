@@ -1,0 +1,50 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-logicaljndinames" name="ref-logicaljndinames"></a></p>
+
+<h4>Logische JNDI-Namen</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Bei der Erstellung einer Ressource geben Sie einen eindeutigen JNDI-Namen f&uuml;r die Ressource an. Mithilfe dieses Namens greifen Anwendungen auf die Ressource zu.</p>
+<p>Der Java EE-Standard legt fest, dass Anwendungen bestimmte Standardressourcen verf&uuml;gbar gemacht werden m&uuml;ssen, und definiert bestimmte JNDI-Namen f&uuml;r diese Standardressourcen. GlassFish Server stellt diese Namen &uuml;ber logische JNDI-Namen bereit, welche Java EE-Standard-JNDI-Namen bestimmten GlassFish Server-Ressourcen wie folgt zuordnen:</p>
+<dl>
+<dt>java:comp/DefaultContextService</dt>
+<dd>
+<p>Dieser Java EE-Standardname wird der Ressource concurrent/__defaultContextService zugeordnet.</p>
+</dd>
+<dt>java:comp/DefaultManagedThreadFactory</dt>
+<dd>
+<p>Dieser Java EE-Standardname wird der Ressource concurrent/__defaultManagedThreadFactory zugeordnet.</p>
+</dd>
+<dt>java:comp/DefaultManagedExecutorService</dt>
+<dd>
+<p>Dieser Java EE-Standardname wird der Ressource concurrent/__defaultManagedExecutorService zugeordnet.</p>
+</dd>
+<dt>java:comp/DefaultManagedScheduledExecutorService</dt>
+<dd>
+<p>Dieser Java EE-Standardname wird der Ressource concurrent/__defaultManagedScheduledExecutorService zugeordnet.</p>
+</dd>
+<dt>java:comp/DefaultDataSource</dt>
+<dd>
+<p>Dieser Java EE-Standardname wird der Ressource jdbc/__default zugeordnet.</p>
+</dd>
+<dt>java:comp/DefaultJMSConnectionFactory</dt>
+<dd>
+<p>Dieser Java EE-Standardname wird der Ressource jms/__defaultConnectionFactory zugeordnet.</p>
+</dd>
+</dl>
+
+
+
+  

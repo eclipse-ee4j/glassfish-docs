@@ -1,0 +1,141 @@
+create-managed-scheduledUnterbefehcreate-managed-scheduled-executor-service(1)
+
+NAME
+       create-managed-scheduled-executor-service - erstellt eine verwaltete
+       geplante Executor-Serviceressource
+
+ZUSAMMENFASSUNG
+           create-managed-scheduled-executor-service [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--longrunningtasks={false|true}]
+           [--hungafterseconds hungafterseconds]
+           [--corepoolsize corepoolsize]
+           [--keepaliveseconds keepaliveseconds]
+           [--threadlifetimeseconds threadlifetimeseconds]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+BESCHREIBUNG
+       Der Unterbefehl create-managed-scheduled-executor-service erstellt eine
+       verwaltete geplante Executor-Serviceressource.
+
+       Dieser Unterbefehl wird nur im Remote-Modus unterstützt.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+       --enabled
+           Legt fest, ob die Ressource während der Laufzeit aktiviert ist. Der
+           Standardwert ist true.
+
+       --contextinfoenabled
+           Legt fest, ob Containerkontexte an Threads propagiert werden. Ist
+           diese Option auf true gesetzt, werden die über die Option
+           --contextinfo angegebenen Kontexte propagiert. Ist diese Option auf
+           false gesetzt, werden keine Kontexte propagiert, und die Option
+           --contextinfo wird ignoriert. Der Standardwert ist true.
+
+       --contextinfo
+           Gibt an, ob einzelne Containerkontexte an Threads propagiert werden
+           sollen. Gültige Werte sind Class Loader, JNDI, Sicherheit und
+           WorkArea. Werte werden in einer durch Komma getrennten Liste unter
+           Beachtung der Groß- und Kleinschreibung angegeben. Standardmäßig
+           werden alle Kontexte propagiert.
+
+       --threadpriority
+           Gibt die Priorität an, die erstellten Threads zugewiesen werden
+           soll. Der Standardwert ist 5.
+
+       --longrunningtasks
+           Gibt an, ob die Ressource für Tasks mit langer Ausführungszeit
+           verwendet werden soll. Der Standardwert ist false. Ist die Option
+           auf true gesetzt, werden Tasks mit langer Ausführungszeit nicht als
+           hängend gemeldet.
+
+       --hungafterseconds
+           Gibt die Anzahl Sekunden an, die eine Task ausgeführt werden darf,
+           bevor sie als nicht reagierend eingestuft wird. Der Standardwert
+           lautet 0, was bedeutet, dass Tasks niemals als nicht reagierend
+           eingestuft werden.
+
+       --corepoolsize
+           Geben Sie die Anzahl Threads an, die in einem Thread aufbewahrt
+           werden sollen, auch wenn sie inaktiv sind. Der Standardwert lautet
+           0, was bedeutet, dass bei der Ausführungsplanung der ersten Task
+           ein Thread erstellt wird.
+
+       --keepaliveseconds
+           Gibt die Anzahl Sekunden an, die Threads im Leerlauf verbleiben
+           dürfen, wenn die Anzahl der Threads größer als corepoolsize ist.
+           Der Standardwert ist 60.
+
+       --threadlifetimeseconds
+           Gibt die Anzahl Sekunden an, die die einzelnen Threads in einem
+           Threadpool verbleiben, bevor sie gelöscht werden. Dies ist
+           unabhängig davon, ob die Anzahl Threads größer als corepoolsize ist
+           oder ob sich die Threads im Leerlauf befinden. Der Standardwert
+           lautet 0, was bedeutet, dass Threads niemals gelöscht werden.
+
+       --description
+           Einzelheiten zur Ressource.
+
+       --property
+           Optionale Name/Wert-Paare für Attribute zum Konfigurieren der
+           Ressource.
+
+           In GlassFish Server werden keine weiteren Eigenschaften für diese
+           Ressource definiert. Darüber hinaus verwendet diese Ressource
+           derzeit keine weiteren Eigenschaften.
+
+       --target
+           Gibt das Ziel an, für das Sie die Ressource erstellen. Gültige
+           Ziele sind:
+
+           server
+               Erstellt die Ressource für die standardmäßige Serverinstanz.
+               Dies ist der Standardwert.
+
+           domain
+               Erstellt die Ressource für die Domain.
+
+           cluster_name
+               Erstellt die Ressource für jede Serverinstanz im angegebenen
+               Cluster.
+
+           instance_name
+               Erstellt die Ressource für die angegebene Serverinstanz.
+
+OPERANDEN
+       jndi_name
+           Der JNDI-Name dieser Ressource.
+
+BEISPIELE
+       Beispiel 1, Verwaltete geplante Executor-Serviceressourcen erstellen
+           In diesem Beispiel wird eine Managed Scheduled
+           Executor-Serviceressource mit dem Namen
+           concurrent/myScheduledExecutor erstellt.
+
+               asadmin> create-managed-scheduled-executor-service concurrent/myScheduledExecutor
+               Managed scheduled executor service concurrent/myScheduledExecutor created successfully.
+               Command create-managed-scheduled-executor-service executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       delete-managed-scheduled-executor-service(1),
+       list-managed-scheduled-executor-services(1)
+
+       asadmin(1M)
+
+Java EE 7                        0create-managed-scheduled-executor-service(1)

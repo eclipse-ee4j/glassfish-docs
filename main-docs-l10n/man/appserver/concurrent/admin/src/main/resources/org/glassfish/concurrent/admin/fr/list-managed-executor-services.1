@@ -1,0 +1,64 @@
+list-managed-executor-seSous-commandes de l'ulist-managed-executor-services(1)
+
+NOM
+       list-managed-executor-services - répertorie les ressources de service
+       exécuteur géré
+
+SYNTAXE
+           list-managed-executor-services [--help]
+           [target]
+
+DESCRIPTION
+       La sous-commande list-managed-executor-services répertorie les
+       ressources de service exécuteur géré.
+
+       Cette sous-commande est prise en charge en mode distant uniquement.
+
+OPTIONS
+       --help, -?
+           Cette option affiche le texte d'aide de la sous-commande.
+
+OPÉRANDES
+       target
+           Indique la cible pour laquelle les ressources de service exécuteur
+           géré doivent être répertoriées. Les cibles valides sont les
+           suivantes :
+
+           server
+               Répertorie les ressources sur l'instance de serveur par défaut.
+               Il s'agit de la valeur par défaut.
+
+           domain
+               Répertorie les ressources pour le domaine.
+
+           cluster-name
+               Répertorie les ressources sur toutes les instances de serveur
+               dans le cluster spécifié.
+
+           instance-name
+               Répertorie les ressources sur l'instance de serveur spécifiée.
+
+EXEMPLES
+       Exemple 1, Liste des ressources de service exécuteur géré
+           Dans cet exemple, les ressources de service exécuteur géré sont
+           répertoriées sur l'instance de serveur par défaut.
+
+               asadmin> list-managed-executor-services
+               concurrent/__defaultManagedExecutorService
+               concurrent/myExecutor1
+               concurrent/myExecutor2
+               Command list-managed-executor-services executed successfully.
+
+STATUT DE SORTIE
+       0
+           sous-commande correctement exécutée
+
+       1
+           erreur lors de l'exécution de la sous-commande
+
+VOIR AUSSI
+       create-managed-executor-service(1), delete-managed-executor-service(1)
+
+       asadmin(1M)
+
+Java EE 7                         9 fév 2013 list-managed-executor-services(1)

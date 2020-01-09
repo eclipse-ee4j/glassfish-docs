@@ -1,0 +1,160 @@
+create-managed-executor-Comandi(secondari decreate-managed-executor-service(1)
+
+NOME
+       create-managed-executor-service - crea una risorsa di servizio
+       esecutore gestito
+
+SINTASSI
+           create-managed-executor-service [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--longrunningtasks={false|true}]
+           [--hungafterseconds hungafterseconds]
+           [--corepoolsize corepoolsize]
+           [--maximumpoolsize maximumpoolsize]
+           [--keepaliveseconds keepaliveseconds]
+           [--threadlifetimeseconds threadlifetimeseconds]
+           [--taskqueuecapacity taskqueuecapacity]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+DESCRIZIONE
+       Il comando secondario create-managed-executor-service crea una risorsa
+       di servizio esecutore gestito.
+
+       Questo comando secondario è supportato solo in modalità remota.
+
+OPZIONI
+       --help, -?
+           Visualizza il testo della Guida per il comando secondario.
+
+       --enabled
+           Determina se la risorsa è abilitata in fase di esecuzione. Il
+           valore predefinito è true.
+
+       --contextinfoenabled
+           Determina se i contesti del contenitore vengono propagati ai
+           thread. Se l'impostazione è true, i contesti specificati
+           nell'opzione --contextinfo vengono propagati. Se l'impostazione è
+           false, nessun contesto viene propagato e l'opzione --contextinfo
+           viene ignorata. Il valore predefinito è true.
+
+       --contextinfo
+           Specifica i singoli contesti del contenitore da propagare ai
+           thread. Valori validi sono Classloader, JNDI, Security e WorkArea.
+           I valori sono specificati in una lista separata da virgole e fanno
+           distinzione tra maiuscole e minuscole. Per impostazione
+           predefinita, vengono propagati tutti i contesti.
+
+       --threadpriority
+           Specifica la priorità da assegnare ai thread creati. Il valore
+           predefinito è 5.
+
+       --longrunningtasks
+           Specifica se la risorsa deve essere utilizzata per task con tempi
+           di esecuzione lunghi. Il valore predefinito è false. Se
+           l'impostazione è true, i task con tempi di esecuzione lunghi non
+           vengono segnalati come bloccati.
+
+       --hungafterseconds
+           Specifica il numero di secondi durante il quale un task può essere
+           eseguito prima di essere considerato senza risposta. Il valore
+           predefinito è 0 e indica che i task non vengono mai considerati
+           senza risposta.
+
+       --corepoolsize
+           Specifica il numero di thread da conservare in un pool di thread,
+           anche se sono inattivi. Il valore predefinito è 0.
+
+           Quando un nuovo task viene inviato e il numero dei thread in
+           esecuzione è minore di corepoolsize, viene creato un nuovo thread
+           per la gestione della richiesta. Quando il valore per corepoolsize
+           è zero, ovvero l'impostazione predefinita, nuovi thread vengono
+           creati solo se la coda dei task è piena o la risorsa sta
+           utilizzando l'accodamento diretto. L'accodamento diretto si
+           verifica quando taskqueuecapacity è zero o quando taskqueuecapacity
+           è 2147483647 e corepoolsize è zero.
+
+       --maximumpoolsize
+           Specifica il numero massimo di thread che un pool di thread può
+           contenere. Il valore predefinito è 2147483647 e indica che il pool
+           di thread è essenzialmente senza limiti e può contenere qualsiasi
+           numero di thread.
+
+       --keepaliveseconds
+           Specifica il numero di secondi in cui i thread possono restare
+           inattivi quando il numero di thread è maggiore di corepoolsize. Il
+           valore predefinito è 60.
+
+       --threadlifetimeseconds
+           Specifica il numero di secondi in cui i thread possono restare in
+           un pool di thread prima di essere rimossi, indipendentemente dal
+           fatto che il numero di thread sia maggiore di corepoolsize o che i
+           thread siano inattivi. Il valore predefinito è 0 e indica che i
+           thread non vengono mai rimossi.
+
+       --taskqueuecapacity
+           Specifica il numero di task inviati che è possibile memorizzare
+           nella coda di task in attesa di esecuzione. Il valore predefinito è
+           2147483647 e indica che la coda di task è essenzialmente senza
+           limiti e può memorizzare qualsiasi numero di task inviati.
+
+       --description
+           Dettagli descrittivi sulla risorsa.
+
+       --property
+           Coppie nome-valore di attributo facoltative per la configurazione
+           della risorsa.
+
+           GlassFish Server non definisce alcuna proprietà aggiuntiva per
+           questa risorsa. Inoltre, questa risorsa non utilizza attualmente
+           alcuna proprietà aggiuntiva.
+
+       --target
+           Specifica la destinazione per la quale viene creata la risorsa. Le
+           destinazioni valide sono:
+
+           server
+               Crea la risorsa per l'istanza server predefinita. Questo è il
+               valore predefinito.
+
+           domain
+               Crea la risorsa per il dominio.
+
+           cluster_name
+               Crea la risorsa per ogni istanza server nel cluster
+               specificato.
+
+           instance_name
+               Crea la risorsa per l'istanza server specificata.
+
+OPERANDI
+       jndi_name
+           Il nome JNDI della risorsa.
+
+ESEMPI
+       Esempio 1, Creazione di una risorsa di servizio esecutore gestito
+           In questo esempio viene creata una risorsa di servizio esecutore
+           gestito denominata concurrent/myExecutor.
+
+               asadmin> create-managed-executor-service concurrent/myExecutor
+               Managed executor service concurrent/myExecutor created successfully.
+               Command create-managed-executor-service executed successfully.
+
+STATO DI USCITA
+       0
+           esecuzione del comando secondario riuscita
+
+       1
+           errore durante l'esecuzione del comando secondario
+
+VEDERE ANCHE
+       delete-managed-executor-service(1), list-managed-executor-services(1)
+
+       asadmin(1M)
+
+Java EE 7                       9 febbraio 2create-managed-executor-service(1)

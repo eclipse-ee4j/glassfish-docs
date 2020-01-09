@@ -1,0 +1,65 @@
+delete-managed-thread-faSous-commandes de l'utdelete-managed-thread-factory(1)
+
+NOM
+       delete-managed-thread-factory - enlève la ressource de fabrique de
+       threads gérée portant le nom JNDI indiqué
+
+SYNTAXE
+           delete-managed-thread-factory [--help]
+           [--target target]
+           managed_thread_factory_name
+
+DESCRIPTION
+       La sous-commande delete-managed-thread-factory enlève la ressource de
+       fabrique de threads gérée portant le nom JNDI indiqué.
+
+       Cette sous-commande est prise en charge en mode distant uniquement.
+
+OPTIONS
+       --help, -?
+           Cette option affiche le texte d'aide de la sous-commande.
+
+       --target
+           Cette option indique la cible de laquelle vous supprimez la
+           ressource. Les cibles valides sont les suivantes :
+
+           server
+               Supprime la ressource de l'instance de serveur par défaut. Il
+               s'agit de la valeur par défaut.
+
+           domain
+               Supprime la ressource du domaine.
+
+           cluster_name
+               Supprime la ressource de chaque instance de serveur du cluster
+               spécifié.
+
+           instance_name
+               Supprime la ressource de l'instance de serveur spécifiée.
+
+OPÉRANDES
+       managed_thread_factory_name
+           Nom JNDI de la ressource à supprimer.
+
+EXEMPLES
+       Exemple 1, Suppression d'une ressource de fabrique de threads gérée
+           Dans cet exemple, la ressource de fabrique de threads gérée nommée
+           concurrent/myThreadFactory est supprimée.
+
+               asadmin> delete-managed-thread-factory concurrent/myThreadFactory
+               Managed thread factory concurrent/myThreadFactory deleted successfully.
+               Command delete-managed-thread-factory executed successfully.
+
+STATUT DE SORTIE
+       0
+           commande correctement exécutée
+
+       1
+           erreur lors de l'exécution de la commande
+
+VOIR AUSSI
+       create-managed-thread-factory(1), list-managed-thread-factories(1)
+
+       asadmin(1M)
+
+Java EE 7                         9 fév 2013  delete-managed-thread-factory(1)

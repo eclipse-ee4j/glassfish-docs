@@ -1,0 +1,63 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-migrateejbtimers" name="ref-migrateejbtimers"></a></p>
+
+<h4><a id="sthref257" name="sthref257"></a><a id="sthref258" name="sthref258"></a><a id="sthref259" name="sthref259"></a>Esegui migrazione timer EJB</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La pagina Esegui migrazione timer EJB contiene le opzioni riportate di seguito.</p>
+<dl>
+<dt>Origine</dt>
+<dd>
+<p>Elenco a discesa delle istanze di GlassFish Server arrestate nel cluster. La migrazione dei timer EJB pu&ograve; essere eseguita solo da istanze non in esecuzione.</p>
+</dd>
+<dt>Destinazione</dt>
+<dd>
+<p>Elenco a discesa delle istanze di GlassFish Server in esecuzione nel cluster. La migrazione dei timer EJB pu&ograve; essere eseguita solo verso istanze in esecuzione.</p>
+</dd>
+</dl>
+
+<hr>
+<p><b>Nota:</b></p>
+Se tutte le istanze nel cluster non sono in esecuzione, nella pagina viene visualizzata solo un'avvertenza che indica l'indisponibilit&agrave; di istanze in esecuzione verso le quali eseguire la migrazione dei timer EJB.
+<hr>
+
+<p>La pagina Esegui migrazione timer EJB contiene una tabella di timer EJB con le informazioni riportate di seguito.</p>
+<dl>
+<dt>Nome server</dt>
+<dd>
+<p>Lista delle istanze di GlassFish Server nel cluster.</p>
+</dd>
+<dt>Conteggio timer</dt>
+<dd>
+<p>Il numero di timer persistenti in ciascuna istanza.</p>
+</dd>
+</dl>
+<a id="sthref260" name="sthref260"></a>
+<h5>Task correlati</h5>
+<p><a href="task-migrate-ejb-timers.html">Per eseguire la migrazione dei timer EJB</a></p>
+<a id="sthref261" name="sthref261"></a>
+<h5>Comandi secondari asadmin equivalenti</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00205"><code>list-timers</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00211"><code>migrate-timers</code>(1)</a></p>
+</li>
+</ul>
+
+
+
+  

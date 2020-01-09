@@ -1,0 +1,37 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="&#53412;&#54252;&#51064;&#53944; &#44036;&#44201;">
+    <indexitem text="&#49444;&#51221;" target="task-setkeyptinterval"></indexitem>
+  </indexitem>
+  <indexitem text="&#47196;&#44613;">
+    <indexitem text="&#53944;&#47004;&#51117;&#49496;" target="task-settranslog"></indexitem>
+  </indexitem>
+  <indexitem text="&#49549;&#49457;">
+    <indexitem text="&#53944;&#47004;&#51117;&#49496; &#49436;&#48708;&#49828;" target="ref-transactionsvcproperties"></indexitem>
+  </indexitem>
+  <indexitem text="&#53944;&#47004;&#51117;&#49496;">
+    <indexitem text="&#48373;&#44396; &#44396;&#49457;" target="task-configtransrecovery"></indexitem>
+    <indexitem text="&#49884;&#44036; &#52488;&#44284; &#49444;&#51221;" target="task-settranstimeout"></indexitem>
+    <indexitem text="&#49884;&#44036; &#52488;&#44284; &#49444;&#51221;" target="task-settranslog"></indexitem>
+    <indexitem text="&#47196;&#44536; &#54028;&#51068; &#50517;&#52629; &#44036;&#44201; &#49444;&#51221;" target="task-setkeyptinterval"></indexitem>
+  </indexitem>
+  <indexitem text="&#53944;&#47004;&#51117;&#49496; &#49436;&#48708;&#49828;">
+    <indexitem text="&#49549;&#49457;" target="ref-transactionsvcproperties"></indexitem>
+    <indexitem text="&#44396;&#49457;(&#51089;&#50629;)" target="task-configtransservice"></indexitem>
+    <indexitem text="&#44396;&#49457;(&#52280;&#51312;)" target="ref-transactionservice"></indexitem>
+  </indexitem>
+</index>

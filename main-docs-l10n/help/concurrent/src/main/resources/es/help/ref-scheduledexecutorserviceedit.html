@@ -1,0 +1,110 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-scheduledexecutorserviceedit" name="ref-scheduledexecutorserviceedit"></a></p>
+
+<h4>Editar servicio del ejecutor programado gestionado<a id="sthref33" name="sthref33"></a></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Utilice la p&aacute;gina Editar servicio de ejecutor programado gestionado para editar un recurso del servicio de ejecutor gestionado programado.</p>
+<p>La p&aacute;gina Editar servicio de ejecutor programado gestionado contiene las siguientes opciones.</p>
+<dl>
+<dt>Cargar Valores por Defecto</dt>
+<dd>
+<p>Bot&oacute;n para restaurar configuraci&oacute;n que tiene valores por defecto a sus valores por defecto. Las configuraciones que no tienen valores por defecto no se modifican.</p>
+</dd>
+<dt>Nombre JNDI</dt>
+<dd>
+<p>Nombre de JNDI &uacute;nico que identifica el recurso. Por convenci&oacute;n, el nombre empieza por un indicador de tipo de recurso y una barra invertida, por ejemplo, concurrent/, jdbc/ o jms/. El nombre JNDI es un campo de s&oacute;lo lectura. S&oacute;lo puede especificar el nombre JNDI al crear un nuevo recurso</p>
+</dd>
+<dt>Nombre de JNDI l&oacute;gico</dt>
+<dd>
+<p>Nombre de JNDI l&oacute;gico para el recurso. Se trata de un nombre est&aacute;ndar de Java EE a trav&eacute;s del que se puede acceder al recurso. El nombre de JNDI l&oacute;gico es un campo de s&oacute;lo lectura. Consulte <a href="../../../common/en/help/ref-logicaljndinames.html">Nombres de JNDI l&oacute;gicos</a> para obtener m&aacute;s informaci&oacute;n.</p>
+</dd>
+<dt>Informaci&oacute;n de contexto</dt>
+<dd>
+<p>Contextos que se propagar&aacute;n a los threads: Classloader, JNDI, seguridad o &aacute;rea de trabajo. La propagaci&oacute;n de contexto se puede activar o desactivar. Si est&aacute; activada, se propagan los contextos seleccionados. Si est&aacute; desactivada, no se propaga ninguno de los contextos, aunque est&eacute;n seleccionados. El valor por defecto es Activado, con los cuatro contextos seleccionados.</p>
+</dd>
+<dt>Estado</dt>
+<dd>
+<p>Indica si el recurso est&aacute; disponible en el tiempo de ejecuci&oacute;n.</p>
+<p>Si s&oacute;lo existe la instancia de servidor por defecto, <code>server</code> en el dominio, la disponibilidad en tiempo de ejecuci&oacute;n del recurso puede estar activada o desactivada. La disponibilidad en tiempo de ejecuci&oacute;n est&aacute; activa por defecto.</p>
+<p>Si se ha creado alg&uacute;n cluster o alguna instancia independiente en el dominio, utilice el separador Destino para controlar la disponibilidad del recurso en tiempo de ejecuci&oacute;n en sus destinos.</p>
+</dd>
+<dt>Prioridad de threads</dt>
+<dd>
+<p>Prioridad que se asignar&aacute; a los threads creados. El valor por defecto es 5.</p>
+</dd>
+<dt>Tareas de larga ejecuci&oacute;n</dt>
+<dd>
+<p>Establece si el recurso se debe utilizar para las tareas de larga duraci&oacute;n. Si est&aacute; activada, las tareas de larga ejecuci&oacute;n no se incluir&aacute;n en el informe como paradas. Esta opci&oacute;n se activada por defecto.</p>
+</dd>
+<dt>Bloquear despu&eacute;s</dt>
+<dd>
+<p>N&uacute;mero de segundos que se pueden ejecutar las tareas antes de que se considere que no responden. El valor por defecto es 0.</p>
+</dd>
+<dt>Orden de despliegue</dt>
+<dd>
+<p>Orden de despliegue de este recurso. Los recursos con los n&uacute;meros m&aacute;s bajos se cargan primero al iniciar el servidor. El valor por defecto es 100.</p>
+</dd>
+<dt>Descripci&oacute;n</dt>
+<dd>
+<p>Descripci&oacute;n de este recurso.</p>
+</dd>
+<dt>Tama&ntilde;o principal</dt>
+<dd>
+<p>N&uacute;mero de threads que mantener en un pool de threads. El valor por defecto es 0.</p>
+</dd>
+<dt>Mantenimiento de conexiones</dt>
+<dd>
+<p>N&uacute;mero de segundos que los threads puede permanecer inactivos cuando el n&uacute;mero de threads es mayor que el tama&ntilde;o principal. El valor por defecto es 60.</p>
+</dd>
+<dt>Duraci&oacute;n de threads</dt>
+<dd>
+<p>N&uacute;mero de segundos que los threads pueden permanecer en el pool de threads antes de que se depuren, independientemente de si el n&uacute;mero de threads es mayor que el tama&ntilde;o principal o si est&aacute;n inactivos. El valor por defecto es 0.</p>
+</dd>
+<dt>Propiedades Adicionales</dt>
+<dd>
+<p>Propiedades adicionales del recurso. GlassFish Server no define ninguna propiedad adicional para este tipo de recurso. Adem&aacute;s, este tipo de recurso no utiliza actualmente ninguna propiedad adicional.</p>
+</dd>
+</dl>
+<a id="sthref34" name="sthref34"></a>
+<h5>Tareas relacionadas</h5>
+<ul>
+<li>
+<p><a href="task-managedscheduledexecutorservicecreate.html">Para crear un servicio de ejecutor programado gestionado</a></p>
+</li>
+<li>
+<p><a href="task-managedscheduledexecutorserviceedit.html">Para editar un servicio de ejecutor programado gestionado</a></p>
+</li>
+<li>
+<p><a href="task-managedscheduledexecutorservicedelete.html">Para suprimir un servicio de ejecutor programado gestionado</a></p>
+</li>
+</ul>
+<a id="GHCON151" name="GHCON151"></a>
+<h5>Comandos asadmin Relacionados</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM680"><code>create-managed-scheduled-executor-service</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM873"><code>list-managed-scheduled-executor-services</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM850"><code>delete-managed-scheduled-executor-service</code>(1)</a></p>
+</li>
+</ul>
+
+
+
+  

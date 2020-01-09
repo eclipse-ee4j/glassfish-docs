@@ -1,0 +1,66 @@
+delete-module-config(1) Unterbefehle des asadmin-Utili delete-module-config(1)
+
+NAME
+       delete-module-config - entfernt die Konfiguration eines Moduls aus
+       domain.xml
+
+ZUSAMMENFASSUNG
+           delete-module-config [--help]
+           [--target target]
+           service_name
+
+BESCHREIBUNG
+       Der Unterbefehl delete-module-config entfernt die Konfiguration eines
+       Moduls aus domain.xml und veranlasst das Modul, die im Modul enthaltene
+       Standardkonfiguration zu verwenden.
+
+       Dieser Unterbefehl wird nur im Remote-Modus unterstützt.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+       --target
+           Gibt das Ziel an, aus dem die Konfiguration gelöscht werden soll.
+
+           Mögliche Werte:
+
+           server
+               Löscht die Konfiguration aus der standardmäßigen Serverinstanz.
+               Dies ist der Standardwert.
+
+           domain
+               Löscht die Konfiguration aus der Standarddomain.
+
+           cluster-name
+               Löscht die Konfiguration aus dem angegebenen Cluster.
+
+           instance-name
+               Löscht die Konfiguration aus der angegebenen Instanz.
+
+OPERANDEN
+       service_name
+           Der Name des Moduls, für das die Konfiguration entfernt werden
+           soll.
+
+BEISPIELE
+       Beispiel 1, Standardkonfigurationen aus domain.xml löschen
+           In diesem Beispiel wird die Konfiguration des Webcontainermoduls
+           aus domain1 in server-config (die Standardkonfiguration) gelöscht.
+
+               asadmin> delete-module-config web-container
+               Command delete-module-config executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       create-module-config(1), get-active-module-config(1)
+
+       asadmin(1M)
+
+Java EE 7                        06. Feb. 2013         delete-module-config(1)

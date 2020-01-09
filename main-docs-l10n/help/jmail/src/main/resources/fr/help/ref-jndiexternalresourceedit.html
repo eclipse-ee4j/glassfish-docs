@@ -1,0 +1,90 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-jndiexternalresourceedit" name="ref-jndiexternalresourceedit"></a></p>
+
+<h4><a id="sthref49" name="sthref49"></a><a id="sthref50" name="sthref50"></a>Modifier une ressource externe</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La page Modifier une ressource externe permet de modifier une ressource JNDI externe.</p>
+<p>Elle contient les options ci-apr&egrave;s.</p>
+<dl>
+<dt>Nom JNDI</dt>
+<dd>
+<p>Nom unique identifiant la ressource. Le champ Nom JNDI est en lecture seule. Vous ne pouvez sp&eacute;cifier le nom JNDI qu'&agrave; la cr&eacute;ation d'une ressource externe.</p>
+</dd>
+<dt>Type de ressource</dt>
+<dd>
+<p>D&eacute;finition qualifi&eacute;e compl&egrave;te du type de la ressource.</p>
+</dd>
+<dt>Classe de fabrique</dt>
+<dd>
+<p>Nom de classe de fabrique sp&eacute;cifi&eacute; par l'utilisateur. Cette classe impl&eacute;mente l'interface <code>javax.naming.spi.InitialContextFactory</code>.</p>
+</dd>
+<dt>Recherche JNDI</dt>
+<dd>
+<p>Valeur JNDI &agrave; rechercher dans le r&eacute;f&eacute;rentiel externe.</p>
+<p>Par exemple, si vous cr&eacute;ez une ressource externe pour vous connecter &agrave; un r&eacute;f&eacute;rentiel externe, pour tester une classe de bean, la recherche JNDI peut prendre la forme suivante : <code>cn=</code><i>testbean</i>.</p>
+</dd>
+<dt>Ordre de d&eacute;ploiement</dt>
+<dd>
+<p>Ordre de d&eacute;ploiement de la ressource externe.</p>
+</dd>
+<dt>Description</dt>
+<dd>
+<p>Description de cette ressource externe.</p>
+</dd>
+<dt>Statut</dt>
+<dd>
+<p>Indique si la ressource est disponible lors de l'ex&eacute;cution.</p>
+<p>Si seule l'instance de serveur par d&eacute;faut <code>server</code>, existe dans le domaine, la disponibilit&eacute; d'ex&eacute;cution de la ressource peut &ecirc;tre activ&eacute;e ou d&eacute;sactiv&eacute;e. La disponibilit&eacute; d'ex&eacute;cution est activ&eacute;e par d&eacute;faut.</p>
+<p>Si des clusters ou des instances autonomes ont &eacute;t&eacute; cr&eacute;&eacute;s dans le domaine, utilisez l'onglet Cible pour contr&ocirc;ler la disponibilit&eacute; d'ex&eacute;cution de la ressource sur ses cibles.</p>
+</dd>
+<dt>Autres propri&eacute;t&eacute;s</dt>
+<dd>
+<p>Propri&eacute;t&eacute;s suppl&eacute;mentaires de la ressource externe. GlassFish Server ne d&eacute;finit aucune autre propri&eacute;t&eacute; pour les ressources externes.</p>
+</dd>
+</dl>
+<a id="GHJML136" name="GHJML136"></a>
+<h5>T&acirc;ches connexes</h5>
+<ul>
+<li>
+<p><a href="task-jndiexternalresourcecreate.html">Cr&eacute;ation d'une ressource JNDI externe</a></p>
+</li>
+<li>
+<p><a href="task-jndiexternalresourceedit.html">Modification d'une ressource JNDI externe</a></p>
+</li>
+<li>
+<p><a href="task-jndiexternalresourcedelete.html">Suppression d'une ressource JNDI externe</a></p>
+</li>
+</ul>
+<a id="GHJML137" name="GHJML137"></a>
+<h5>Commandes asadmin connexes</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00041"><code>create-jndi-resource</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00179"><code>list-jndi-resources</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00093"><code>delete-jndi-resource</code>(1)</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+  

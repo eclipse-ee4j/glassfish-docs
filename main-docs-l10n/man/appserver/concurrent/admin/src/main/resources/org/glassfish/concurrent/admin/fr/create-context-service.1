@@ -1,0 +1,101 @@
+create-context-service(1Sous-commandes de l'utilitaircreate-context-service(1)
+
+NOM
+       create-context-service - crée une ressource de service de contexte
+
+SYNTAXE
+           create-context-service [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+DESCRIPTION
+       La sous-commande create-contexte-service crée une ressource de service
+       de contexte.
+
+       Cette sous-commande est prise en charge en mode distant uniquement.
+
+OPTIONS
+       --help, -?
+           Cette option affiche le texte d'aide de la sous-commande.
+
+       --enabled
+           Cette option détermine si la ressource est activée au moment de
+           l'exécution. La valeur par défaut est true.
+
+       --contextinfoenabled
+           Cette option détermine si les contextes de conteneur sont propagés
+           vers les threads. Si cette option a la valeur true, les contextes
+           spécifiés dans l'option --contextinfo sont propagés. Si cette
+           option a la valeur false, aucun contexte n'est propagé et l'option
+           --contextinfo n'est pas prise en compte. La valeur par défaut est
+           true.
+
+       --contextinfo
+           Cette option spécifie des contextes de conteneur à propager vers
+           les threads. Les valeurs valides sont Chargeur de classes, JNDI,
+           Sécurité et Espace de travail. Les valeurs sont spécifiées sous
+           forme de liste séparée par des virgules et font la distinction
+           entre les majuscules et les minuscules. Tous les contextes sont
+           propagés par défaut.
+
+       --description
+           Description de la ressource.
+
+       --property
+           Paires nom/valeur d'attribut facultatives pour la configuration de
+           la ressource.
+
+           GlassFish Server ne définit aucune autre propriété pour cette
+           ressource. De plus, cette ressource n'utilise actuellement aucune
+           autre propriété supplémentaire.
+
+       --target
+           Cette option indique la cible pour laquelle vous créez la
+           ressource. Les cibles valides sont les suivantes :
+
+           server
+               Cette valeur crée la ressource pour l'instance de serveur par
+               défaut. Il s'agit de la valeur par défaut.
+
+           domain
+               Cette valeur crée la ressource pour le domaine.
+
+           cluster_name
+               Cette valeur crée la ressource pour chaque instance de serveur
+               du cluster indiqué.
+
+           instance_name
+               Cette valeur crée la ressource pour l'instance de serveur
+               indiquée.
+
+OPÉRANDES
+       jndi_name
+           Nom JNDI de cette ressource.
+
+EXEMPLES
+       Exemple 1, Création d'une ressource de service de contexte
+           Dans cet exemple, une ressource de contexte de service nommée
+           concurrent/myContextService est créée.
+
+               asadmin> create-context-service concurrent/myContextService
+               Context service concurrent/myContextService created successfully.
+               Command create-context-service executed successfully.
+
+STATUT DE SORTIE
+       0
+           sous-commande correctement exécutée
+
+       1
+           erreur lors de l'exécution de la sous-commande
+
+VOIR AUSSI
+       delete-context-service(1), list-context-services(1)
+
+       asadmin(1M)
+
+Java EE 7                         9 fév 2013         create-context-service(1)

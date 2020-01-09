@@ -1,0 +1,37 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="intervalo de punto clave">
+    <indexitem text="definici&#243;n" target="task-setkeyptinterval"></indexitem>
+  </indexitem>
+  <indexitem text="propiedades">
+    <indexitem text="servicio de transacci&#243;n" target="ref-transactionsvcproperties"></indexitem>
+  </indexitem>
+  <indexitem text="registro">
+    <indexitem text="transacciones" target="task-settranslog"></indexitem>
+  </indexitem>
+  <indexitem text="servicio de transacci&#243;n">
+    <indexitem text="configuraci&#243;n (referencia)" target="ref-transactionservice"></indexitem>
+    <indexitem text="configuraci&#243;n (tarea)" target="task-configtransservice"></indexitem>
+    <indexitem text="propiedades" target="ref-transactionsvcproperties"></indexitem>
+  </indexitem>
+  <indexitem text="transacciones">
+    <indexitem text="configuraci&#243;n de recuperaci&#243;n" target="task-configtransrecovery"></indexitem>
+    <indexitem text="definici&#243;n de timeouts" target="task-settranstimeout"></indexitem>
+    <indexitem text="definici&#243;n de ubicaci&#243;n de log" target="task-settranslog"></indexitem>
+    <indexitem text="definici&#243;n del intervalo de compresi&#243;n de archivo lob" target="task-setkeyptinterval"></indexitem>
+  </indexitem>
+</index>

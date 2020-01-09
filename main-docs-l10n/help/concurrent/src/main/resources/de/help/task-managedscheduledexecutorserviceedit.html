@@ -1,0 +1,100 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-managedscheduledexecutorserviceedit" name="task-managedscheduledexecutorserviceedit"></a></p>
+
+<h4>So wird ein verwalteter geplanter ExecutorService bearbeitet<a id="sthref9" name="sthref9"></a></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<ol>
+<li>
+<p>Blenden Sie in der Navigationsbaumstruktur den Knoten "Ressourcen" ein.</p>
+</li>
+<li>
+<p>Blenden Sie unter dem Ressourcenknoten den Knoten "Nebenl&auml;ufige Ressourcen" ein.</p>
+</li>
+<li>
+<p>W&auml;hlen Sie unter dem Knoten "Nebenl&auml;ufige Ressourcen" den Knoten "Verwaltete geplante ExecutorServices".</p>
+<p>Die Seite "Verwaltete geplante ExecutorServices" wird ge&ouml;ffnet.</p>
+</li>
+<li>
+<p>Klicken Sie auf der Seite "Verwaltete geplante ExecutorServices" auf den Namen der zu bearbeitenden Ressource.</p>
+<p>Die Seite "Verwalteten geplanten ExecutorService bearbeiten" wird ge&ouml;ffnet.</p>
+
+<hr>
+<p><b>Hinweis:</b></p>
+Der JNDI-Name ist ein schreibgesch&uuml;tztes Feld. Sie k&ouml;nnen den JNDI-Namen nur festlegen, wenn Sie eine neue Ressource erstellen. Der logische JNDI-Name ist ebenfalls ein schreibgesch&uuml;tztes Feld.
+<hr>
+
+</li>
+<li>
+<p>Aktivieren Sie das Kontrollk&auml;stchen "Kontextinformationen", um die Kontexte auf Threads zu propagieren, und w&auml;hlen Sie die zu propagierenden Kontexte.</p>
+<p>Standardm&auml;&szlig;ig ist diese Option aktiviert, und alle Kontexte sind gew&auml;hlt. Klicken Sie bei gedr&uuml;ckter UMSCHALT- oder STRG-Taste, um mehrere Kontexte auszuw&auml;hlen. Wenn diese Option deaktiviert ist, werden Kontexte nicht propagiert, auch wenn sie ausgew&auml;hlt sind.</p>
+</li>
+<li>
+<p>Aktivieren Sie das Kontrollk&auml;stchen "Status", um die Ressource zu aktivieren.</p>
+<p>Diese Option ist standardm&auml;&szlig;ig aktiviert.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Threadpriorit&auml;t" die Priorit&auml;t ein, die erstellten Threads zugewiesen werden soll.</p>
+<p>Der Standardwert ist 5.</p>
+</li>
+<li>
+<p>Aktivieren Sie das Kontrollk&auml;stchen "Tasks mit langer Ausf&uuml;hrungszeit", um die Ressource zur Ausf&uuml;hrung von Tasks mit langer Ausf&uuml;hrungszeit zu verwenden.</p>
+<p>Ist diese Option aktiviert, werden Tasks mit langer Ausf&uuml;hrungszeit nicht als aufgeh&auml;ngt gemeldet. Diese Option ist standardm&auml;&szlig;ig deaktiviert.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Aufgeh&auml;ngt nach" die Anzahl Sekunden ein, die Tasks ausgef&uuml;hrt werden d&uuml;rfen, bevor sie als nicht reagierend eingestuft werden.</p>
+<p>Der Standardwert lautet 0, was bedeutet, dass Tasks niemals als nicht reagierend eingestuft werden.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Deployment-Reihenfolge" eine Nummer ein, um die Deployment-Reihenfolge der Ressource anzugeben.</p>
+<p>Je niedriger die Nummer einer Ressource, desto fr&uuml;her wird sie beim Hochfahren des Servers geladen. Der Standardwert ist 100.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Beschreibung" eine kurze Beschreibung der Ressource ein.</p>
+<p>Bei dieser Beschreibung handelt es sich um einen Zeichenfolgenwert, der maximal 250 Zeichen umfassen darf.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Kerngr&ouml;&szlig;e" die Anzahl Threads ein, die in einem Threadpool bleiben sollen, auch wenn sie inaktiv sind.</p>
+<p>Der Standardwert lautet 0, was bedeutet, dass bei der Ausf&uuml;hrungsplanung der ersten Task ein Thread erstellt wird.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Keep Alive" die Anzahl Sekunden ein, die Threads inaktiv bleiben k&ouml;nnen, wenn die Anzahl Threads gr&ouml;&szlig;er ist als die Kerngr&ouml;&szlig;e.</p>
+<p>Der Standardwert ist 60.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Threadg&uuml;ltigkeitsdauer" die Anzahl Sekunden ein, die Threads in einem Threadpool bleiben d&uuml;rfen, bevor sie gel&ouml;scht werden, unabh&auml;ngig davon, ob die Anzahl Threads gr&ouml;&szlig;er ist als die Kerngr&ouml;&szlig;e oder ob die Threads inaktiv sind.</p>
+<p>Der Standardwert lautet 0, was bedeutet, dass Threads niemals gel&ouml;scht werden.</p>
+</li>
+<li>
+<p>F&uuml;gen Sie im Abschnitt "Weitere Eigenschaften" keine weiteren Eigenschaften hinzu.</p>
+<p>GlassFish Server definiert keine weiteren Eigenschaften f&uuml;r diesen Ressourcentyp. Dar&uuml;ber hinaus verwendet dieser Ressourcentyp derzeit keine weiteren Eigenschaften.</p>
+</li>
+<li>
+<p>Klicken Sie auf "Speichern".</p>
+</li>
+</ol>
+<a id="GHCON118" name="GHCON118"></a>
+<h5>Siehe auch</h5>
+<ul>
+<li>
+<p><a href="task-managedscheduledexecutorservicecreate.html">So wird ein verwalteter geplanter ExecutorService erstellt</a></p>
+</li>
+<li>
+<p><a href="task-managedscheduledexecutorservicedelete.html">So wird ein verwalteter geplanter ExecutorService gel&ouml;scht</a></p>
+</li>
+</ul>
+
+
+  

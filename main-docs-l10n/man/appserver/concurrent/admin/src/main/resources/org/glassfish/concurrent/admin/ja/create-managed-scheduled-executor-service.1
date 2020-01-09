@@ -1,0 +1,108 @@
+create-managed-schedulasadminユ
+
+名前
+       create-managed-scheduled-executor-service -
+       管理対象スケジュール済エグゼキュータ・サービス・リソースを作成します
+
+概要
+           create-managed-scheduled-executor-service [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--longrunningtasks={false|true}]
+           [--hungafterseconds hungafterseconds]
+           [--corepoolsize corepoolsize]
+           [--keepaliveseconds keepaliveseconds]
+           [--threadlifetimeseconds threadlifetimeseconds]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+説明
+       create-managed-scheduled-executor-serviceサブコマンドは、管理対象スケジュール済エグゼキュータ・サービス・リソースを作成します。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+       --enabled
+           リソースが実行時に有効かどうかを判断します。デフォルト値はtrueです。
+
+       --contextinfoenabled
+           コンテナ・コンテキストがスレッドに伝播されるかどうかを判断します。trueに設定された場合、--contextinfoオプションで指定されたコンテキストが伝播されます。falseに設定された場合、コンテキストは伝播されず、--contextinfoオプションは無視されます。デフォルト値はtrueです。
+
+       --contextinfo
+           スレッドに伝播する個々のコンテナ・コンテキストを指定します。有効な値はClassloader、JNDI、SecurityおよびWorkAreaです。値をカンマ区切りリストで指定し、大文字と小文字は区別されません。デフォルトでは、すべてのコンテキストが伝播されます。
+
+       --threadpriority
+           作成されたスレッドに割り当てる優先度を指定します。デフォルト値は5です。
+
+       --longrunningtasks
+           リソースを長時間実行中のタスクに使用するかどうかを指定します。デフォルト値はfalseです。trueに設定された場合、長時間実行中のタスクはスタックとして報告されません。
+
+       --hungafterseconds
+           タスクが無応答であるとみなされるまでに実行可能な秒数を指定します。デフォルト値は0で、タスクは無応答であるとみなされません。
+
+       --corepoolsize
+           アイドル状態の場合でも、スレッド・プール内に保持するスレッド数を指定します。デフォルト値は0で、最初のタスクがスケジュールされた際に、スレッドが作成されます。
+
+       --keepaliveseconds
+           スレッド数がcorepoolsizeより大きい場合に、スレッドがアイドル状態でいられる秒数を指定します。デフォルト値は60です。
+
+       --threadlifetimeseconds
+           スレッド数がcorepoolsizeより大きいかどうか、またはスレッドがアイドル状態であるかどうかにかかわらず、スレッドがパージされるまでにスレッド・プール内に存続できる秒数を指定します。デフォルト値は0で、スレッドはパージされません。
+
+       --description
+           リソースの詳細を説明します。
+
+       --property
+           リソースを構成するための属性名と値のペア(オプション)。
+
+           GlassFish
+           Serverはこのリソースの追加プロパティを定義しません。また、このリソースは、現在追加プロパティを使用しません。
+
+       --target
+           リソースを作成するターゲットを指定します。有効なターゲットは次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンスにリソースを作成します。これがデフォルト値です。
+
+           domain
+               ドメインにリソースを作成します。
+
+           cluster_name
+               指定したクラスタ内のすべてのサーバー・インスタンスにリソースを作成します。
+
+           instance_name
+               指定したサーバー・インスタンスにリソースを作成します。
+
+オペランド
+       jndi_name
+           リソースのJNDI名。
+
+例
+       例 1, 管理対象スケジュール済エグゼキュータ・サービス・リソースの作成
+           この例では、concurrent/myScheduledExecutorという管理対象スケジュール済エグゼキュータ・サービス・リソースを作成します。
+
+               asadmin> create-managed-scheduled-executor-service concurrent/myScheduledExecutor
+               Managed scheduled executor service concurrent/myScheduledExecutor created successfully.
+               Command create-managed-scheduled-executor-service executed successfully.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       delete-managed-scheduled-executor-service(1),
+       list-managed-scheduled-executor-services(1)
+
+       asadmin(1M)
+
+Java EE 7                        2create-managed-scheduled-executor-service(1)

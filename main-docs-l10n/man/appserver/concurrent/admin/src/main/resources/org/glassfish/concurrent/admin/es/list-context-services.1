@@ -1,0 +1,62 @@
+list-context-services(1)Subcomandos de la Utilidad asalist-context-services(1)
+
+NOMBRE DE REFERENCIA
+       list-context-services - Muestra los recursos de servicio de contexto.
+
+SINOPSIS
+           list-context-services [--help]
+           [target]
+
+DESCRIPCIÓN
+       El subcomando list-context-services muestra los recursos de servicio de
+       contexto.
+
+       Este subcomando sólo está soportado en modo remoto.
+
+OPCIONES
+       --help, -?
+           Muestra el texto de ayuda para el subcomando.
+
+OPERANDOS
+       target
+           Especifica el destino para el que se van a mostrar los recursos de
+           servicio de contexto. Los destinos válidos son:
+
+           server
+               Muestra los recursos en la instancia de servidor por defecto.
+               Este es el valor por defecto.
+
+           domain
+               Muestra los recursos para el dominio.
+
+           cluster-name
+               Muestra los recursos en todas las instancias de servidor del
+               cluster especificado.
+
+           instance-name
+               Muestra los recursos en la instancia de servidor especificada.
+
+EJEMPLOS
+       Ejemplo 1, Lista de recursos de servicio de contexto.
+           En este ejemplo se muestran los recursos del servicio de contexto
+           en la instancia de servidor por defecto.
+
+               asadmin> list-context-services
+               concurrent/__defaultContextService
+               concurrent/myContextService1
+               concurrent/myContextService2
+               Command list-context-services executed successfully.
+
+ESTADO DE SALIDA
+       0
+           Subcomando ejecutado correctamente
+
+       1
+           Error al ejecutar el subcomando
+
+CONSULTE TAMBIÉN
+       create-context-service(1), delete-context-service(1)
+
+       asadmin(1M)
+
+Java EE 7                    09 de febrero de 2013    list-context-services(1)

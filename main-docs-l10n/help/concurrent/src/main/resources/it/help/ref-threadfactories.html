@@ -1,0 +1,101 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-threadfactories" name="ref-threadfactories"></a></p>
+
+<h4>Thread factory gestiti<a id="sthref35" name="sthref35"></a><a id="sthref36" name="sthref36"></a></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>I thread factory gestiti vengono utilizzati dalle applicazioni per creare thread gestiti su richiesta. I thread vengono avviati e gestiti dal contenitore. Il contesto del contenitore viene propagato al thread di esecuzione del task.</p>
+<p>Utilizzare la pagina Thread factory gestiti per creare una risorsa thread factory gestito.</p>
+<p>Per ogni risorsa thread factory gestito vengono fornite le informazioni riportate di seguito.</p>
+<dl>
+<dt>Nome JNDI</dt>
+<dd>
+<p>Il nome univoco che identifica la risorsa.</p>
+</dd>
+<dt>Nome JNDI logico</dt>
+<dd>
+<p>Il nome JNDI logico per la risorsa. Per ulteriori informazioni, vedere <a href="../../../common/en/help/ref-logicaljndinames.html">Nomi JNDI logici</a>.</p>
+</dd>
+<dt>Abilitato</dt>
+<dd>
+<p>Questa colonna viene visualizzata se nel dominio esiste solo l'istanza server predefinita, <code>server</code>.</p>
+<p>Un segno di spunta indica che la risorsa &egrave; abilitata, una X indica che la risorsa &egrave; disabilitata.</p>
+</dd>
+<dt>Stato</dt>
+<dd>
+<p>Questa colonna viene visualizzata se nel dominio sono stati creati cluster o istanze standalone.</p>
+<p>Il numero di cluster e istanze standalone a cui la risorsa &egrave; destinata e in quante di queste destinazioni la risorsa &egrave; abilitata. Ad esempio, "Abilitato in 2 di 4 destinazione/i" significa che la risorsa &egrave; destinata a quattro cluster e istanze standalone e che &egrave; abilitata in due di queste quattro destinazioni.</p>
+</dd>
+<dt>Informazioni contesto</dt>
+<dd>
+<p>I contesti contenitore propagati ai thread.</p>
+</dd>
+<dt>Priorit&agrave; thread</dt>
+<dd>
+<p>La priorit&agrave; assegnata ai thread.</p>
+</dd>
+<dt>Descrizione</dt>
+<dd>
+<p>La descrizione della risorsa.</p>
+</dd>
+</dl>
+<p>La tabella Thread factory gestiti contiene inoltre le opzioni riportate di seguito.</p>
+<dl>
+<dt>Nuovo</dt>
+<dd>
+<p>Pulsante che consente di creare una nuova risorsa.</p>
+</dd>
+<dt>Elimina</dt>
+<dd>
+<p>Pulsante che consente di eliminare una o pi&ugrave; risorse selezionate.</p>
+</dd>
+<dt>Abilita</dt>
+<dd>
+<p>Pulsante che consente di abilitare una o pi&ugrave; risorse selezionate.</p>
+</dd>
+<dt>Disabilita</dt>
+<dd>
+<p>Pulsante che consente di disabilitare una o pi&ugrave; risorse selezionate.</p>
+</dd>
+</dl>
+<a id="sthref37" name="sthref37"></a>
+<h5>Task correlati</h5>
+<ul>
+<li>
+<p><a href="task-managedthreadfactorynew.html">Per creare un thread factory gestito</a></p>
+</li>
+<li>
+<p><a href="task-managedthreadfactoryedit.html">Per modificare un thread factory gestito</a></p>
+</li>
+<li>
+<p><a href="task-managedthreadfactorydelete.html">Per eliminare un thread factory gestito</a></p>
+</li>
+</ul>
+<a id="GHCON154" name="GHCON154"></a>
+<h5>Comandi asadmin correlati</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM842"><code>create-managed-thread-factory</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM875"><code>list-managed-thread-factories</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM852"><code>delete-managed-thread-factory</code>(1)</a></p>
+</li>
+</ul>
+
+
+  

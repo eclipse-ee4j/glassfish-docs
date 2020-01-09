@@ -1,0 +1,98 @@
+create-context-service(1Unterbefehle des asadmin-Utilcreate-context-service(1)
+
+NAME
+       create-context-service - erstellt eine Kontextserviceressource
+
+ZUSAMMENFASSUNG
+           create-context-service [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+BESCHREIBUNG
+       Der Unterbefehl create-context-service erstellt eine
+       Kontextserviceressource.
+
+       Dieser Unterbefehl wird nur im Remote-Modus unterstützt.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+       --enabled
+           Legt fest, ob die Ressource während der Laufzeit aktiviert ist. Der
+           Standardwert ist true.
+
+       --contextinfoenabled
+           Legt fest, ob Containerkontexte an Threads propagiert werden. Ist
+           diese Option auf true gesetzt, werden die über die Option
+           --contextinfo angegebenen Kontexte propagiert. Ist diese Option auf
+           false gesetzt, werden keine Kontexte propagiert, und die Option
+           --contextinfo wird ignoriert. Der Standardwert ist true.
+
+       --contextinfo
+           Gibt an, ob einzelne Containerkontexte an Threads propagiert werden
+           sollen. Gültige Werte sind Class Loader, JNDI, Sicherheit und
+           WorkArea. Werte werden in einer durch Komma getrennten Liste unter
+           Beachtung der Groß- und Kleinschreibung angegeben. Standardmäßig
+           werden alle Kontexte propagiert.
+
+       --description
+           Einzelheiten zur Ressource.
+
+       --property
+           Optionale Name/Wert-Paare für Attribute zum Konfigurieren der
+           Ressource.
+
+           In GlassFish Server werden keine weiteren Eigenschaften für diese
+           Ressource definiert. Darüber hinaus verwendet diese Ressource
+           derzeit keine weiteren Eigenschaften.
+
+       --target
+           Gibt das Ziel an, für das Sie die Ressource erstellen. Gültige
+           Ziele sind:
+
+           server
+               Erstellt die Ressource für die standardmäßige Serverinstanz.
+               Dies ist der Standardwert.
+
+           domain
+               Erstellt die Ressource für die Domain.
+
+           cluster_name
+               Erstellt die Ressource für jede Serverinstanz im angegebenen
+               Cluster.
+
+           instance_name
+               Erstellt die Ressource für die angegebene Serverinstanz.
+
+OPERANDEN
+       jndi_name
+           Der JNDI-Name dieser Ressource.
+
+BEISPIELE
+       Beispiel 1, Kontextserviceressourcen erstellen
+           In diesem Beispiel wird eine Kontextserviceressource mit dem Namen
+           concurrent/myContextService erstellt.
+
+               asadmin> create-context-service concurrent/myContextService
+               Context service concurrent/myContextService created successfully.
+               Command create-context-service executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       delete-context-service(1), list-context-services(1)
+
+       asadmin(1M)
+
+Java EE 7                        09. Feb. 2013       create-context-service(1)

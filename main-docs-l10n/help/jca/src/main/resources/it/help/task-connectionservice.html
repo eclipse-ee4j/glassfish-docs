@@ -1,0 +1,61 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-connectionservice" name="task-connectionservice"></a></p>
+
+<h4><a id="sthref54" name="sthref54"></a>Per configurare il servizio connettore</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<ol>
+<li>
+<p>Espandere il nodo Configurazione nell'albero di navigazione.</p>
+</li>
+<li>
+<p>Nel nodo Configurazione selezionare il nodo Servizio connettore.</p>
+<p>Viene visualizzata la pagina Servizio connettore.</p>
+</li>
+<li>
+<p>Nel campo Timeout chiusura digitare il numero massimo di secondi consentito durante la chiusura di GlassFish Server per il completamento del metodo <code>ResourceAdapter.stop</code> di un'istanza di modulo connettore.</p>
+<p>I Resource Adapter che richiedono tempi di chiusura pi&ugrave; lunghi vengono ignorati e la procedura di chiusura di GlassFish Server continua. Il valore predefinito &egrave; 30 secondi.</p>
+</li>
+<li>
+<p>Nell'elenco a discesa Criteri di caricamento classi del connettore selezionare il criterio da utilizzare.</p>
+<ul>
+<li>
+<p>Selezionare <code>derived</code> per indicare che i Resource Adapter vengono forniti in base ai riferimenti di un'applicazione a qualsiasi risorsa del Resource Adapter.</p>
+<p>Questo &egrave; il criterio predefinito.</p>
+</li>
+<li>
+<p>Selezionare <code>global</code> per specificare che tutti i Resource Adapter saranno visibili per tutte le applicazioni.</p>
+</li>
+</ul>
+<p>Questo criterio non si applica per il Resource Adapter di sistema JMS preinstallato, <code>jmsra</code>, che &egrave; sempre visibile per tutte le applicazioni.</p>
+</li>
+<li>
+<p>Fare clic su Salva.</p>
+
+<hr>
+<p><b>Suggerimento:</b></p>
+Per ripristinare le impostazioni predefinite, fare clic sul pulsante Carica impostazioni predefinite, quindi su Salva.
+<hr>
+
+</li>
+</ol>
+<a id="sthref55" name="sthref55"></a>
+<h5>Vedere anche</h5>
+<p><a href="../../../common/en/help/task-appdeployconn.html">Per distribuire un modulo connettore</a></p>
+
+
+
+
+  

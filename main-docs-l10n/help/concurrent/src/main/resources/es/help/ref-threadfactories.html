@@ -1,0 +1,101 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-threadfactories" name="ref-threadfactories"></a></p>
+
+<h4>F&aacute;bricas de threads gestionados<a id="sthref35" name="sthref35"></a><a id="sthref36" name="sthref36"></a></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Las aplicaciones utilizan las f&aacute;bricas de threads gestionados para crear threads gestionados a petici&oacute;n. El contenedor inicia y gestiona los threads. El contexto del contenedor se propaga al thread que ejecuta la tarea.</p>
+<p>Utilice la p&aacute;gina F&aacute;bricas de threads gestionadas para configurar recursos de la f&aacute;brica de threads gestionada.</p>
+<p>En cada recurso de la f&aacute;brica de threads gestionada, aparece la siguiente informaci&oacute;n.</p>
+<dl>
+<dt>Nombre JNDI</dt>
+<dd>
+<p>Nombre &uacute;nico que identifica el recurso.</p>
+</dd>
+<dt>Nombre de JNDI l&oacute;gico</dt>
+<dd>
+<p>Nombre de JNDI l&oacute;gico para el recurso. Consulte <a href="../../../common/en/help/ref-logicaljndinames.html">Nombres de JNDI l&oacute;gicos</a> para obtener m&aacute;s informaci&oacute;n.</p>
+</dd>
+<dt>Activado</dt>
+<dd>
+<p>(Esta columna s&oacute;lo se muestra si la instancia del servidor por defecto, <code>server</code>, existe en el dominio).</p>
+<p>Una marca de control si el recurso est&aacute; activado, o una X si est&aacute; desactivado.</p>
+</dd>
+<dt>Estado</dt>
+<dd>
+<p>(Esta columna s&oacute;lo se muestra si en el dominio se ha creado alg&uacute;n cluster o instancia independiente).</p>
+<p>N&uacute;mero de clusters e instancias independientes a los que se dirige el recurso y el n&uacute;mero de estos destinos en los que el recurso est&aacute; activado. Por ejemplo, "Activado en 2 de 4 de destinos" significa que el recurso se dirige a cuatro clusters e instancias independientes y que est&aacute; activado en dos de estos cuatro destinos.</p>
+</dd>
+<dt>Informaci&oacute;n de contexto</dt>
+<dd>
+<p>Contextos de contenedor propagados a los threads.</p>
+</dd>
+<dt>Prioridad de threads</dt>
+<dd>
+<p>Prioridad asignada a los threads.</p>
+</dd>
+<dt>Descripci&oacute;n</dt>
+<dd>
+<p>Descripci&oacute;n del recurso.</p>
+</dd>
+</dl>
+<p>La tabla F&aacute;bricas de threads gestionadas tambi&eacute;n contiene las siguientes opciones.</p>
+<dl>
+<dt>Nuevo</dt>
+<dd>
+<p>Bot&oacute;n para crear un nuevo recurso.</p>
+</dd>
+<dt>Suprimir</dt>
+<dd>
+<p>Bot&oacute;n para suprimir uno o varios recursos seleccionados.</p>
+</dd>
+<dt>Activar</dt>
+<dd>
+<p>Bot&oacute;n para activar uno o varios recursos seleccionados.</p>
+</dd>
+<dt>Desactivar</dt>
+<dd>
+<p>Bot&oacute;n para desactivar uno o varios recursos seleccionados.</p>
+</dd>
+</dl>
+<a id="sthref37" name="sthref37"></a>
+<h5>Tareas relacionadas</h5>
+<ul>
+<li>
+<p><a href="task-managedthreadfactorynew.html">Para crear una f&aacute;brica de threads gestionada</a></p>
+</li>
+<li>
+<p><a href="task-managedthreadfactoryedit.html">Para editar una f&aacute;brica de threads gestionada</a></p>
+</li>
+<li>
+<p><a href="task-managedthreadfactorydelete.html">Para suprimir una f&aacute;brica de threads gestionada</a></p>
+</li>
+</ul>
+<a id="GHCON154" name="GHCON154"></a>
+<h5>Comandos asadmin Relacionados</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM842"><code>create-managed-thread-factory</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM875"><code>list-managed-thread-factories</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM852"><code>delete-managed-thread-factory</code>(1)</a></p>
+</li>
+</ul>
+
+
+  

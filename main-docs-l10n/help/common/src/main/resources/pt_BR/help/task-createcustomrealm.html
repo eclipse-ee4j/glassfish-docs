@@ -1,0 +1,69 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-createcustomrealm" name="task-createcustomrealm"></a></p>
+
+<h4><a id="sthref85" name="sthref85"></a><a id="sthref86" name="sthref86"></a>Para Criar um Realm Personalizado</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Al&eacute;m dos tr&ecirc;s realms incorporados, voc&ecirc; tamb&eacute;m pode criar realms personalizados que armazenem dados de usu&aacute;rio de algum outro modo, como em um banco de dados relacional. O desenvolvimento de um realm personalizado est&aacute; fora do escopo deste documento. Para obter mais informa&ccedil;&otilde;es, consulte o <a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSDVG00006">Cap&iacute;tulo 5, <i>Securing Applications,</i> no <i>Oracle GlassFish Server Application Development Guide</i></a>.</p>
+<p>Para fins de administra&ccedil;&atilde;o, os realms personalizados s&atilde;o implementados por uma classe (chamada de <code>LoginModule</code>) derivada do pacote do Java Authentication and Authorization Service (JAAS).</p>
+<ol>
+<li>
+<p>Siga o procedimento descrito em <a href="task-realmnew.html">Para Criar um Realm</a>, digitando o nome do realm personalizado e o nome da classe <code>LoginModule</code>.</p>
+<p>Use qualquer nome exclusivo para o realm personalizado; por exemplo, <code>myCustomRealm</code>.</p>
+</li>
+<li>
+<p>Clique em OK.</p>
+</li>
+<li>
+<p>Edite o arquivo de configura&ccedil;&atilde;o de log-in do dom&iacute;nio, domain-dir<code>/config/login.conf</code> e adicione o nome de classe totalmente qualificado do <code>LoginModule</code> do JAAS, no final do arquivo, como a seguir:</p>
+<pre>
+<i>realmName</i> {
+    <i>fully-qualified-LoginModule-classname</i> required;
+};
+</pre>
+<p>Por exemplo,</p>
+<pre>
+myCustomRealm {
+    com.foo.bar.security.customrealm.simpleCustomLoginModule required;
+};
+</pre></li>
+<li>
+<p>Copie a classe do <code>LoginModule</code> e todas as classes dependentes no diret&oacute;rio domain-dir<code>/lib/classes</code>.</p>
+</li>
+<li>
+<p>Reinicie o servidor se Reinicializa&ccedil;&atilde;o Necess&aacute;ria aparecer no Console de Administra&ccedil;&atilde;o.</p>
+</li>
+<li>
+<p>Verifique se o realm est&aacute; devidamente carregado.</p>
+<p>Verifique domain-dir<code>/logs/server.log</code> para garantir que o servidor tenha carregado o realm. O servidor dever&aacute; chamar o m&eacute;todo <code>init</code> do realm.</p>
+</li>
+</ol>
+<a id="GHCOM287" name="GHCOM287"></a>
+<h5>Consulte Tamb&eacute;m</h5>
+<ul>
+<li>
+<p><a href="task-realmnew.html">Para Criar um Realm</a></p>
+</li>
+<li>
+<p><a href="task-realmedit.html">Para Editar um Realm</a></p>
+</li>
+<li>
+<p><a href="task-todeleterealm.html">Para Deletar um Realm</a></p>
+</li>
+</ul>
+
+
+
+  

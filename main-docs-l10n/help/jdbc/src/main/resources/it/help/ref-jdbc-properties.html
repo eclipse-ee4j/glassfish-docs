@@ -1,0 +1,70 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-jdbc-properties" name="ref-jdbc-properties"></a></p>
+
+<h4><a id="sthref56" name="sthref56"></a><a id="sthref57" name="sthref57"></a>Propriet&agrave; specifiche dei connection pool JDBC</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La maggior parte dei driver JDBC consente l'utilizzo di liste di propriet&agrave; standard per specificare l'utente, la password e altre informazioni di configurazione delle risorse. Sebbene le propriet&agrave; siano facoltative per GlassFish Server, alcune risultano necessarie per la maggior parte dei database. Per informazioni dettagliate, vedere l'interfaccia API JDBC 4.0 Standard Extension.</p>
+<p>La modifica delle propriet&agrave; del driver JDBC richiede il riavvio del server.</p>
+<p>Le propriet&agrave; standard riportate di seguito sono comuni a molti fornitori di driver JDBC. Per informazioni sulle propriet&agrave; disponibili per il driver JDBC in uso, consultare la documentazione del fornitore.</p>
+<dl>
+<dt><code>user</code></dt>
+<dd>
+<p>Specifica il nome utente per la connessione al database.</p>
+</dd>
+<dt><code>password</code></dt>
+<dd>
+<p>Specifica la password per la connessione al database.</p>
+</dd>
+<dt><code>databaseName</code></dt>
+<dd>
+<p>Specifica il database per il connection pool corrente.</p>
+</dd>
+<dt><code>serverName</code></dt>
+<dd>
+<p>Specifica il database server per il connection pool corrente.</p>
+</dd>
+<dt><code>port</code></dt>
+<dd>
+<p>Specifica la porta utilizzata dal database server per l'ascolto delle richieste.</p>
+</dd>
+<dt><code>networkProtocol</code></dt>
+<dd>
+<p>Specifica il protocollo di comunicazione.</p>
+</dd>
+<dt><code>roleName</code></dt>
+<dd>
+<p>Specifica il nome del ruolo SQL iniziale.</p>
+</dd>
+<dt><code>datasourceName</code></dt>
+<dd>
+<p>Specifica una classe <code>XADataSource</code> di base oppure una classe <code>ConnectionPoolDataSource</code> se viene implementato il connection pooling.</p>
+</dd>
+<dt><code>description</code></dt>
+<dd>
+<p>Specifica una descrizione di testo.</p>
+</dd>
+<dt><code>url</code></dt>
+<dd>
+<p>Specifica l'URL per il connection pool corrente. Questa propriet&agrave; non &egrave; standard, tuttavia &egrave; utilizzata di frequente.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+  

@@ -1,0 +1,62 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-ejbcontaineravailability" name="ref-ejbcontaineravailability"></a></p>
+
+<h4><a id="sthref15" name="sthref15"></a><a id="sthref16" name="sthref16"></a>Disponibilit&eacute; du conteneur EJB</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La page Disponibilit&eacute; du conteneur EJB permet de configurer les param&egrave;tres de disponibilit&eacute; du conteneur EJB.</p>
+<p>Elle contient les options ci-apr&egrave;s.</p>
+<dl>
+<dt>Charger les valeurs par d&eacute;faut</dt>
+<dd>
+<p>Bouton permettant de restaurer les valeurs par d&eacute;faut des param&egrave;tres qui en ont. Les param&egrave;tres qui n'ont pas de valeurs par d&eacute;faut ne sont pas modifi&eacute;s.</p>
+</dd>
+<dt>Nom de configuration</dt>
+<dd>
+<p>Nom de la configuration &agrave; laquelle s'appliquent les param&egrave;tres de cette page. Ce champ est en lecture seule.</p>
+</dd>
+<dt>Service de disponibilit&eacute;</dt>
+<dd>
+<p>Si la case Activ&eacute; est coch&eacute;e, la disponibilit&eacute; est activ&eacute;e pour le conteneur EJB.</p>
+</dd>
+<dt>Type de persistance HA</dt>
+<dd>
+<p>M&eacute;canisme de persistance utilis&eacute; lorsque le service de disponibilit&eacute; est activ&eacute;. La valeur par d&eacute;faut est <code>replicated</code>, ce qui fournit une persistance bas&eacute;e sur le basculement en cas d'incident dans un cluster. Ne modifiez pas cette valeur.</p>
+</dd>
+<dt>Type de persistance SFSB</dt>
+<dd>
+<p>M&eacute;canisme de persistance utilis&eacute; lorsque le service de disponibilit&eacute; n'est <i>pas</i> activ&eacute;. La valeur par d&eacute;faut est <code>file</code>, ce qui fournit une persistance bas&eacute;e sur le syst&egrave;me de fichiers. Ne modifiez pas cette valeur.</p>
+<p>Le champ Emplacement de stockage des sessions d&eacute;termine l'emplacement de persistance des &eacute;tats de point de reprise SFSB. Pour plus d'informations sur la d&eacute;finition de l'emplacement de stockage des sessions, reportez-vous &agrave; <a href="../../../ejb-lite/en/help/task-ejbgeneral.html">Configuration des param&egrave;tres EJB</a>.</p>
+</dd>
+<dt>Autres propri&eacute;t&eacute;s</dt>
+<dd>
+<p>Propri&eacute;t&eacute;s suppl&eacute;mentaires de la disponibilit&eacute; du conteneur EJB.</p>
+<p>GlassFish Server ne d&eacute;finit aucune autre propri&eacute;t&eacute; de disponibilit&eacute; du conteneur EJB.</p>
+</dd>
+</dl>
+<a id="sthref17" name="sthref17"></a>
+<h5>T&acirc;ches connexes</h5>
+<ul>
+<li>
+<p><a href="task-ejbcontaineravailability.html">Configuration des param&egrave;tres de disponibilit&eacute; du conteneur EJB</a></p>
+</li>
+<li>
+<p><a href="../../../ejb-lite/en/help/task-ejbgeneral.html">Configuration des param&egrave;tres EJB</a></p>
+</li>
+</ul>
+
+
+
+  

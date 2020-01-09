@@ -1,0 +1,61 @@
+delete-managed-thread-factorasadmin 实用程序子delete-managed-thread-factory(1)
+
+名称
+       delete-managed-thread-factory - 删除具有指定 JNDI
+       名称的托管线程工厂资源
+
+提要
+           delete-managed-thread-factory [--help]
+           [--target target]
+           managed_thread_factory_name
+
+说明
+       delete-managed-thread-factory 子命令可删除具有指定 JNDI
+       名称的托管线程工厂资源。
+
+       该子命令仅在远程模式下受支持。
+
+选项
+       --help, -?
+           显示子命令的帮助文本。
+
+       --target
+           指定要从中删除资源的目标。有效目标包括：
+
+           server
+               从默认服务器实例删除资源。这是默认值。
+
+           domain
+               从域删除资源。
+
+           cluster_name
+               从指定集群中的每个服务器实例中删除资源。
+
+           instance_name
+               从指定服务器实例删除资源。
+
+操作数
+       managed_thread_factory_name
+           要删除的资源的 JNDI 名称。
+
+示例
+       Example 1, 删除托管线程工厂资源
+           此示例删除名为 concurrent/myThreadFactory 的托管线程工厂资源。
+
+               asadmin> delete-managed-thread-factory concurrent/myThreadFactory
+               Managed thread factory concurrent/myThreadFactory deleted successfully.
+               Command delete-managed-thread-factory executed successfully.
+
+退出状态
+       0
+           已成功执行命令
+
+       1
+           执行命令时出现错误
+
+另请参阅
+       create-managed-thread-factory(1), list-managed-thread-factories(1)
+
+       asadmin(1M)
+
+Java EE 7                      2013 年 2 月 9 delete-managed-thread-factory(1)

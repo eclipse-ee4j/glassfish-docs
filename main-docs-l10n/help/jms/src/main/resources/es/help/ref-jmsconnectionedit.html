@@ -1,0 +1,130 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-jmsconnectionedit" name="ref-jmsconnectionedit"></a></p>
+
+<h4><a id="sthref53" name="sthref53"></a><a id="sthref54" name="sthref54"></a>Editar f&aacute;brica de conexiones de JMS</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Utilice la p&aacute;gina Editar F&aacute;brica de Conexiones JMS para modificar la configuraci&oacute;n de una f&aacute;brica de conexiones JMS.</p>
+<p>La p&aacute;gina Editar F&aacute;brica de Conexiones JMS contiene las siguientes opciones.</p>
+<dl>
+<dt>Cargar Valores por Defecto</dt>
+<dd>
+<p>Bot&oacute;n para restaurar configuraci&oacute;n que tiene valores por defecto a sus valores por defecto. Las configuraciones que no tienen valores por defecto no se modifican.</p>
+</dd>
+<dt>Nombre JNDI</dt>
+<dd>
+<p>Nombre de JNDI &uacute;nico que identifica el recurso. Por convenci&oacute;n, el nombre empieza por un indicador de tipo de recurso y una barra invertida, por ejemplo, concurrent/, jdbc/ o jms/. El nombre JNDI es un campo de s&oacute;lo lectura. S&oacute;lo puede especificar el nombre JNDI al crear un nuevo recurso</p>
+</dd>
+<dt>Nombre de JNDI l&oacute;gico</dt>
+<dd>
+<p>Nombre de JNDI l&oacute;gico para el recurso. Se trata de un nombre est&aacute;ndar de Java EE a trav&eacute;s del que se puede acceder al recurso. El nombre de JNDI l&oacute;gico es un campo de s&oacute;lo lectura. Consulte <a href="../../../common/en/help/ref-logicaljndinames.html">Nombres de JNDI l&oacute;gicos</a> para obtener m&aacute;s informaci&oacute;n.</p>
+</dd>
+<dt>Tipo de recurso</dt>
+<dd>
+<p>Tipo de la f&aacute;brica de conexiones. El tipo de recurso es un campo de s&oacute;lo lectura. S&oacute;lo se puede especificar el tipo de recurso al crear una nueva f&aacute;brica de conexiones JMS.</p>
+</dd>
+<dt>Descripci&oacute;n</dt>
+<dd>
+<p>Descripci&oacute;n de la f&aacute;brica de conexiones.</p>
+</dd>
+<dt>Estado</dt>
+<dd>
+<p>Indica si el recurso est&aacute; disponible en el tiempo de ejecuci&oacute;n.</p>
+<p>Si s&oacute;lo existe la instancia de servidor por defecto, <code>server</code> en el dominio, la disponibilidad en tiempo de ejecuci&oacute;n del recurso puede estar activada o desactivada. La disponibilidad en tiempo de ejecuci&oacute;n est&aacute; activa por defecto.</p>
+<p>Si se ha creado alg&uacute;n cluster o alguna instancia independiente en el dominio, utilice el separador Destino para controlar la disponibilidad del recurso en tiempo de ejecuci&oacute;n en sus destinos.</p>
+</dd>
+<dt>Tama&ntilde;o de pool inicial y m&iacute;nimo:</dt>
+<dd>
+<p>El n&uacute;mero m&iacute;nimo de conexiones del pool para la f&aacute;brica de conexiones. El valor por defecto es 8.</p>
+</dd>
+<dt>Tama&ntilde;o de Pool M&aacute;ximo</dt>
+<dd>
+<p>N&uacute;mero m&aacute;ximo de conexiones del pool. El valor por defecto es 32.</p>
+</dd>
+<dt>Cantidad de Cambio de Tama&ntilde;o del Pool</dt>
+<dd>
+<p>N&uacute;mero de conexiones que se pueden eliminar cuando se agota el timeout de inactividad del pool. El valor por defecto es 2.</p>
+</dd>
+<dt>Timeout de Inactividad</dt>
+<dd>
+<p>Tiempo m&aacute;ximo, en segundos, que una conexi&oacute;n puede permanecer inactiva en el pool. El valor por defecto es 300.</p>
+</dd>
+<dt>Tiempo de Espera M&aacute;ximo</dt>
+<dd>
+<p>Cantidad de tiempo que la aplicaci&oacute;n que solicita una conexi&oacute;n puede esperar para obtener un mensaje de timeout de conexi&oacute;n. El valor por defecto es 60000.</p>
+</dd>
+<dt>Ante cualquier fallo</dt>
+<dd>
+<p>Si se activa la casilla de control Cerrar todas las conexiones, GlassFish Server cerrar&aacute; todas las conexiones del pool y las restablecer&aacute; aunque tan s&oacute;lo falle una. Esta opci&oacute;n se activada por defecto.</p>
+</dd>
+<dt>Soporte de Transacci&oacute;n</dt>
+<dd>
+<p>El valor puede ser cualquiera de los siguientes:</p>
+<dl>
+<dt>XATransaction</dt>
+<dd>
+<p>El recurso se puede utilizar para transacciones que suponen el uso de m&aacute;s de un recurso dentro de un &aacute;mbito de transacci&oacute;n. &Eacute;ste es el valor por defecto de una f&aacute;brica de conexiones JMS.</p>
+<p>Por ejemplo, en las transacciones puede participar este recurso m&aacute;s un recurso JDBC, un recurso de conector u otro recurso de f&aacute;brica de conexiones JMS. Este valor ofrece la m&aacute;xima flexibilidad. Un recurso que se configure como XATransaction participar&aacute; en operaciones de confirmaci&oacute;n de dos fases.</p>
+</dd>
+<dt>LocalTransaction</dt>
+<dd>
+<p>Este recurso se puede utilizar bien para transacciones que impliquen solamente un recurso dentro del &aacute;mbito de la transacci&oacute;n o bien como el &uacute;ltimo agente en una transacci&oacute;n distribuida que involucre a m&aacute;s de un recurso XA.</p>
+<p>Este valor ofrece un rendimiento mucho m&aacute;s &oacute;ptimo. Un recurso que se configura como LocalTransaction no se utilizar&aacute; en operaciones de confirmaci&oacute;n de dos fases.</p>
+</dd>
+<dt>NoTransaction</dt>
+<dd>
+<p>Este recurso no puede participar nunca en transacciones. Esta configuraci&oacute;n es de uso limitado en aplicaciones JMS.</p>
+</dd>
+</dl>
+</dd>
+<dt>Validaci&oacute;n de la conexi&oacute;n</dt>
+<dd>
+<p>Si la casilla de control Necesaria est&aacute; activada, las conexiones se validar&aacute;n antes de proporcion&aacute;rselas a la aplicaci&oacute;n. Si falla la validaci&oacute;n de un recurso, &eacute;ste se destruye, y se crea y se devuelve un recurso nuevo. Esta opci&oacute;n se activada por defecto.</p>
+</dd>
+<dt>Propiedades Adicionales</dt>
+<dd>
+<p>Son las propiedades adicionales de la f&aacute;brica de conexiones.</p>
+<p>Para obtener m&aacute;s informaci&oacute;n sobre las propiedades disponibles, consulte <a href="ref-jmsconnectionproperties.html">Propiedades espec&iacute;ficas de f&aacute;bricas de conexiones JMS</a>.</p>
+</dd>
+</dl>
+<a id="sthref55" name="sthref55"></a>
+<h5>Tareas relacionadas</h5>
+<ul>
+<li>
+<p><a href="task-jmsconnectionnew.html">Para crear un recurso de la f&aacute;brica de conexiones JMS</a></p>
+</li>
+<li>
+<p><a href="task-jmsconnectionedit.html">Para editar un recurso de la f&aacute;brica de conexiones JMS</a></p>
+</li>
+<li>
+<p><a href="task-jmsconnectiondelete.html">Para suprimir un recurso de la f&aacute;brica de conexiones JMS</a></p>
+</li>
+</ul>
+<a id="sthref56" name="sthref56"></a>
+<h5>Comandos asadmin Relacionados</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00040"><code>create-jms-resource</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00177"><code>list-jms-resources</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00092"><code>delete-jms-resource</code>(1)</a></p>
+</li>
+</ul>
+
+
+  

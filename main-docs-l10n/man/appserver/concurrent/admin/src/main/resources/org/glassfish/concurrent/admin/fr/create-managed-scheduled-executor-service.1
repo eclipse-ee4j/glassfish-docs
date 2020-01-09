@@ -1,0 +1,144 @@
+create-managed-scheduledSous-commacreate-managed-scheduled-executor-service(1)
+
+NOM
+       create-managed-scheduled-executor-service - crée une ressource de
+       service d'exécuteur programmé géré
+
+SYNTAXE
+           create-managed-scheduled-executor-service [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--longrunningtasks={false|true}]
+           [--hungafterseconds hungafterseconds]
+           [--corepoolsize corepoolsize]
+           [--keepaliveseconds keepaliveseconds]
+           [--threadlifetimeseconds threadlifetimeseconds]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+DESCRIPTION
+       La sous-commande create-managed-scheduled-executor-service crée une
+       ressource de service d'exécuteur programmé géré.
+
+       Cette sous-commande est prise en charge en mode distant uniquement.
+
+OPTIONS
+       --help, -?
+           Cette option affiche le texte d'aide de la sous-commande.
+
+       --enabled
+           Cette option détermine si la ressource est activée au moment de
+           l'exécution. La valeur par défaut est true.
+
+       --contextinfoenabled
+           Cette option détermine si les contextes de conteneur sont propagés
+           vers les threads. Si cette option a la valeur true, les contextes
+           spécifiés dans l'option --contextinfo sont propagés. Si cette
+           option a la valeur false, aucun contexte n'est propagé et l'option
+           --contextinfo n'est pas prise en compte. La valeur par défaut est
+           true.
+
+       --contextinfo
+           Cette option spécifie des contextes de conteneur à propager vers
+           les threads. Les valeurs valides sont Chargeur de classes, JNDI,
+           Sécurité et Espace de travail. Les valeurs sont spécifiées sous
+           forme de liste séparée par des virgules et font la distinction
+           entre les majuscules et les minuscules. Tous les contextes sont
+           propagés par défaut.
+
+       --threadpriority
+           Indique la priorité à affecter aux threads créés. La valeur par
+           défaut est 5.
+
+       --longrunningtasks
+           Indique si la ressource doit être utilisée pour les tâches à longue
+           durée d'exécution. La valeur par défaut est false. Si cette option
+           a la valeur true, les tâches à longue durée d'exécution ne sont pas
+           signalées comme étant bloquées.
+
+       --hungafterseconds
+           Indique le nombre de secondes pendant lequel une tâche peut être
+           exécutée avant d'être considérée comme sans réponse. La valeur par
+           défaut est 0, ce qui signifie que les tâches ne sont jamais
+           considérées comme sans réponse.
+
+       --corepoolsize
+           Indique le nombre de threads à conserver dans un pool de threads,
+           même s'ils sont inactifs. La valeur par défaut est 0, ce qui
+           signifie qu'un thread est créé lorsque la première tâche est
+           planifiée.
+
+       --keepaliveseconds
+           Indique le nombre de secondes pendant lequel des threads peuvent
+           rester inactifs lorsque le nombre de threads est supérieur à
+           corepoolsize. La valeur par défaut est 60.
+
+       --threadlifetimeseconds
+           Indique le nombre de secondes pendant lequel des threads peuvent
+           rester dans un pool de threads avant d'être purgés, peu importe que
+           le nombre de threads soit supérieur à corepoolsize ou que les
+           threads soient inactifs. La valeur par défaut est 0, ce qui
+           signifie que les threads ne sont jamais purgés.
+
+       --description
+           Description de la ressource.
+
+       --property
+           Paires nom/valeur d'attribut facultatives pour la configuration de
+           la ressource.
+
+           GlassFish Server ne définit aucune autre propriété pour cette
+           ressource. De plus, cette ressource n'utilise actuellement aucune
+           autre propriété supplémentaire.
+
+       --target
+           Cette option indique la cible pour laquelle vous créez la
+           ressource. Les cibles valides sont les suivantes :
+
+           server
+               Cette valeur crée la ressource pour l'instance de serveur par
+               défaut. Il s'agit de la valeur par défaut.
+
+           domain
+               Cette valeur crée la ressource pour le domaine.
+
+           cluster_name
+               Cette valeur crée la ressource pour chaque instance de serveur
+               du cluster indiqué.
+
+           instance_name
+               Cette valeur crée la ressource pour l'instance de serveur
+               indiquée.
+
+OPÉRANDES
+       jndi_name
+           Nom JNDI de cette ressource.
+
+EXEMPLES
+       Exemple 1, Création d'une ressource de service d'exécuteur programmé
+       géré
+           Dans cet exemple, une ressource de service exécuteur planifié géré
+           nommée concurrent/myScheduledExecutor est créée.
+
+               asadmin> create-managed-scheduled-executor-service concurrent/myScheduledExecutor
+               Managed scheduled executor service concurrent/myScheduledExecutor created successfully.
+               Command create-managed-scheduled-executor-service executed successfully.
+
+STATUT DE SORTIE
+       0
+           sous-commande correctement exécutée
+
+       1
+           erreur lors de l'exécution de la sous-commande
+
+VOIR AUSSI
+       delete-managed-scheduled-executor-service(1),
+       list-managed-scheduled-executor-services(1)
+
+       asadmin(1M)
+
+Java EE 7                         create-managed-scheduled-executor-service(1)

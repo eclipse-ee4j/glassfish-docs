@@ -1,0 +1,115 @@
+list-batch-jobs(1)      Subcomandos do utilitário asad      list-batch-jobs(1)
+
+NOME
+       list-batch-jobs - lista jobs em batch
+
+SINOPSE
+           list-batch-jobs [--help]
+           [--target target]
+           [--long={false|true}]
+           [--output output]
+           [--header={false|true}]
+           [job_name]
+
+DESCRIçãO
+       O subcomando list-batch-jobs lista jobs em batch e detalhes do job.
+
+OPçõES
+       --help, -?
+           Exibe o texto de ajuda do subcomando.
+
+       --target
+           Especifica o alvo cujos jobs em batch e detalhes do job devem ser
+           listados. Os valores válidos são os seguintes:
+
+           server
+               Lista os jobs em batch da instância do servidor default server
+               e é o valor default.
+
+           cluster-name
+               Lista os jobs em batch para cada instância do servidor no
+               cluster.
+
+           instance-name
+               Lista os jobs em batch de uma instância específica do servidor.
+
+       --long, -l
+           Exibe informações detalhadas sobre jobs em batch. O valor default é
+           false.
+
+       --output, -o
+           Exibe detalhes específicos sobre jobs em batch. Use uma lista
+           separada por vírgulas para especificar os detalhes que você deseja
+           exibir e sua ordem. Os valores diferenciam maiúsculas de
+           minúsculas. Os cabeçalhos de coluna jobname e instancecount são
+           exibidos por default.
+
+           Os valores possíveis são os seguintes:
+
+           jobname
+               Exibe o nome do job.
+
+           appname
+               Exibe o nome da aplicação.
+
+           instancecount
+               Exibe o número de instâncias do job.
+
+           instanceid
+               Exibe o ID designado à instância do job.
+
+           executionid
+               Exibe o ID designado à execução do job em batch. Uma nova
+               execução é criada na primeira vez em que um job é iniciado e
+               cada vez que a execução existente é reiniciada.
+
+           batchstatus
+               Exibe o status do job conforme definido pelo tempo de execução
+               em batch.
+
+           starttime
+               Exibe o horário inicial do job.
+
+           endtime
+               Exibe o horário de término do job.
+
+           exitstatus
+               Exibe o status do job conforme definido pelo XML do Job ou pela
+               aplicação em batch. Por default, o status de saída e o status
+               do batch são iguais, a menos que o status de saída seja
+               substituído explicitamente.
+
+       --header, -h
+           Especifica se os cabeçalhos da coluna são exibidos quando a opção
+           --long for usada. O valor default é verdadeiro. Para suprimir os
+           cabeçalhos, defina a opção --header como false.
+
+OPERANDOS
+       job_name
+           O nome do job cujos detalhes serão listados.
+
+EXEMPLOS
+       Example 1, Listando Jobs em Batch
+           Este exemplo lista jobs em batch para a instância do servidor
+           default.
+
+               asadmin> list-batch-jobs
+               JOBNAME  INSTANCECOUNT
+               payroll  9
+               bonus    6
+               Command list-batch-jobs executed successfully.
+
+STATUS DE SAíDA
+       0
+           subcomando executado com sucesso
+
+       1
+           erro na execução do subcomando
+
+CONSULTE TAMBéM
+       list-batch-job-executions(1), list-batch-job-steps(1),
+       set-batch-runtime-configuration(1), list-batch-runtime-configuration(1)
+
+       asadmin(1M)
+
+Java EE 7                         13 fev 2013               list-batch-jobs(1)

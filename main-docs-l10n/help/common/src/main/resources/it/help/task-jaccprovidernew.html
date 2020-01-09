@@ -1,0 +1,71 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-jaccprovidernew" name="task-jaccprovidernew"></a></p>
+
+<h4><a id="sthref99" name="sthref99"></a>Per creare un provider JACC</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Utilizzare la pagina Nuovo provider JACC per creare un nuovo provider JACC (Java Authorization Contract for Containers) conforme a JSR-115/196, che pu&ograve; essere usato dai moduli di autorizzazione di terze parti per applicazioni in esecuzione su GlassFish Server. Il provider JACC viene creato come elemento <code>jacc-provider</code> all'interno dell'elemento <code>security-service</code> nel file <code>domain.xml</code> del dominio.</p>
+<p>L'installazione predefinita di GlassFish Server comprende due provider JACC, denominati <code>default</code> e <code>simple</code>. I nuovi provider JACC creati si aggiungono a questi due provider predefiniti. I provider JACC predefiniti di GlassFish Server implementano un motore di autorizzazione semplice, basato su file e conforme alla specifica JACC.</p>
+<p>Per informazioni sulle modalit&agrave; di scrittura delle classi di implementazione per un provider JACC, vedere la specifica JACC all'indirizzo <code><a href="http://jcp.org/en/jsr/detail?id=115">http://jcp.org/en/jsr/detail?id=115</a></code>.</p>
+<ol>
+<li>
+<p>Nel nodo Configurazioni dell'albero di navigazione espandere il cluster o l'istanza di GlassFish Server per cui si desidera creare un provider JACC.</p>
+<p>Per creare un provider disponibile per tutte le istanze e i cluster, scegliere il nodo <code>default-config</code>.</p>
+</li>
+<li>
+<p>Nel nodo di configurazione espanso dell'istanza o del cluster, espandere il nodo Sicurezza.</p>
+</li>
+<li>
+<p>Nel nodo Sicurezza selezionare il nodo Provider JACC.</p>
+<p>Viene visualizzata la pagina Provider JACC.</p>
+</li>
+<li>
+<p>Nella pagina Provider JACC fare clic su Nuovo.</p>
+<p>Viene visualizzata la pagina Nuovo provider JACC.</p>
+</li>
+<li>
+<p>Nel campo Nome della pagina Nuovo provider JACC digitare il nome che identificher&agrave; il provider.</p>
+<p>Questo nome viene utilizzato per fare riferimento all'elemento <code>jacc-provider</code> nel file <code>domain.xml</code>.</p>
+</li>
+<li>
+<p>Nel campo Configurazione criteri digitare il nome della classe che implementa il factory di configurazione dei criteri.</p>
+<p>Il provider <code>default</code> utilizza <code>com.sun.enterprise.security.provider.PolicyConfigurationFactoryImpl</code>. Il provider <code>simple</code> utilizza <code>com.sun.enterprise.security.jacc.provider.SimplePolicyConfigurationFactory</code>.</p>
+</li>
+<li>
+<p>Nel campo Provider criteri digitare il nome della classe che implementa il policy factory.</p>
+<p>Il provider <code>default</code> utilizza <code>com.sun.enterprise.security.provider.PolicyWrapper</code>. Il provider <code>simple</code> utilizza <code>com.sun.enterprise.security.jacc.provider.SimplePolicyProvider</code>.</p>
+</li>
+<li>
+<p>Nella sezione Propriet&agrave; aggiuntive, specificare le propriet&agrave; aggiuntive.</p>
+<p>Per aggiungere una propriet&agrave;, fare clic sul pulsante Aggiungi propriet&agrave;. Nella riga vuota visualizzata, digitare il nome della propriet&agrave; nel campo Nome e il valore della propriet&agrave; nel campo Valore.</p>
+<p>Per la descrizione delle propriet&agrave; aggiuntive disponibili per i provider JACC, vedere <a href="ref-jaccproviderprop.html">Propriet&agrave; specifiche dei provider JACC</a>.</p>
+</li>
+<li>
+<p>Fare clic su OK.</p>
+</li>
+</ol>
+<a id="GHCOM304" name="GHCOM304"></a>
+<h5>Vedere anche</h5>
+<ul>
+<li>
+<p><a href="task-jaccprovideredit.html">Per modificare un provider JACC</a></p>
+</li>
+<li>
+<p><a href="task-jaccproviderdelete.html">Per eliminare un provider JACC</a></p>
+</li>
+</ul>
+
+
+  

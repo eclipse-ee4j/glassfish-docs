@@ -1,0 +1,66 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-predefinedconfigsysproperties" name="ref-predefinedconfigsysproperties"></a></p>
+
+<h4>Propri&eacute;t&eacute;s syst&egrave;me pr&eacute;d&eacute;finies</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>GlassFish Server d&eacute;finit les propri&eacute;t&eacute;s syst&egrave;me de configuration suivantes :</p>
+<dl>
+<dt><code>ASADMIN_LISTENER_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; indique le num&eacute;ro du port HTTP ou du port HTTPS via lesquels le serveur DAS se connecte &agrave; l'instance &agrave; g&eacute;rer. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>HTTP_LISTENER_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; sp&eacute;cifie le num&eacute;ro du port utilis&eacute; pour l'&eacute;coute des demandes HTTP. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>HTTP_SSL_LISTENER_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; sp&eacute;cifie le num&eacute;ro du port utilis&eacute; pour l'&eacute;coute des demandes HTTPS. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>IIOP_LISTENER_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; sp&eacute;cifie le num&eacute;ro du port utilis&eacute; pour les connexions IIOP. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>IIOP_SSL_LISTENER_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; sp&eacute;cifie le num&eacute;ro du port utilis&eacute; pour les connexions IIOP s&eacute;curis&eacute;es. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>IIOP_SSL_MUTUALAUTH_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; sp&eacute;cifie le num&eacute;ro du port utilis&eacute; pour les connexions IIOP s&eacute;curis&eacute;es avec authentification client. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>JAVA_DEBUGGER_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; indique le num&eacute;ro du port utilis&eacute; pour les connexions au d&eacute;bogueur JPDA (Java Platform Debugger Architecture) (<code><a href="http://java.sun.com/javase/technologies/core/toolsapis/jpda/">http://java.sun.com/javase/technologies/core/toolsapis/jpda/</a></code>). Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>JMS_PROVIDER_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; sp&eacute;cifie le num&eacute;ro de port pour le fournisseur Java Message Service. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>JMX_SYSTEM_CONNECTOR_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; sp&eacute;cifie le num&eacute;ro du port d'&eacute;coute du connecteur JMX. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+<dt><code>OSGI_SHELL_TELNET_PORT</code></dt>
+<dd>
+<p>Cette propri&eacute;t&eacute; indique le num&eacute;ro du port utilis&eacute; pour les connexions au shell distant Apache Felix (<code><a href="http://felix.apache.org/site/apache-felix-remote-shell.html">http://felix.apache.org/site/apache-felix-remote-shell.html</a></code>). Ce shell utilise le service shell Felix pour interagir avec le sous-syst&egrave;me de gestion du module OSGi. Les valeurs valides sont comprises entre 1 et 65535. Sous UNIX, la cr&eacute;ation de sockets qui &eacute;coutent sur les ports 1 &agrave; 1024 exige des privil&egrave;ges de superutilisateur.</p>
+</dd>
+</dl>
+
+
+
+
+  

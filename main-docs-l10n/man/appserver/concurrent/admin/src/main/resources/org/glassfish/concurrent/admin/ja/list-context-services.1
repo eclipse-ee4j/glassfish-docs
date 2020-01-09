@@ -1,0 +1,57 @@
+list-context-services(asadminユーティリティのサブコマン
+
+名前
+       list-context-services - コンテキスト・サービス・リソースをリストします
+
+概要
+           list-context-services [--help]
+           [target]
+
+説明
+       list-context-servicesサブコマンドは、コンテキスト・サービス・リソースをリストします。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+オペランド
+       target
+           コンテキスト・サービス・リソースをリストするターゲットを指定します。有効なターゲットは次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンス上のリソースをリストします。これがデフォルト値です。
+
+           domain
+               ドメインのリソースをリストします。
+
+           cluster-name
+               指定したクラスタにあるすべてのサーバー・インスタンスのリソースをリストします。
+
+           instance-name
+               指定したサーバー・インスタンスのリソースをリストします。
+
+例
+       例 1, コンテキスト・サービス・リソースのリスト
+           この例では、デフォルトのサーバー・インスタンスのコンテキスト・サービス・リソースをリストします。
+
+               asadmin> list-context-services
+               concurrent/__defaultContextService
+               concurrent/myContextService1
+               concurrent/myContextService2
+               Command list-context-services executed successfully.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       create-context-service(1), delete-context-service(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月9日         list-context-services(1)

@@ -1,0 +1,103 @@
+create-managed-thread-faComandi)secondari dellcreate-managed-thread-factory(1)
+
+NOME
+       create-managed-thread-factory - crea una risorsa thread factory gestito
+
+SINTASSI
+           create-managed-thread-factory [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+DESCRIZIONE
+       Il comando secondario create-managed-thread-factory crea una risorsa
+       thread factory gestito.
+
+       Questo comando secondario è supportato solo in modalità remota.
+
+OPZIONI
+       --help, -?
+           Visualizza il testo della Guida per il comando secondario.
+
+       --enabled
+           Determina se il factory thread gestito è abilitato in fase di
+           esecuzione. Il valore predefinito è true.
+
+       --contextinfoenabled
+           Determina se i contesti del contenitore vengono propagati ai
+           thread. Se l'impostazione è true, i contesti specificati
+           nell'opzione --contextinfo vengono propagati. Se l'impostazione è
+           false, nessun contesto viene propagato e l'opzione --contextinfo
+           viene ignorata. Il valore predefinito è true.
+
+       --contextinfo
+           Specifica i singoli contesti del contenitore da propagare ai
+           thread. Valori validi sono Classloader, JNDI, Security e WorkArea.
+           I valori sono specificati in una lista separata da virgole e fanno
+           distinzione tra maiuscole e minuscole. Per impostazione
+           predefinita, vengono propagati tutti i contesti.
+
+       --threadpriority
+           Specifica la priorità da assegnare ai thread creati. Il valore
+           predefinito è 5.
+
+       --description
+           Dettagli descrittivi sulla risorsa.
+
+       --property
+           Coppie nome-valore di attributo facoltative per la configurazione
+           della risorsa.
+
+           GlassFish Server non definisce alcuna proprietà aggiuntiva per
+           questa risorsa. Inoltre, questa risorsa non utilizza attualmente
+           alcuna proprietà aggiuntiva.
+
+       --target
+           Specifica la destinazione per la quale viene creata la risorsa. Le
+           destinazioni valide sono:
+
+           server
+               Crea la risorsa per l'istanza server predefinita. Questo è il
+               valore predefinito.
+
+           domain
+               Crea la risorsa per il dominio.
+
+           cluster_name
+               Crea la risorsa per ogni istanza server nel cluster
+               specificato.
+
+           instance_name
+               Crea la risorsa per l'istanza server specificata.
+
+OPERANDI
+       jndi_name
+           Il nome JNDI della risorsa.
+
+ESEMPI
+       Esempio 1, Creazione di una risorsa thread factory gestito
+           In questo esempio viene creata una risorsa di factory thread
+           gestito denominata concurrent/myThreadFactory.
+
+               asadmin> create-managed-thread-factory concurrent/myThreadFactory
+               Managed thread factory concurrent/myThreadFactory created successfully.
+               Command create-managed-thread-factory executed successfully.
+
+STATO DI USCITA
+       0
+           esecuzione del comando secondario riuscita
+
+       1
+           errore durante l'esecuzione del comando secondario
+
+VEDERE ANCHE
+       delete-managed-thread-factory(1), list-managed-thread-factories(1)
+
+       asadmin(1M)
+
+Java EE 7                       9 febbraio 201create-managed-thread-factory(1)

@@ -1,0 +1,80 @@
+get-active-module-configSous-commandes de l'utilitaget-active-module-config(1)
+
+NOM
+       get-active-module-config - affiche la configuration active en cours
+       d'un service ou d'une instance
+
+SYNTAXE
+           get-active-module-config [--help]
+           [--target target]
+           [--all={false|true}]
+           [service_name]
+
+DESCRIPTION
+       La sous-commande get-active-module-config affiche la configuration
+       active en cours d'un service ou d'une instance.
+
+       Cette sous-commande est prise en charge en mode distant uniquement.
+
+OPTIONS
+       --help, -?
+           Cette option affiche le texte d'aide de la sous-commande.
+
+       --target
+           Cette option indique la cible pour laquelle vous souhaitez afficher
+           la configuration active en cours d'un service spécifique ou de
+           l'intégralité de l'instance.
+
+           Les valeurs possibles sont les suivantes :
+
+           server
+               Affiche la configuration active en cours pour l'instance de
+               serveur par défaut. Il s'agit de la valeur par défaut.
+
+           domain
+               Affiche la configuration active en cours pour le domaine par
+               défaut.
+
+           cluster-name
+               Affiche la configuration active en cours pour le cluster
+               spécifié.
+
+           instance-name
+               Affiche la configuration active en cours pour l'instance
+               spécifiée.
+
+       --all
+           Affiche toutes les configurations actives en cours.
+
+           La valeur par défaut est false.
+
+OPÉRANDES
+       service_name
+           Nom du module pour lequel vous souhaitez afficher la configuration
+           active en cours.
+
+EXEMPLES
+       Exemple 1, Affichage de la configuration active en cours
+           Dans cet exemple, la configuration active en cours du service JMS
+           dans server-config (configuration par défaut) est affichée.
+
+               asadmin> get-active-module-config jms-service
+               At location: domain/configs/config[server-config]
+               <jms-service default-jms-host="default_JMS_host" type="EMBEDDED"
+                 <jms-host port="7676" host="localhost" name="default_JMS_host"/>
+               </jms-service>
+               Command get-active-module-config executed successfully.
+
+STATUT DE SORTIE
+       0
+           sous-commande correctement exécutée
+
+       1
+           erreur lors de l'exécution de la sous-commande
+
+VOIR AUSSI
+       create-module-config(1), delete-module-config(1)
+
+       asadmin(1M)
+
+Java EE 7                         6 fév 2013       get-active-module-config(1)

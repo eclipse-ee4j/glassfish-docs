@@ -1,0 +1,65 @@
+delete-context-service(1Comandi secondari della utilidelete-context-service(1)
+
+NOME
+       delete-context-service - rimuove la risorsa di servizio contesto con il
+       nome JNDI specificato
+
+SINTASSI
+           delete-context-service [--help]
+           [--target target]
+           context_service_name
+
+DESCRIZIONE
+       Il comando secondario delete-context-service rimuove la risorsa di
+       servizio contesto con il nome JNDI specificato.
+
+       Questo comando secondario è supportato solo in modalità remota.
+
+OPZIONI
+       --help, -?
+           Visualizza il testo della Guida per il comando secondario.
+
+       --target
+           Specifica la destinazione dalla quale viene eliminata la risorsa.
+           Le destinazioni valide sono:
+
+           server
+               Elimina la risorsa dall'istanza server predefinita. Questo è il
+               valore predefinito.
+
+           domain
+               Elimina la risorsa dal dominio.
+
+           cluster_name
+               Elimina la risorsa da tutte le istanze server del cluster
+               specificato.
+
+           instance_name
+               Elimina la risorsa JMS dall'istanza server specificata.
+
+OPERANDI
+       context_service_name
+           Il nome JNDI della risorsa da eliminare.
+
+ESEMPI
+       Esempio 1, Eliminazione di una risorsa servizio contesto
+           In questo esempio viene eliminata la risorsa di servizio contesto
+           denominata concurrent/myContextService.
+
+               asadmin> delete-context-service concurrent/myContextService
+               Context service concurrent/myContextService deleted successfully.
+               Command delete-context-service executed successfully.
+
+STATO DI USCITA
+       0
+           esecuzione del comando riuscita
+
+       1
+           errore durante l'esecuzione del comando
+
+VEDERE ANCHE
+       create-context-service(1), list-context-services(1)
+
+       asadmin(1M)
+
+Java EE 7                       9 febbraio 2013      delete-context-service(1)

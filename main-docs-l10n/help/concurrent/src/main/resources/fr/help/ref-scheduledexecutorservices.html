@@ -1,0 +1,101 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-scheduledexecutorservices" name="ref-scheduledexecutorservices"></a></p>
+
+<h4>Services ex&eacute;cuteurs planifi&eacute;s g&eacute;r&eacute;s<a id="sthref28" name="sthref28"></a><a id="sthref29" name="sthref29"></a></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Les services ex&eacute;cuteurs planifi&eacute;s g&eacute;r&eacute;s sont utilis&eacute;s par les applications pour ex&eacute;cuter les t&acirc;ches soumises de fa&ccedil;on asynchrone &agrave; des moments donn&eacute;s. Les t&acirc;ches sont ex&eacute;cut&eacute;es sur les threads d&eacute;marr&eacute;s et g&eacute;r&eacute;s par le conteneur. Le contexte du conteneur est propag&eacute; vers le thread ex&eacute;cutant la t&acirc;che.</p>
+<p>Utilisez la page Services ex&eacute;cuteurs planifi&eacute;s g&eacute;r&eacute;s pour configurer les ressources de service ex&eacute;cuteur planifi&eacute; g&eacute;r&eacute;.</p>
+<p>Pour chaque ressource de service ex&eacute;cuteur planifi&eacute; g&eacute;r&eacute;, les informations suivantes sont fournies.</p>
+<dl>
+<dt>Nom JNDI</dt>
+<dd>
+<p>Nom unique identifiant la ressource.</p>
+</dd>
+<dt>Nom JNDI logique</dt>
+<dd>
+<p>Nom JNDI logique pour la ressource. Pour plus d'informations, reportez-vous &agrave; <a href="../../../common/en/help/ref-logicaljndinames.html">Noms JNDI logiques</a>.</p>
+</dd>
+<dt>Activ&eacute;</dt>
+<dd>
+<p>(Cette colonne est affich&eacute;e si seule l'instance de serveur par d&eacute;faut <code>server</code> existe dans le domaine.)</p>
+<p>Coche si la ressource est activ&eacute;e ou X si la ressource est d&eacute;sactiv&eacute;e.</p>
+</dd>
+<dt>Statut</dt>
+<dd>
+<p>(Cette colonne appara&icirc;t si des clusters ou des instances autonomes ont &eacute;t&eacute; cr&eacute;&eacute;s dans le domaine.)</p>
+<p>Nombre de clusters et d'instances autonomes sur lesquels la ressource est cibl&eacute;e et nombre de cibles sur lesquelles la ressource est activ&eacute;e. Par exemple, Activ&eacute; sur 2 cibles sur 4 signifie que la ressource est cibl&eacute;e sur quatre clusters et instances autonomes et activ&eacute;e sur deux de ces quatre cibles.</p>
+</dd>
+<dt>Informations de contexte</dt>
+<dd>
+<p>Contextes de conteneur propag&eacute;es vers les threads.</p>
+</dd>
+<dt>Priorit&eacute; des threads</dt>
+<dd>
+<p>Priorit&eacute; affect&eacute;e aux threads.</p>
+</dd>
+<dt>Description</dt>
+<dd>
+<p>Description de la ressource.</p>
+</dd>
+</dl>
+<p>La table Services ex&eacute;cuteurs planifi&eacute;s g&eacute;r&eacute;s contient &eacute;galement les options suivantes :</p>
+<dl>
+<dt>Nouveau</dt>
+<dd>
+<p>Bouton permettant de cr&eacute;er une ressource.</p>
+</dd>
+<dt>Supprimer</dt>
+<dd>
+<p>Bouton permettant de supprimer les ressources s&eacute;lectionn&eacute;es.</p>
+</dd>
+<dt>Activer</dt>
+<dd>
+<p>Bouton permettant d'activer les ressources s&eacute;lectionn&eacute;es.</p>
+</dd>
+<dt>D&eacute;sactiver</dt>
+<dd>
+<p>Bouton permettant de d&eacute;sactiver les ressources s&eacute;lectionn&eacute;es.</p>
+</dd>
+</dl>
+<a id="sthref30" name="sthref30"></a>
+<h5>T&acirc;ches connexes</h5>
+<ul>
+<li>
+<p><a href="task-managedscheduledexecutorservicecreate.html">Cr&eacute;ation d'un service ex&eacute;cuteur planifi&eacute; g&eacute;r&eacute;</a></p>
+</li>
+<li>
+<p><a href="task-managedscheduledexecutorserviceedit.html">Modification d'un service ex&eacute;cuteur planifi&eacute; g&eacute;r&eacute;</a></p>
+</li>
+<li>
+<p><a href="task-managedscheduledexecutorservicedelete.html">Suppression d'un service ex&eacute;cuteur planifi&eacute; g&eacute;r&eacute;</a></p>
+</li>
+</ul>
+<a id="GHCON147" name="GHCON147"></a>
+<h5>Commandes asadmin connexes</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM680"><code>create-managed-scheduled-executor-service</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM873"><code>list-managed-scheduled-executor-services</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM850"><code>delete-managed-scheduled-executor-service</code>(1)</a></p>
+</li>
+</ul>
+
+
+  

@@ -1,0 +1,86 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-contextserviceedit" name="ref-contextserviceedit"></a></p>
+
+<h4>Editar Servi&ccedil;o de Contexto<a id="sthref19" name="sthref19"></a></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Use a p&aacute;gina Editar Servi&ccedil;o de Contexto para editar um recurso de servi&ccedil;o de contexto.</p>
+<p>A p&aacute;gina Editar Servi&ccedil;o de Contexto cont&eacute;m as op&ccedil;&otilde;es a seguir.</p>
+<dl>
+<dt>Carregar Defaults</dt>
+<dd>
+<p>Bot&atilde;o para restaurar defini&ccedil;&otilde;es para seus valores default. Defini&ccedil;&otilde;es que n&atilde;o tiveram seus valores default alterados.</p>
+</dd>
+<dt>Nome JNDI</dt>
+<dd>
+<p>Um nome JNDI exclusivo que identifica o recurso. Por conven&ccedil;&atilde;o, o nome come&ccedil;a com um indicador de tipo de recurso e uma barra, tais como concurrent/, jdbc/ ou jms/. O nome JNDI &eacute; um campo somente para leitura. Voc&ecirc; pode especificar o nome JNDI ao criar um novo recurso</p>
+</dd>
+<dt>Nome L&oacute;gico JNDI</dt>
+<dd>
+<p>O nome l&oacute;gico JNDI para o recurso. Este &eacute; um nome padr&atilde;o do Java EE pelo qual o recurso pode ser acessado. O nome JNDI l&oacute;gico tamb&eacute;m &eacute; um campo somente para leitura. Consulte <a href="../../../common/en/help/ref-logicaljndinames.html">Nomes L&oacute;gicos JNDI</a> para obter mais informa&ccedil;&otilde;es.</p>
+</dd>
+<dt>Informa&ccedil;&otilde;es de Contexto</dt>
+<dd>
+<p>Os contextos a serem propagados para threads:, Classloader; JNDI, Seguran&ccedil;a ou WorkArea. A propaga&ccedil;&atilde;o de contexto pode ser ativada ou desativada. Se a op&ccedil;&atilde;o estiver ativada, os contextos selecionados ser&atilde;o propagados. Se esta op&ccedil;&atilde;o estiver desativada, nenhum dos contextos ser&aacute; propagado, mesmo que eles estejam selecionados. O valor default &eacute; Ativado, com todos os quatro contextos selecionados.</p>
+</dd>
+<dt>Ordem de Implanta&ccedil;&atilde;o</dt>
+<dd>
+<p>A ordem de implanta&ccedil;&atilde;o deste recurso. Recursos com n&uacute;meros menores s&atilde;o carregados primeiro na inicializa&ccedil;&atilde;o do servidor. O valor default &eacute; 100.</p>
+</dd>
+<dt>Descri&ccedil;&atilde;o</dt>
+<dd>
+<p>Uma descri&ccedil;&atilde;o deste recurso.</p>
+</dd>
+<dt>Status</dt>
+<dd>
+<p>Se o recurso est&aacute; dispon&iacute;vel no runtime.</p>
+<p>Se apenas a inst&acirc;ncia do servidor default, <code>server</code>, existir no dom&iacute;nio, a disponibilidade de runtime do recurso poder&aacute; ser ativada ou desativada. A disponibilidade de runtime est&aacute; ativada por default.</p>
+<p>Se clusters ou inst&acirc;ncias standalone tiverem sido criados no dom&iacute;nio, utilize a guia Alvo para controlar a disponibilidade de runtime do recurso em seus alvos.</p>
+</dd>
+<dt>Propriedades Adicionais</dt>
+<dd>
+<p>Propriedades adicionais do recurso. O GlassFish Server n&atilde;o define propriedades adicionais para este tipo de recurso. Al&eacute;m disso, este tipo de recurso n&atilde;o usa atualmente propriedades adicionais.</p>
+</dd>
+</dl>
+<a id="sthref20" name="sthref20"></a>
+<h5>Tarefas Relacionadas</h5>
+<ul>
+<li>
+<p><a href="task-contextservicecreate.html">Para Criar um Servi&ccedil;o de Contexto</a></p>
+</li>
+<li>
+<p><a href="task-contextserviceedit.html">Para Editar um Servi&ccedil;o de Contexto</a></p>
+</li>
+<li>
+<p><a href="task-contextservicedelete.html">Para Deletar um Servi&ccedil;o de Contexto</a></p>
+</li>
+</ul>
+<a id="GHCON137" name="GHCON137"></a>
+<h5>Comandos asadmin Relacionados</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM838"><code>create-context-service</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM865"><code>list-context-services</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM846"><code>delete-context-service</code>(1)</a></p>
+</li>
+</ul>
+
+
+
+  

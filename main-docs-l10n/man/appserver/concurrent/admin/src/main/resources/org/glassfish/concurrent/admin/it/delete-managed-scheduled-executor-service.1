@@ -1,0 +1,68 @@
+delete-managed-scheduledComandiosedelete-managed-scheduled-executor-service(1)
+
+NOME
+       delete-managed-scheduled-executor-service - rimuove la risorsa di
+       servizio di esecutore pianificato gestito con il nome JNDI specificato
+
+SINTASSI
+           delete-managed-scheduled-executor-service [--help]
+           [--target target]
+           managed_scheduled_executor_service_name
+
+DESCRIZIONE
+       Il comando secondario delete-managed-scheduled-executor-service rimuove
+       la risorsa di servizio di esecutore pianificato gestito con il nome
+       JNDI specificato.
+
+       Questo comando secondario è supportato solo in modalità remota.
+
+OPZIONI
+       --help, -?
+           Visualizza il testo della Guida per il comando secondario.
+
+       --target
+           Specifica la destinazione dalla quale viene eliminata la risorsa.
+           Le destinazioni valide sono:
+
+           server
+               Elimina la risorsa dall'istanza server predefinita. Questo è il
+               valore predefinito.
+
+           domain
+               Elimina la risorsa dal dominio.
+
+           cluster_name
+               Elimina la risorsa da tutte le istanze server del cluster
+               specificato.
+
+           instance_name
+               Elimina la risorsa JMS dall'istanza server specificata.
+
+OPERANDI
+       managed_scheduled_executor_service_name
+           Il nome JNDI della risorsa da eliminare.
+
+ESEMPI
+       Esempio 1, Eliminazione di una risorsa di servizio esecutore
+       pianificato gestito
+           In questo esempio viene eliminata la risorsa di servizio esecutore
+           pianificato gestito denominata concurrent/myScheduledExecutor.
+
+               asadmin> delete-managed-scheduled-executor-service concurrent/myScheduledExecutor
+               Managed scheduled executor service concurrent/myScheduledExecutor deleted successfully.
+               Command delete-managed-scheduled-executor-service executed successfully.
+
+STATO DI USCITA
+       0
+           esecuzione del comando riuscita
+
+       1
+           errore durante l'esecuzione del comando
+
+VEDERE ANCHE
+       create-managed-scheduled-executor-service(1),
+       list-managed-scheduled-executor-services(1)
+
+       asadmin(1M)
+
+Java EE 7                       9 delete-managed-scheduled-executor-service(1)

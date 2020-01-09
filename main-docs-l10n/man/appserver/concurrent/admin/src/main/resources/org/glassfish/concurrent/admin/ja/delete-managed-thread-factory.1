@@ -1,0 +1,60 @@
+delete-managed-thread-asadminユ
+
+名前
+       delete-managed-thread-factory -
+       指定したJNDI名の管理対象スレッド・ファクトリ・リソースを除去します
+
+概要
+           delete-managed-thread-factory [--help]
+           [--target target]
+           managed_thread_factory_name
+
+説明
+       delete-managed-thread-factoryサブコマンドは、指定したJNDI名の管理対象スレッド・ファクトリ・リソースを除去します。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+       --target
+           リソースを削除するターゲットを指定します。有効なターゲットは次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンスからリソースを削除します。これがデフォルト値です。
+
+           domain
+               ドメインからリソースを削除します。
+
+           cluster_name
+               指定したクラスタ内のすべてのサーバー・インスタンスからリソースを削除します。
+
+           instance_name
+               指定したサーバー・インスタンスからリソースを削除します。
+
+オペランド
+       managed_thread_factory_name
+           削除されるリソースのJNDI名。
+
+例
+       例 1, 管理対象スレッド・ファクトリ・リソースの削除
+           この例では、concurrent/myThreadFactoryという管理対象スレッド・ファクトリ・リソースを削除します。
+
+               asadmin> delete-managed-thread-factory concurrent/myThreadFactory
+               Managed thread factory concurrent/myThreadFactory deleted successfully.
+               Command delete-managed-thread-factory executed successfully.
+
+終了ステータス
+       0
+           コマンドは正常に実行されました
+
+       1
+           コマンドの実行時にエラーが発生しました
+
+関連項目
+       create-managed-thread-factory(1), list-managed-thread-factories(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月9日 delete-managed-thread-factory(1)

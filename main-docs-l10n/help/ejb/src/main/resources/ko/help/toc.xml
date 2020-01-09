@@ -1,0 +1,35 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<toc version="2.0">
+  <tocitem target="tasks-topic-group" text="GlassFish Server &#44288;&#47532; &#53080;&#49556; &#51089;&#50629;" expand="false">
+    <tocitem target="task-group-configejbcontainer" text="EJB &#52968;&#53580;&#51060;&#45320; &#44396;&#49457;" expand="false">
+      <tocitem target="task-ejbmdbpoolsettings" text="MDB &#54400; &#49444;&#51221;&#51012; &#44396;&#49457;&#54616;&#45716; &#48169;&#48277;" expand="false"></tocitem>
+      <tocitem target="task-ejbtimerservice" text="EJB &#53440;&#51060;&#47672; &#49436;&#48708;&#49828; &#44396;&#49457;" expand="false"></tocitem>
+      <tocitem target="task-ejbcontaineravailability" text="EJB &#52968;&#53580;&#51060;&#45320; &#44032;&#50857;&#49457; &#49444;&#51221;&#51012; &#44396;&#49457;&#54616;&#45716; &#48169;&#48277;" expand="false"></tocitem>
+    </tocitem>
+  </tocitem>
+  <tocitem target="ref-topic-group" text="GlassFish Server &#44288;&#47532; &#53080;&#49556; &#52280;&#51312;&#49436;" expand="false">
+    <tocitem target="ref-group-configuration" text="&#44396;&#49457;" expand="false">
+      <tocitem target="ref-group-availabilityservice" text="&#44032;&#50857;&#49457; &#49436;&#48708;&#49828;" expand="false">
+        <tocitem target="ref-ejbcontaineravailability" text="EJB &#52968;&#53580;&#51060;&#45320; &#44032;&#50857;&#49457;" expand="false"></tocitem>
+      </tocitem>
+      <tocitem target="ref-group-ejbcontainer" text="EJB &#52968;&#53580;&#51060;&#45320;" expand="false">
+        <tocitem target="ref-ejbmdbpoolsettings" text="MDB &#44592;&#48376; &#54400; &#49444;&#51221;" expand="false"></tocitem>
+        <tocitem target="ref-ejbtimerservice" text="EJB &#53440;&#51060;&#47672; &#49436;&#48708;&#49828;" expand="false"></tocitem>
+      </tocitem>
+    </tocitem>
+  </tocitem>
+</toc>

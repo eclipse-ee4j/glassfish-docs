@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>net.java</groupId>
+        <artifactId>jvnet-parent</artifactId>
+        <version>4</version>
+    </parent>
+
+    <groupId>org.glassfish.docs</groupId>
+    <artifactId>main-docs</artifactId>
+    <version>4.2-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Main Docs</name>
+
+    <organization>
+        <name>Oracle Corporation</name>
+        <url>http://www.oracle.com</url>
+    </organization>
+    <modules>
+    	<module>basedocs</module>
+     	<module>man</module>
+      	<module>help</module>
+    </modules>
+
+    <properties>
+	<hk2.plugin.version>0.3.89</hk2.plugin.version>
+	<docs-assembly.version>1.0</docs-assembly.version>
+    </properties>
+
+    <build>
+	<defaultGoal>install</defaultGoal>
+	<sourceDirectory>src/main/java</sourceDirectory>
+	<finalName>${project.artifactId}</finalName>
+
+        <extensions>
+            <extension>
+              <!--
+                    enforce new version of the wagon
+                    see https://jira.codehaus.org/browse/WAGON-383 
+                -->
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-http</artifactId>
+                <version>2.6</version>
+            </extension>
+        </extensions>
+
+	<pluginManagement>
+	    <plugins>
+		<plugin>
+		    <groupId>com.sun.enterprise</groupId>
+		    <artifactId>hk2-maven-plugin</artifactId>
+		    <version>${hk2.plugin.version}</version>
+		</plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>1.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>2.9.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>2.1</version>
+                </plugin>
+	        <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-enforcer-plugin</artifactId>
+		    <version>1.0-beta-1</version>
+	    	</plugin>
+	    </plugins>
+	</pluginManagement>
+
+	<plugins>
+	    <plugin>
+		<groupId>com.sun.enterprise</groupId>
+		<artifactId>hk2-maven-plugin</artifactId>
+		<extensions>true</extensions>
+		<configuration>
+		    <archive>
+			<!-- Use the manifest.mf produced by maven-bundle-plugin:manifest -->
+			<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+		    </archive>
+		</configuration>
+	    </plugin>
+
+	  <!-- Configure maven-bundle-plugin to generate OSGi manifest.
+		 Please note: we use the manifest goal only and not the bundle goal.
+		 The bundle goal can lead to very surprising results if the
+		 package names are not correctly specified. So,
+		 we use the jar plugin to generate the jar.-->
+	    <plugin>
+		<groupId>org.apache.felix</groupId>
+		<artifactId>maven-bundle-plugin</artifactId>
+		<version>2.3.4</version>
+		<configuration>
+		  <!-- By default, we don't export anything.  -->
+		    <Export-Package />
+
+		  <!--
+			Since, we are in a top level pom and
+			we we don't want it to be active for plain jar type artifacts,
+			enable the plugin for hk2-jar and bundle packaging type only,
+		    -->
+		    <supportedProjectTypes>
+			<supportedProjectType>hk2-jar</supportedProjectType>
+			<supportedProjectType>bundle</supportedProjectType>
+		    </supportedProjectTypes>
+		    <instructions>
+			<!--
+			    Read all the configuration from osgi.bundle file, if it exists.
+			    See Felix-699 to find out why we use ${basedir}.
+			-->
+			<_include>-${basedir}/osgi.bundle</_include>
+		    </instructions>
+		</configuration>
+		<executions>
+		    <execution>
+			<id>bundle-manifest</id>
+			<phase>process-classes</phase>
+			<goals>
+			    <goal>manifest</goal>
+			</goals>
+		    </execution>
+		</executions>
+	    </plugin>
+	</plugins>
+    </build>
+</project>

@@ -1,0 +1,68 @@
+delete-module-config(1) Comandi secondari della utilit delete-module-config(1)
+
+NOME
+       delete-module-config - rimuove la configurazione di un modulo da
+       domain.xml
+
+SINTASSI
+           delete-module-config [--help]
+           [--target target]
+           service_name
+
+DESCRIZIONE
+       Il comando secondario delete-module-config rimuove la configurazione di
+       un modulo dal file domain.xml e induce il modulo a utilizzare la
+       configurazione predefinita inclusa nel modulo.
+
+       Questo comando secondario è supportato solo in modalità remota.
+
+OPZIONI
+       --help, -?
+           Visualizza il testo della Guida per il comando secondario.
+
+       --target
+           Specifica la destinazione da cui la configurazione predefinita deve
+           essere eliminata.
+
+           Di seguito sono riportati i valori possibili.
+
+           server
+               Elimina la configurazione dall'istanza server predefinita.
+               Questo è il valore predefinito.
+
+           domain
+               Elimina la configurazione dal dominio predefinito.
+
+           cluster-name
+               Elimina la configurazione dal cluster specificato.
+
+           instance-name
+               Elimina la configurazione dall'stanza specificata.
+
+OPERANDI
+       service_name
+           Il nome del modulo per cui la configurazione deve essere rimossa.
+
+ESEMPI
+       Esempio 1, Eliminazione di una configurazione predefinita dal file
+       domain.xml
+           In questo esempio, la configurazione del modulo contenitore Web
+           viene eliminata da domain1 in server-config (la configurazione
+           predefinita).
+
+               asadmin> delete-module-config web-container
+               Command delete-module-config executed successfully.
+
+STATO DI USCITA
+       0
+           esecuzione del comando secondario riuscita
+
+       1
+           errore durante l'esecuzione del comando secondario
+
+VEDERE ANCHE
+       create-module-config(1), get-active-module-config(1)
+
+       asadmin(1M)
+
+Java EE 7                       6 febbraio 2013        delete-module-config(1)

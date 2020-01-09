@@ -1,0 +1,61 @@
+delete-module-config(1asadminユーティリティのサブコマンdelete-module-config(1)
+
+名前
+       delete-module-config - domain.xmlからモジュールの構成を除去します
+
+概要
+           delete-module-config [--help]
+           [--target target]
+           service_name
+
+説明
+       delete-module-configサブコマンドはdomain.xmlからモジュールの構成を除去して、モジュール内に含まれるデフォルト構成が使用されるようにします。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+       --target
+           構成が削除されるターゲットを指定します。
+
+           使用可能な値は次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンスから構成を削除します。これがデフォルト値です。
+
+           domain
+               デフォルトのドメインから構成を削除します。
+
+           cluster-name
+               指定したクラスタから構成を削除します。
+
+           instance-name
+               指定したインスタンスから構成を削除します。
+
+オペランド
+       service_name
+           構成を除去するモジュール名。
+
+例
+       例 1, domain.xmlからのデフォルト構成の削除
+           この例では、Webコンテナ・モジュールの構成を、server-config
+           (デフォルト構成)のdomain1から削除します。
+
+               asadmin> delete-module-config web-container
+               Command delete-module-config executed successfully.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       create-module-config(1), get-active-module-config(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月6日          delete-module-config(1)

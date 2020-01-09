@@ -1,0 +1,66 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-domainattributestab" name="ref-domainattributestab"></a></p>
+
+<h4><a id="sthref124" name="sthref124"></a>Attributi dominio</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Utilizzare la pagina Attributi dominio per impostare attributi di dominio avanzati per GlassFish Server.</p>
+<p>La pagina Attributi dominio contiene le opzioni riportate di seguito.</p>
+<dl>
+<dt>Carica console dopo avvio DAS</dt>
+<dd>
+<p>Determina quando caricare Console di amministrazione in base alle opzioni riportate di seguito.</p>
+<dl>
+<dt>Basato sull'uso</dt>
+<dd>
+<p>Carica Console di amministrazione dopo il server di amministrazione del dominio (DAS) se la console &egrave; stata utilizzata nelle ultime 24 ore o se esistono altre istanze server oltre al server DAS. Questa &egrave; l'impostazione predefinita.</p>
+</dd>
+<dt>Sempre</dt>
+<dd>
+<p>Carica sempre Console di amministrazione dopo il server DAS. La console viene caricata al termine della sequenza di avvio principale di GlassFish Server.</p>
+</dd>
+<dt>Mai</dt>
+<dd>
+<p>Non carica mai Console di amministrazione dopo il server DAS. La console viene caricata quando viene richiesto di accedervi.</p>
+</dd>
+</dl>
+</dd>
+<dt>Radice applicazioni</dt>
+<dd>
+<p>Il percorso completo della directory in cui risiedono le applicazioni distribuite. Il valore predefinito &egrave; domain-dir<code>/applications</code>.</p>
+</dd>
+<dt>Radice log</dt>
+<dd>
+<p>Indica la posizione di memorizzazione dei file di log del server. Il valore predefinito &egrave; domain-dir<code>/logs</code>.</p>
+</dd>
+<dt>Impostazioni nazionali</dt>
+<dd>
+<p>Se questo campo viene lasciato vuoto, vengono utilizzate le impostazioni nazionali predefinite dell'host.</p>
+<p>Per impostazioni nazionali si intende un identificativo che specifica una determinata combinazione di lingua e regione. Ad esempio, le impostazioni nazionali per l'Inglese americano sono <code>en_US</code>, mentre per l'Italiano sono <code>it_IT</code>. Per utilizzare impostazioni nazionali non in lingua Inglese, &egrave; necessario che sia stata eseguita la localizzazione di GlassFish Server, un processo che prevede la traduzione dall'Inglese a un'altra lingua.</p>
+</dd>
+</dl>
+<a id="GHCOM338" name="GHCOM338"></a>
+<h5>Task correlati</h5>
+<ul>
+<li>
+<p><a href="task-setadvanceappconfig.html">Per impostare la configurazione delle applicazioni</a></p>
+</li>
+<li>
+<p><a href="task-setadvancedomainattributes.html">Per impostare gli attributi del dominio</a></p>
+</li>
+</ul>
+
+
+  

@@ -1,0 +1,98 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-messagesecurityconfignew" name="ref-messagesecurityconfignew"></a></p>
+
+<h4><a id="sthref228" name="sthref228"></a>Nouvelle configuration de la s&eacute;curit&eacute; des messages</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La page Nouvelle configuration de la s&eacute;curit&eacute; des messages permet de cr&eacute;er une configuration HttpServlet pour la s&eacute;curit&eacute; des messages.</p>
+<p>Elle contient les options ci-apr&egrave;s.</p>
+<dl>
+<dt>Nom de configuration</dt>
+<dd>
+<p>Nom de la configuration &agrave; laquelle s'appliquent les param&egrave;tres de cette page. Ce champ est en lecture seule.</p>
+</dd>
+<dt>Couche d'authentification</dt>
+<dd>
+<p>Sp&eacute;cifie la couche Messages au niveau de laquelle l'authentification est effectu&eacute;e. La valeur doit &ecirc;tre <code>SOAP</code> ou <code>HttpServlet</code>. Comme une configuration SOAP est disponible par d&eacute;faut, le seul choix est <code>HttpServlet</code>.</p>
+</dd>
+<dt>ID fournisseur</dt>
+<dd>
+<p>Identificateur unique de la configuration du fournisseur pour cette configuration de s&eacute;curit&eacute; des messages.</p>
+</dd>
+<dt>Fournisseur par d&eacute;faut</dt>
+<dd>
+<p>Si cette option est s&eacute;lectionn&eacute;e, ce fournisseur est le fournisseur par d&eacute;faut. Le fournisseur par d&eacute;faut est appel&eacute; lorsque l'application n'identifie aucun fournisseur sp&eacute;cifique. Le type de fournisseur d&eacute;termine si le fournisseur est le fournisseur c&ocirc;t&eacute; client par d&eacute;faut, le fournisseur c&ocirc;t&eacute; serveur par d&eacute;faut, ou les deux.</p>
+</dd>
+<dt>Type de fournisseur</dt>
+<dd>
+<p>Sp&eacute;cifie le type du fournisseur. Les choix disponibles sont les suivants :</p>
+<dl>
+<dt><code>client</code></dt>
+<dd>
+<p>Sp&eacute;cifie que le fournisseur est le fournisseur d'authentification c&ocirc;t&eacute; client.</p>
+</dd>
+<dt><code>server</code></dt>
+<dd>
+<p>Sp&eacute;cifie que le fournisseur est le fournisseur d'authentification c&ocirc;t&eacute; serveur.</p>
+</dd>
+<dt><code>client-server</code></dt>
+<dd>
+<p>Sp&eacute;cifie que le fournisseur est &agrave; la fois le fournisseur d'authentification c&ocirc;t&eacute; client et c&ocirc;t&eacute; serveur.</p>
+</dd>
+</dl>
+</dd>
+<dt>Nom de classe</dt>
+<dd>
+<p>Nom de la classe d'impl&eacute;mentation Java du fournisseur. Les fournisseurs d'authentification c&ocirc;t&eacute; client doivent impl&eacute;menter l'interface <code>com.sun.enterprise.security.jauth.ClientAuthModule</code>. Les fournisseurs c&ocirc;t&eacute; serveur doivent impl&eacute;menter l'interface <code>com.sun.enterprise.security.jauth.ServerAuthModule</code>. Les fournisseurs c&ocirc;t&eacute; client doivent impl&eacute;menter les deux interfaces.</p>
+</dd>
+<dt>Autres propri&eacute;t&eacute;s</dt>
+<dd>
+<p>Propri&eacute;t&eacute;s suppl&eacute;mentaires pour la configuration de s&eacute;curit&eacute; des messages.</p>
+</dd>
+</dl>
+<a id="GHCOM459" name="GHCOM459"></a>
+<h5>T&acirc;ches connexes</h5>
+<ul>
+<li>
+<p><a href="task-configmsgsecproviders.html">Configuration des utilitaires GlassFish Server que les fournisseurs de s&eacute;curit&eacute; des messages doivent utiliser</a></p>
+</li>
+<li>
+<p><a href="task-messagesecurityconfignew.html">Cr&eacute;ation d'une configuration de s&eacute;curit&eacute; des messages</a></p>
+</li>
+<li>
+<p><a href="task-messagesecurityconfigedit.html">Modification d'une configuration de s&eacute;curit&eacute; des messages</a></p>
+</li>
+<li>
+<p><a href="task-messagesecurityconfigdelete.html">Suppression d'une configuration de s&eacute;curit&eacute; des messages</a></p>
+</li>
+<li>
+<p><a href="task-messagesecurityproviderconfignew.html">Cr&eacute;ation d'une configuration de fournisseur de s&eacute;curit&eacute; des messages</a></p>
+</li>
+<li>
+<p><a href="task-messagesecurityproviderconfigedit.html">Modification d'une configuration de fournisseur de s&eacute;curit&eacute; des messages</a></p>
+</li>
+<li>
+<p><a href="task-messagesecurityproviderconfigdelete.html">Suppression d'une configuration de fournisseur de s&eacute;curit&eacute; des messages</a></p>
+</li>
+<li>
+<p><a href="task-enablemesec4appclients.html">Activation de la s&eacute;curit&eacute; des messages pour les clients d'application</a></p>
+</li>
+</ul>
+<a id="GHCOM460" name="GHCOM460"></a>
+<h5>Commandes asadmin connexes</h5>
+<p>Aucune.</p>
+
+
+  

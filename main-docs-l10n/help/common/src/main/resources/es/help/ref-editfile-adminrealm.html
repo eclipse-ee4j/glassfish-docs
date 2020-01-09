@@ -1,0 +1,47 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-editfile-adminrealm" name="ref-editfile-adminrealm"></a></p>
+
+<h4><a id="sthref201" name="sthref201"></a><a id="sthref202" name="sthref202"></a>Propiedades espec&iacute;ficas de la clase <code>FileRealm</code></h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Las siguientes propiedades son necesarias para un dominio<code>file</code>.</p>
+<dl>
+<dt>Contexto JAAS</dt>
+<dd>
+<p>Contexto JAAS (Java Authentication and Authorization Service) (identificador para el m&oacute;dulo de conexi&oacute;n que se utiliza para este dominio). El &uacute;nico valor v&aacute;lido es <code>fileRealm</code>.</p>
+</dd>
+<dt>Archivo de claves</dt>
+<dd>
+<p>Ruta de acceso completa y nombre del archivo donde el servidor almacenar&aacute; toda la informaci&oacute;n sobre usuarios, grupos y contrase&ntilde;as para este dominio. El valor por defecto es domain-dir<code>/config/keyfile</code> para el dominio <code>file</code> y domain-dir<code>/config/admin-keyfile</code> para el dominio <code>admin-realm</code>.</p>
+</dd>
+</dl>
+<p>El archivo de claves para el dominio <code>file</code> est&aacute; inicialmente vac&iacute;o, as&iacute; que los usuarios deben agregarse en la p&aacute;gina <a href="ref-managefilerealm.html">Usuarios de archivos</a> antes de que se utilice el dominio <code>file</code>.</p>
+<p>El archivo de claves para el dominio <code>admin-realm</code> inicialmente contiene el nombre de usuario del administrador, la contrase&ntilde;a del administrador en formato cifrado y el grupo al que pertenece este usuario (<code>asadmin</code> por defecto). Para obtener m&aacute;s informaci&oacute;n sobre c&oacute;mo agregar usuarios a <code>admin-realm</code>, consulte <a href="task-accessadmintools.html">Otorgar acceso a herramientas de administraci&oacute;n</a>.</p>
+
+<hr>
+<p><b>Nota:</b></p>
+Los usuarios del grupo <code>asadmin</code> en <code>admin-realm</code> est&aacute;n autorizados a utilizar las herramientas Consola de administraci&oacute;n y <code>asadmin</code>. Agregue a este grupo s&oacute;lo usuarios que tengan privilegios administrativos del servidor.
+<hr>
+
+<p>La siguiente propiedad opcional est&aacute; disponible para un dominio <code>file</code>.</p>
+<dl>
+<dt>Asignar grupos</dt>
+<dd>
+<p>Lista separada por comas de nombres de grupos. Todos los clientes que presenten certificados v&aacute;lidos se asignan a estos grupos, por ejemplo, <code>employee,manager</code> , donde &eacute;stos son los nombres de los grupos de usuarios.</p>
+</dd>
+</dl>
+
+
+  

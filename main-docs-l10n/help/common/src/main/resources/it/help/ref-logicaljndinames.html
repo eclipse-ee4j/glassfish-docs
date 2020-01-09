@@ -1,0 +1,50 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-logicaljndinames" name="ref-logicaljndinames"></a></p>
+
+<h4>Nomi JNDI logici</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Quando si crea una risorsa, si specifica un nome JNDI univoco per la risorsa. Le applicazioni utilizzano questo nome per accedere alla risorsa.</p>
+<p>Lo standard Java EE specifica che determinate risorse predefinite devono essere rese disponibili per le applicazioni e definisce nomi JNDI specifici per queste risorse predefinite. GlassFish Server rende disponibili questi nomi attraverso l'utilizzo di nomi JNDI logici, che mappano i nomi JNDI di standard Java EE a risorse specifiche di GlassFish Server, come riportato di seguito.</p>
+<dl>
+<dt>java:comp/DefaultContextService</dt>
+<dd>
+<p>Questo nome di standard Java EE viene mappato alla risorsa concurrent/__defaultContextService.</p>
+</dd>
+<dt>java:comp/DefaultManagedThreadFactory</dt>
+<dd>
+<p>Questo nome di standard Java EE viene mappato alla risorsa concurrent/__defaultManagedThreadFactory.</p>
+</dd>
+<dt>java:comp/DefaultManagedExecutorService</dt>
+<dd>
+<p>Questo nome di standard Java EE viene mappato alla risorsa concurrent/__defaultManagedExecutorService.</p>
+</dd>
+<dt>java:comp/DefaultManagedScheduledExecutorService</dt>
+<dd>
+<p>Questo nome di standard Java EE viene mappato alla risorsa concurrent/__defaultManagedScheduledExecutorService.</p>
+</dd>
+<dt>java:comp/DefaultDataSource</dt>
+<dd>
+<p>Questo nome di standard Java EE viene mappato alla risorsa jdbc/__default.</p>
+</dd>
+<dt>java:comp/DefaultJMSConnectionFactory</dt>
+<dd>
+<p>Questo nome di standard Java EE viene mappato alla risorsa jms/__defaultConnectionFactory.</p>
+</dd>
+</dl>
+
+
+
+  

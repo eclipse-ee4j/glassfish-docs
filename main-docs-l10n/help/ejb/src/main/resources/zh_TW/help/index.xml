@@ -1,0 +1,55 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="EJB &#35336;&#26178;&#22120;&#26381;&#21209;">
+    <indexitem text="&#32068;&#24907; (&#20316;&#26989;)" target="task-ejbtimerservice"></indexitem>
+    <indexitem text="&#32068;&#24907; (&#21443;&#29031;)" target="ref-ejbtimerservice"></indexitem>
+  </indexitem>
+  <indexitem text="EJB &#23481;&#22120;">
+    <indexitem text="&#32068;&#24907; EJB &#35336;&#26178;&#22120;&#26381;&#21209; (&#20316;&#26989;)" target="task-ejbtimerservice"></indexitem>
+    <indexitem text="&#32068;&#24907; MDB &#38598;&#21312;&#35373;&#23450; (&#20316;&#26989;)" target="task-ejbmdbpoolsettings"></indexitem>
+    <indexitem text="&#21855;&#29992;&#21487;&#29992;&#24615; (&#20316;&#26989;)" target="task-ejbcontaineravailability"></indexitem>
+    <indexitem text="&#21855;&#29992;&#21487;&#29992;&#24615; (&#20316;&#26989;)" target="task-ejbcontaineravailability"></indexitem>
+    <indexitem text="&#32068;&#24907;&#21487;&#29992;&#24615;&#35373;&#23450; (&#20316;&#26989;)" target="task-ejbcontaineravailability"></indexitem>
+    <indexitem text="&#32068;&#24907; EJB &#35336;&#26178;&#22120;&#26381;&#21209; (&#21443;&#29031;)" target="ref-ejbtimerservice"></indexitem>
+    <indexitem text="&#32068;&#24907; MDB &#38598;&#21312;&#35373;&#23450; (&#21443;&#29031;)" target="ref-ejbmdbpoolsettings"></indexitem>
+    <indexitem text="&#32068;&#24907;&#21487;&#29992;&#24615;&#35373;&#23450; (&#21443;&#29031;)" target="ref-ejbcontaineravailability"></indexitem>
+  </indexitem>
+  <indexitem text="Enterprise JavaBeans (EJB) &#20803;&#20214;">
+    <indexitem text="&lt;em&gt;&#35531;&#21443;&#38321; &lt;/em&gt;EJB">
+    </indexitem>
+  </indexitem>
+  <indexitem text="JMS">
+    <indexitem text="&#32068;&#24907; MDB &#38598;&#21312;&#35373;&#23450; (&#20316;&#26989;)" target="task-ejbmdbpoolsettings"></indexitem>
+    <indexitem text="&#32068;&#24907; MDB &#38598;&#21312;&#35373;&#23450; (&#21443;&#29031;)" target="ref-ejbmdbpoolsettings"></indexitem>
+  </indexitem>
+  <indexitem text="MDB &#38598;&#21312;&#35373;&#23450;">
+    <indexitem text="&#32068;&#24907; (&#20316;&#26989;)" target="task-ejbmdbpoolsettings"></indexitem>
+    <indexitem text="&#32068;&#24907; (&#21443;&#29031;)" target="ref-ejbmdbpoolsettings"></indexitem>
+  </indexitem>
+  <indexitem text="&#35336;&#26178;&#22120;&#26381;&#21209;">
+    <indexitem text="&#32068;&#24907; (&#20316;&#26989;)" target="task-ejbtimerservice"></indexitem>
+    <indexitem text="&#32068;&#24907; (&#21443;&#29031;)" target="ref-ejbtimerservice"></indexitem>
+  </indexitem>
+  <indexitem text="&#23481;&#22120;">
+    <indexitem text="&lt;em&gt;&#35531;&#21443;&#38321; &lt;/em&gt;EJB &#23481;&#22120;">
+    </indexitem>
+  </indexitem>
+  <indexitem text="&#21487;&#29992;&#24615;">
+    <indexitem text="EJB &#23481;&#22120; (&#20316;&#26989;)" target="task-ejbcontaineravailability"></indexitem>
+    <indexitem text="EJB &#23481;&#22120; (&#21443;&#29031;)" target="ref-ejbcontaineravailability"></indexitem>
+  </indexitem>
+</index>

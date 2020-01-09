@@ -1,0 +1,63 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-migrateejbtimers" name="ref-migrateejbtimers"></a></p>
+
+<h4><a id="sthref257" name="sthref257"></a><a id="sthref258" name="sthref258"></a><a id="sthref259" name="sthref259"></a>Migrar temporizadores EJB</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La p&aacute;gina Migrar temporizadores EJB contiene las opciones siguientes.</p>
+<dl>
+<dt>Origen</dt>
+<dd>
+<p>Lista desplegable de instancias de GlassFish Server paradas en el cluster. Los temporizadores EJB s&oacute;lo se pueden migrar desde instancias que no se est&eacute;n ejecutando.</p>
+</dd>
+<dt>Destino</dt>
+<dd>
+<p>Lista desplegable de instancias de GlassFish Server en ejecuci&oacute;n en el cluster. Los temporizadores EJB s&oacute;lo se pueden migrar a instancias que se est&eacute;n ejecutando.</p>
+</dd>
+</dl>
+
+<hr>
+<p><b>Nota:</b></p>
+Si no se est&aacute; ejecutando ninguna instancia del cluster, esta p&aacute;gina s&oacute;lo muestra una advertencia que indica que no hay disponibles instancias en ejecuci&oacute;n a las que se pueda migrar los temporizadores EJB.
+<hr>
+
+<p>La p&aacute;gina Migrar temporizadores EJB contiene una tabla de temporizadores EJB con la informaci&oacute;n siguiente.</p>
+<dl>
+<dt>Nombre de servidor</dt>
+<dd>
+<p>Lista de instancias de GlassFish Server en el cluster.</p>
+</dd>
+<dt>Recuento de temporizadores</dt>
+<dd>
+<p>N&uacute;mero de temporizadores persistentes en cada instancia.</p>
+</dd>
+</dl>
+<a id="sthref260" name="sthref260"></a>
+<h5>Tareas relacionadas</h5>
+<p><a href="task-migrate-ejb-timers.html">Migrar temporizadores EJB</a></p>
+<a id="sthref261" name="sthref261"></a>
+<h5>Subcomandos asadmin equivalentes</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00205"><code>list-timers</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00211"><code>migrate-timers</code>(1)</a></p>
+</li>
+</ul>
+
+
+
+  

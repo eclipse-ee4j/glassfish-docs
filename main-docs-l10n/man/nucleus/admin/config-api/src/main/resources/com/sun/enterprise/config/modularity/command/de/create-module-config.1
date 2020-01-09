@@ -1,0 +1,80 @@
+create-module-config(1) Unterbefehle des asadmin-Utili create-module-config(1)
+
+NAME
+       create-module-config - fügt die Standardkonfiguration eines Moduls zu
+       domain.xml hinzu
+
+ZUSAMMENFASSUNG
+           create-module-config [--help]
+           [--dryrun={false|true}]
+           [--all={false|true}]
+           [--target target]
+           service_name
+
+BESCHREIBUNG
+       Der Unterbefehl create-module-config fügt die Standardkonfiguration
+       eines Moduls zu domain.xml hinzu.
+
+       Dieser Unterbefehl wird nur im Remote-Modus unterstützt.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+       --dryrun
+           Zeigt die Standardkonfiguration eines Moduls an, fügt sie jedoch
+           nicht zu domain.xml hinzu. Der Standardwert ist false.
+
+       --all
+           Fügt alle Standardkonfigurationen von Modulen zu domain.xml hinzu,
+           sofern sie noch nicht darin enthalten sind. Der Standardwert ist
+           false.
+
+       --target
+           Gibt das Ziel an, dem die Standardkonfiguration hinzugefügt werden
+           soll.
+
+           Mögliche Werte:
+
+           server
+               Fügt die Standardkonfiguration zur Standardserverinstanz hinzu.
+               Dies ist der Standardwert.
+
+           domain
+               Fügt die Standardkonfiguration zur Standarddomain hinzu.
+
+           cluster-name
+               Fügt die Standardkonfiguration zum angegebenen Cluster hinzu.
+
+           instance-name
+               Fügt die Standardkonfiguration zur angegebenen Instanz hinzu.
+
+OPERANDEN
+       service_name
+           Der Name des Moduls, für das die Standardkonfiguration hinzugefügt
+           werden soll.
+
+BEISPIELE
+       Beispiel 1, Standardkonfigurationen zu domain.xml hinzufügen
+           In diesem Beispiel wird die Standardkonfiguration des
+           Webcontainermoduls zu domain1 in server-config (die
+           Standardkonfiguration) hinzugefügt. Mithilfe der Option --dryrun
+           können Sie vor dem Hinzufügen einer Konfiguration eine Vorschau
+           davon anzeigen.
+
+               asadmin> create-module-config web-container
+               Command create-module-config executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       delete-module-config(1), get-active-module-config(1)
+
+       asadmin(1M)
+
+Java EE 7                        06. Feb. 2013         create-module-config(1)

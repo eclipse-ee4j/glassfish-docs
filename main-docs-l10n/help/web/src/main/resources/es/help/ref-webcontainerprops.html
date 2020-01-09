@@ -1,0 +1,32 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-webcontainerprops" name="ref-webcontainerprops"></a></p>
+
+<h4><a id="sthref85" name="sthref85"></a><a id="sthref86" name="sthref86"></a>Propiedades espec&iacute;ficas del contenedor web</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La siguiente propiedad general adicional est&aacute; disponible para el contenedor web.</p>
+<dl>
+<dt><code>dispatcher-max-depth</code></dt>
+<dd>
+<p>Impide que el elemento include recursivo o las sentencias de reenv&iacute;o creen un bucle infinito configurando el nivel de distribuci&oacute;n de anidado m&aacute;ximo. Si se supera este l&iacute;mite, se escribe el siguiente mensaje en el log del servidor:</p>
+<pre>
+Exceeded maximum depth for nested request dispatches
+</pre>
+<p>El valor por defecto es 20.</p>
+</dd>
+</dl>
+
+
+  

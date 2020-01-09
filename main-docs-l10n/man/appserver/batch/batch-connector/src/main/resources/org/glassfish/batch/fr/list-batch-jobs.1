@@ -1,0 +1,119 @@
+list-batch-jobs(1)      Sous-commandes de l'utilitaire      list-batch-jobs(1)
+
+NOM
+       list-batch-jobs - répertorie les traitements batch
+
+SYNTAXE
+           list-batch-jobs [--help]
+           [--target target]
+           [--long={false|true}]
+           [--output output]
+           [--header={false|true}]
+           [job_name]
+
+DESCRIPTION
+       La sous-commande list-batch-jobs répertorie les traitements batch et
+       les détails relatifs aux travaux associés.
+
+OPTIONS
+       --help, -?
+           Cette option affiche le texte d'aide de la sous-commande.
+
+       --target
+           Cette option indique la cible pour laquelle répertorier des
+           traitements batch et des détails de travail. Les valeurs valides
+           sont les suivantes :
+
+           server
+               Répertorie les traitements batch pour l'instance de serveur par
+               défaut (server). Il s'agit de la valeur par défaut.
+
+           cluster-name
+               Répertorie les traitements batch pour chaque instance de
+               serveur du cluster.
+
+           instance-name
+               Répertorie les traitements batch pour une instance de serveur
+               donnée.
+
+       --long, -l
+           Affiche des informations détaillées sur les traitements batch. La
+           valeur par défaut est false.
+
+       --output, -o
+           Affiche des détails spécifiques sur les traitements batch. Utilisez
+           une liste séparée par des virgules pour indiquer les détails à
+           afficher et leur ordre. Les valeurs ne respectent pas les
+           majuscules/minuscules. Les en-têtes de colonne jobname et
+           instancecount sont affichés par défaut.
+
+           Les valeurs possibles sont les suivantes :
+
+           jobname
+               Affiche le nom du travail.
+
+           appname
+               Affiche le nom de l'application.
+
+           instancecount
+               Affiche le nombre d'instances de travail.
+
+           instanceid
+               Affiche l'ID affecté à l'instance de travail.
+
+           executionid
+               Affiche l'ID affecté à l'exécution du traitement batch. Une
+               exécution est créée la première fois qu'un travail est démarré
+               et chaque fois que l'exécution existante est redémarrée.
+
+           batchstatus
+               Affiche le statut du travail tel que défini par l'exécution de
+               batch.
+
+           starttime
+               Affiche l'heure de début du travail.
+
+           endtime
+               Affiche l'heure de fin du travail.
+
+           exitstatus
+               Affiche le statut du travail tel que défini par le fichier XML
+               du travail ou par l'application de traitement batch. Par
+               défaut, le statut de sortie et le statut de batch sont
+               identiques, à moins que le statut de sortie ne soit
+               explicitement remplacé.
+
+       --header, -h
+           Indique si les en-têtes de colonne sont affichés lorsque l'option
+           --long est utilisée. La valeur par défaut est true. Pour supprimer
+           les en-têtes, définissez l'option --header sur false.
+
+OPÉRANDES
+       job_name
+           Nom du travail pour lequel répertorier des détails.
+
+EXEMPLES
+       Exemple 1, Liste des traitements batch
+           Dans cet exemple, des traitements batch sont répertoriés pour
+           l'instance de serveur par défaut.
+
+               asadmin> list-batch-jobs
+               JOBNAME  INSTANCECOUNT
+               payroll  9
+               bonus    6
+               Command list-batch-jobs executed successfully.
+
+STATUT DE SORTIE
+       0
+           sous-commande correctement exécutée
+
+       1
+           erreur lors de l'exécution de la sous-commande
+
+VOIR AUSSI
+       list-batch-job-executions(1), list-batch-job-steps(1),
+       set-batch-runtime-configuration(1), list-batch-runtime-configuration(1)
+
+       asadmin(1M)
+
+Java EE 7                        13 fév. 2013               list-batch-jobs(1)

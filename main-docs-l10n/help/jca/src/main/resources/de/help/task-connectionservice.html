@@ -1,0 +1,61 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-connectionservice" name="task-connectionservice"></a></p>
+
+<h4><a id="sthref54" name="sthref54"></a>So wird der Connector-Service konfiguriert</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<ol>
+<li>
+<p>Blenden Sie in der Navigationsbaumstruktur den Knoten "Konfiguration" ein.</p>
+</li>
+<li>
+<p>W&auml;hlen Sie unter dem Konfigurationsknoten den Knoten "Connector-Service".</p>
+<p>Die Seite "Connector-Service" wird ge&ouml;ffnet.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Timeout beim Herunterfahren" die maximale Anzahl Sekunden ein, die w&auml;hrend des Herunterfahrens von GlassFish Server, auf die Ausf&uuml;hrung der <code>ResourceAdapter.stop</code>-Methode einer Connector-Modulinstanz gewartet wird.</p>
+<p>Ressourcenadapter, deren Herunterfahren l&auml;nger dauert, werden ignoriert, und das Herunterfahren von GlassFish Server wird fortgesetzt. Der Standardwert ist 30 Sekunden.</p>
+</li>
+<li>
+<p>W&auml;hlen Sie in der Dropdown-Liste "Policy zum Laden von Connector-Klassen" die zu verwendende Policy.</p>
+<ul>
+<li>
+<p>W&auml;hlen Sie <code>derived</code>, um anzugeben, dass die Ressourcenadapter entsprechend den Verweisen einer Anwendung auf beliebige Ressourcen des Ressourcenadapters bereitgestellt werden.</p>
+<p>Diese Policy ist die Standardeinstellung.</p>
+</li>
+<li>
+<p>W&auml;hlen Sie <code>global</code>, um anzugeben, dass alle Ressourcenadapter f&uuml;r alle Anwendungen sichtbar sind.</p>
+</li>
+</ul>
+<p>Diese Policy gilt nicht f&uuml;r den vorinstallierten JMS-Systemressourcenadapter, <code>jmsra</code>, der immer f&uuml;r alle Anwendungen sichtbar ist.</p>
+</li>
+<li>
+<p>Klicken Sie auf "Speichern".</p>
+
+<hr>
+<p><b>Tipp:</b></p>
+Um zu den Standardeinstellungen zur&uuml;ckzukehren, klicken Sie auf die Schaltfl&auml;che "Standardwerte laden" und anschlie&szlig;end auf "Speichern".
+<hr>
+
+</li>
+</ol>
+<a id="sthref55" name="sthref55"></a>
+<h5>Siehe auch</h5>
+<p><a href="../../../common/en/help/task-appdeployconn.html">So stellen Sie ein Connector-Modul bereit</a></p>
+
+
+
+
+  

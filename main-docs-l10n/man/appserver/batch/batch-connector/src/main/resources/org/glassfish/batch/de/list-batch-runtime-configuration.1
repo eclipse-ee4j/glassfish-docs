@@ -1,0 +1,90 @@
+list-batch-runtime-confiUnterbefehle des aslist-batch-runtime-configuration(1)
+
+NAME
+       list-batch-runtime-configuration - zeigt die Konfiguration der
+       Batchlaufzeit an
+
+ZUSAMMENFASSUNG
+           list-batch-runtime-configuration [--help]
+           [--target target]
+           [--output output]
+           [--header={false|true}]
+
+BESCHREIBUNG
+       Der Unterbefehl list-batch-runtime-configuration zeigt die
+       Konfiguration der Batchlaufzeit an. Konfigurationsdaten der
+       Batchlaufzeit werden im Element config in der Datei domain.xml
+       gespeichert.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+       --target
+           Gibt das Ziel an, für das die Konfiguration der Batchlaufzeit
+           aufgelistet werden soll. Folgende Werte sind gültig:
+
+           server
+               Listet die Konfiguration der Batchlaufzeit für die
+               standardmäßige Serverinstanz server auf und ist der
+               Standardwert.
+
+           cluster-name
+               Listet die Konfiguration der Batchlaufzeit für jede
+               Serverinstanz im Cluster auf.
+
+           instance-name
+               Listet die Konfiguration der Batchlaufzeit für eine bestimmte
+               Serverinstanz auf.
+
+       --output, -o
+           Zeigt bestimmte Details zur Konfiguration der Batchlaufzeit an.
+           Mithilfe einer durch Komma getrennten Liste können Sie die
+           anzuzeigenden Details und deren Reihenfolge festlegen. Die Werte
+           sind von Groß- und Kleinschreibung unabhängig. Die
+           Spaltenüberschriften datasourcelookupname und
+           executorservicelookupname werden standardmäßig angezeigt.
+
+           Mögliche Werte:
+
+           datasourcelookupname
+               Der JNDI-Lookup-Name der Datenquelle, die zur Speicherung der
+               Jobinformationen verwendet wird. Standardmäßig verwendet die
+               Batchlaufzeit die Standarddatenquelle jdbc/__TimerPool.
+
+           executorservicelookupname
+               Der JNDI-Lookup-Name des Managed Executor-Service, mit dem
+               Threads für Jobs bereitgestellt werden. Standardmäßig verwendet
+               die Batchlaufzeit den standardmäßigen Managed Executor-Service
+               concurrent/__defaultManagedExecutorService.
+
+       --header, -h
+           Legt fest, ob bei Verwendung der Option --long Spaltenüberschriften
+           angezeigt werden. Der Standardwert ist true. Um die Überschriften
+           zu unterdrücken, legen Sie für die Option --header den Wert false
+           fest.
+
+BEISPIELE
+       Beispiel 1, Konfiguration der Batchlaufzeit auflisten
+           Im folgenden Beispiel wird die Konfiguration der Batchlaufzeit für
+           die standardmäßige Serverinstanz aufgelistet.
+
+               asadmin> list-batch-runtime-configuration
+               DATASOURCELOOKUPNAME     EXECUTORSERVICELOOKUPNAME
+               jdbc/_default            concurrent/__defaultManagedExecutorService
+               Command list-batch-runtime-configuration executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       set-batch-runtime-configuration(1), list-batch-jobs(1),
+       list-batch-job-executions(1), list-batch-job-steps(1)
+
+       asadmin(1M)
+
+Java EE 7                        13. Feb. 2list-batch-runtime-configuration(1)

@@ -1,0 +1,119 @@
+list-batch-jobs(1)      Subcomandos de la Utilidad asa      list-batch-jobs(1)
+
+NOMBRE DE REFERENCIA
+       list-batch-jobs - Muestra trabajos por lotes.
+
+SINOPSIS
+           list-batch-jobs [--help]
+           [--target target]
+           [--long={false|true}]
+           [--output output]
+           [--header={false|true}]
+           [job_name]
+
+DESCRIPCIÓN
+       El subcomando list-batch-jobs muestra trabajos por lotes y detalles de
+       los trabajos.
+
+OPCIONES
+       --help, -?
+           Muestra el texto de ayuda para el subcomando.
+
+       --target
+           Especifica el destino para el que se van a mostrar los trabajos por
+           lotes y los detalles del trabajo. Los valores válidos son los
+           siguientes:
+
+           server
+               Muestra los trabajos por lotes de la instancia de servidor por
+               defecto server y es el valor por defecto.
+
+           cluster-name
+               Muestra los trabajos por lotes para todas las instancias de
+               servidor del cluster.
+
+           instance-name
+               Muestra los trabajos por lotes para una determinada instancia
+               de servidor.
+
+       --long, -l
+           Muestra información detallada sobre los trabajos por lotes. El
+           valor por defecto es false.
+
+       --output, -o
+           Muestra detalles concretos sobre cada trabajo por lotes. Utilice
+           una lista separada por comas para especificar los detalles que
+           desea mostrar y el orden de los mismos. Los valores son sensibles a
+           mayúsculas/minúsculas. Las cabeceras de columna jobname e
+           instancecount se muestran por defecto.
+
+           Los valores posibles son los siguientes:
+
+           jobname
+               Muestra el nombre del trabajo.
+
+           appname
+               Muestra el nombre de la aplicación.
+
+           instancecount
+               Muestra el número de instancias de trabajo.
+
+           instanceid
+               Muestra el identificador asignado a la instancia de trabajo.
+
+           executionid
+               Muestra el identificador asignado a la ejecución del trabajo
+               por lotes. Se crea una nueva ejecución la primera vez que se
+               inicia el trabajo y cada vez que se reinicie la ejecución
+               existente.
+
+           batchstatus
+               Muestra el estado del trabajo como lo ha definido el tiempo de
+               ejecución por lotes.
+
+           starttime
+               Muestra la hora de inicio del trabajo.
+
+           endtime
+               Muestra la hora de finalización del trabajo.
+
+           exitstatus
+               Muestra el estado del trabajo como lo ha definido el XML de
+               trabajo para el trabajo o la aplicación por lotes. Por defecto,
+               el estado de salida y de lote son los mismos a menos que el
+               estado de salida se sustituya de forma explícita.
+
+       --header, -h
+           Especifica si los encabezados de columna se muestran cuando se usa
+           la opción --long. El valor por defecto es true. Para suprimir los
+           encabezados, defina la opción --header en false.
+
+OPERANDOS
+       job_name
+           Nombre del trabajo del que se van a mostrar los detalles.
+
+EJEMPLOS
+       Ejemplo 1, Lista de trabajos por lotes
+           En este ejemplo se muestran los trabajos por lotes en la instancia
+           de servidor por defecto.
+
+               asadmin> list-batch-jobs
+               JOBNAME  INSTANCECOUNT
+               payroll  9
+               bonus    6
+               Command list-batch-jobs executed successfully.
+
+ESTADO DE SALIDA
+       0
+           Subcomando ejecutado correctamente
+
+       1
+           Error al ejecutar el subcomando
+
+CONSULTE TAMBIÉN
+       list-batch-job-executions(1), list-batch-job-steps(1),
+       set-batch-runtime-configuration(1), list-batch-runtime-configuration(1)
+
+       asadmin(1M)
+
+Java EE 7                    13 de febrero de 2013          list-batch-jobs(1)

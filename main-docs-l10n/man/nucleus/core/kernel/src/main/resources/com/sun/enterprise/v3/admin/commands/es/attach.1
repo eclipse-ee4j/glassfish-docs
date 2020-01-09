@@ -1,0 +1,58 @@
+attach(1)               Subcomandos de la Utilidad asa               attach(1)
+
+NOMBRE DE REFERENCIA
+       attach - Se asocia a los subcomandos iniciados mediante asadmin
+       --detach o que contienen información de progreso.
+
+SINOPSIS
+           attach  [--help]
+           job_id
+
+DESCRIPCIÓN
+       El subcomando attach se asocia a los subcomandos iniciados mediante
+       --detach de la opción de la utilidad asadmin o que contienen
+       información de progreso. La opción --detach desasocia los subcomandos
+       de larga ejecución y los ejecuta en segundo plano en modo de
+       desasociación.
+
+       Los identificadores de trabajo se asignan a los subcomandos (trabajos)
+       y se puede utilizar para ver el estado de un trabajo y su salida.
+       Utilice el subcomando list-jobs(1) para ver los trabajos y sus
+       identificadores, y el subcomando configure-managed-jobs(1) para
+       configurar el tiempo que se debe mantener la información sobre los
+       trabajos.
+
+       Este subcomando sólo está soportado en modo remoto.
+
+OPCIONES
+       --help, -?
+           Muestra el texto de ayuda para el subcomando.
+
+OPERANDOS
+       job_id
+           ID del trabajo para el que desea ver el estado y la salida.
+
+EJEMPLOS
+       Ejemplo 1, Asociación de un subcomando y comprobación del estado
+           En este ejemplo se asocia el subcomando deploy al identificador de
+           trabajo 20 y se muestra que el trabajo ha finalizado. Si un
+           subcomando todavía está en curso, la salida muestra el estado
+           actual, por ejemplo, 64%: cargando bits.
+
+               asadmin> attach 20
+               Finished execution of deploy
+               Command attach executed successfully.
+
+ESTADO DE SALIDA
+       0
+           Subcomando ejecutado correctamente
+
+       1
+           Error al ejecutar el subcomando
+
+CONSULTE TAMBIÉN
+       list-jobs(1), configure-managed-jobs(1)
+
+       asadmin(1M)
+
+Java EE 7                     12 de enero de 2013                    attach(1)

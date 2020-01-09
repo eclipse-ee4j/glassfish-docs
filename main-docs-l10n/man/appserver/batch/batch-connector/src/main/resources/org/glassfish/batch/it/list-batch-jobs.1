@@ -1,0 +1,116 @@
+list-batch-jobs(1)      Comandi secondari della utilit      list-batch-jobs(1)
+
+NOME
+       list-batch-jobs - elenca i processi batch
+
+SINTASSI
+           list-batch-jobs [--help]
+           [--target target]
+           [--long={false|true}]
+           [--output output]
+           [--header={false|true}]
+           [job_name]
+
+DESCRIZIONE
+       Il comando secondario list-batch-jobs elenca i processi batch e i
+       dettagli dei processi.
+
+OPZIONI
+       --help, -?
+           Visualizza il testo della Guida per il comando secondario.
+
+       --target
+           Specifica la destinazione per la quale elencare i processi batch e
+           i dettagli dei processi. Di seguito sono riportati i valori validi.
+
+           server
+               Elenca i processi batch per l'istanza server predefinita server
+               ed è il valore predefinito.
+
+           cluster-name
+               Elenca i processi batch per ogni istanza server del cluster.
+
+           instance-name
+               Elenca i processi batch per un'istanza server particolare.
+
+       --long, -l
+           Visualizza informazioni dettagliate sui processi batch. Il valore
+           predefinito è false.
+
+       --output, -o
+           Visualizza dettagli specifici sui processi batch. Utilizzare una
+           lista separata da virgole per specificare i dettagli da
+           visualizzare e l'ordine di visualizzazione. I valori non fanno
+           distinzione tra maiuscole e minuscole. Le intestazioni di colonna
+           jobname e instancecount vengono visualizzate per impostazione
+           predefinita.
+
+           Di seguito sono riportati i valori possibili.
+
+           jobname
+               Visualizza il nome del processo batch.
+
+           appname
+               Visualizza il nome dell'applicazione.
+
+           instancecount
+               Visualizza il numero di istanze di processo.
+
+           instanceid
+               Visualizza l'ID assegnato all'istanza di processo.
+
+           executionid
+               Visualizza l'ID assegnato all'esecuzione del processo batch.
+               Una nuova esecuzione viene creata al primo avvio di un processo
+               e a ogni riavvio dell'esecuzione esistente.
+
+           batchstatus
+               Visualizza lo stato del processo impostato dal runtime batch.
+
+           starttime
+               Visualizza l'ora di inizio del processo.
+
+           endtime
+               Visualizza l'ora di fine del processo.
+
+           exitstatus
+               Visualizza lo stato del processo impostato dall'XML di processo
+               per il processo o dall'applicazione batch. Per impostazione
+               predefinita, lo stato di uscita e lo stato del batch sono
+               uguali a meno che lo stato di uscita non venga sostituito in
+               modo esplicito.
+
+       --header, -h
+           Specifica se le intestazioni di colonna vengono visualizzate quando
+           si utilizza l'opzione --long. Il valore predefinito è true. Per
+           eliminare le intestazioni, impostare l'opzione --header su false.
+
+OPERANDI
+       job_name
+           Il nome del processo per il quale elencare i dettagli.
+
+ESEMPI
+       Esempio 1, Visualizzazione della lista di processi batch
+           In questo esempio vengono elencati i processi batch per l'istanza
+           server predefinita.
+
+               asadmin> list-batch-jobs
+               JOBNAME  INSTANCECOUNT
+               payroll  9
+               bonus    6
+               Command list-batch-jobs executed successfully.
+
+STATO DI USCITA
+       0
+           esecuzione del comando secondario riuscita
+
+       1
+           errore durante l'esecuzione del comando secondario
+
+VEDERE ANCHE
+       list-batch-job-executions(1), list-batch-job-steps(1),
+       set-batch-runtime-configuration(1), list-batch-runtime-configuration(1)
+
+       asadmin(1M)
+
+Java EE 7                      13 febbraio 2013             list-batch-jobs(1)

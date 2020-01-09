@@ -1,0 +1,125 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-eelogginglevels" name="ref-eelogginglevels"></a></p>
+
+<h4><a id="sthref194" name="sthref194"></a><a id="sthref195" name="sthref195"></a>N&iacute;veis de Log do M&oacute;dulo</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Use a p&aacute;gina N&iacute;veis de Log de M&oacute;dulo para configurar os n&iacute;veis de log de m&oacute;dulos individuais.</p>
+<p>Para cada m&oacute;dulo, as seguintes informa&ccedil;&otilde;es s&atilde;o fornecidas.</p>
+<dl>
+<dt>Nome do Logger</dt>
+<dd>
+<p>O nome do logger do m&oacute;dulo (por exemplo, <code>javax.enterprise.system.tools.admin</code> ).</p>
+</dd>
+<dt>N&iacute;vel do Logger</dt>
+<dd>
+<p>O n&iacute;vel de log atual do m&oacute;dulo.</p>
+</dd>
+</dl>
+<p>A tabela Defini&ccedil;&otilde;es do Logger tamb&eacute;m cont&eacute;m as seguintes op&ccedil;&otilde;es.</p>
+<dl>
+<dt>Adicionar Logger</dt>
+<dd>
+<p>Bot&atilde;o para adicionar um m&oacute;dulo de logger. Se clicar neste bot&atilde;o, uma linha &eacute; adicionada &agrave; tabela Defini&ccedil;&otilde;es do Logger. Insira as informa&ccedil;&otilde;es sobre o m&oacute;dulo do logger na nova linha.</p>
+</dd>
+<dt>Deletar Logger</dt>
+<dd>
+<p>Bot&atilde;o para deletar um ou mais m&oacute;dulos selecionados.</p>
+</dd>
+<dt>N&iacute;vel</dt>
+<dd>
+<p>Lista drop-down ns qual &eacute; poss&iacute;vel selecionar um n&iacute;vel de log a ser aplicado em todos os m&oacute;dulos selecionados.</p>
+</dd>
+<dt>Alterar N&iacute;vel</dt>
+<dd>
+<p>Bot&atilde;o para alterar o n&iacute;vel de log para um ou mais m&oacute;dulos selecionados.</p>
+</dd>
+</dl>
+<p>Os seguintes n&iacute;veis de log est&atilde;o dispon&iacute;veis. Eles est&atilde;o listados do mais alto para o mais baixo.</p>
+<dl>
+<dt>EMERG&Ecirc;NCIA</dt>
+<dd>
+<p>O servidor est&aacute; em um estado n&atilde;o utiliz&aacute;vel. Ocorreu uma falha severa ou pane no sistema.</p>
+</dd>
+<dt>ALERTA</dt>
+<dd>
+<p>Um determinado servi&ccedil;o est&aacute; em estado n&atilde;o utiliz&aacute;vel. A recupera&ccedil;&atilde;o autom&aacute;tica n&atilde;o &eacute; poss&iacute;vel.</p>
+</dd>
+<dt>SEVERE</dt>
+<dd>
+<p>Eventos que interferem na execu&ccedil;&atilde;o normal do programa.</p>
+</dd>
+<dt>WARNING</dt>
+<dd>
+<p>Advert&ecirc;ncias, inclusive exce&ccedil;&otilde;es.</p>
+</dd>
+<dt>INFO</dt>
+<dd>
+<p>Mensagens relacionadas &agrave; configura&ccedil;&atilde;o do servidor ou status do servidor, excluindo erros.</p>
+</dd>
+<dt>CONFIG</dt>
+<dd>
+<p>Mensagens relacionadas &agrave; configura&ccedil;&atilde;o do servidor.</p>
+</dd>
+<dt>FINE</dt>
+<dd>
+<p>Verbosidade m&iacute;nima.</p>
+</dd>
+<dt>FINER</dt>
+<dd>
+<p>Verbosidade moderada.</p>
+</dd>
+<dt>FINEST</dt>
+<dd>
+<p>Verbosidade m&aacute;xima.</p>
+</dd>
+<dt>OFF</dt>
+<dd>
+<p>Nenhuma mensagem de log.</p>
+</dd>
+</dl>
+<a id="GHCOM423" name="GHCOM423"></a>
+<h5>Tarefas Relacionadas</h5>
+<ul>
+<li>
+<p><a href="task-eelogging.html">Para Configurar Defini&ccedil;&otilde;es Gerais de Log</a></p>
+</li>
+<li>
+<p><a href="task-eelogginglevels.html">Para Configurar N&iacute;veis do Log</a></p>
+</li>
+<li>
+<p><a href="task-logviewer.html">Para Exibir Arquivos de Log do DAS</a></p>
+</li>
+</ul>
+<a id="GHCOM424" name="GHCOM424"></a>
+<h5>Comandos asadmin Relacionados</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00007"><code>collect-log-files</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00183"><code>list-log-levels</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00224"><code>rotate-log</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00228"><code>set-log-levels</code>(1)</a></p>
+</li>
+</ul>
+
+
+
+  

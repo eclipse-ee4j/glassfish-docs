@@ -1,0 +1,44 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-messagesecurityproviderconfigprops" name="ref-messagesecurityproviderconfigprops"></a></p>
+
+<h4><a id="sthref232" name="sthref232"></a><a id="sthref233" name="sthref233"></a>Propri&eacute;t&eacute;s propres aux configurations de fournisseur de s&eacute;curit&eacute; des messages</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Les propri&eacute;t&eacute;s suivantes sont disponibles pour la configuration d'un fournisseur de s&eacute;curit&eacute; des messages.</p>
+<dl>
+<dt><code>server.config</code></dt>
+<dd>
+<p>R&eacute;pertoire et nom d'un fichier XML qui contient les informations de configuration du serveur. La valeur par d&eacute;faut est domain-dir<code>/config/wss-server-config-1.0.xml</code>.</p>
+</dd>
+<dt><code>debug</code></dt>
+<dd>
+<p>La valeur <code>true</code> active le vidage des messages de d&eacute;bogage de fournisseur c&ocirc;t&eacute; serveur vers le journal du serveur. La valeur par d&eacute;faut est <code>false</code>.</p>
+</dd>
+<dt><code>dynamic.username.password</code></dt>
+<dd>
+<p>La valeur <code>true</code> signale &agrave; l'ex&eacute;cution du fournisseur qu'elle doit collecter le nom utilisateur et le mot de passe de <code>CallbackHandler</code> pour chaque demande. Si la valeur est False, le nom utilisateur et le mot de passe de <code>wsse:UsernameToken(s)</code> sont collect&eacute;s une seule fois, lors de l'initialisation du module. Cette propri&eacute;t&eacute; s'applique uniquement &agrave; <code>ClientAuthModule</code>. La valeur par d&eacute;faut est <code>false</code>.</p>
+</dd>
+<dt><code>encryption.key.alias</code></dt>
+<dd>
+<p>Sp&eacute;cifie la cl&eacute; de cryptage utilis&eacute;e par le fournisseur. La cl&eacute; est identifi&eacute;e par son alias de <code>keystore</code>. La valeur par d&eacute;faut est <code>s1as</code>.</p>
+</dd>
+<dt><code>signature.key.alias</code></dt>
+<dd>
+<p>Sp&eacute;cifie la cl&eacute; de signature utilis&eacute;e par le fournisseur. La cl&eacute; est identifi&eacute;e par son alias de <code>keystore</code>. La valeur par d&eacute;faut est <code>s1as</code>.</p>
+</dd>
+</dl>
+
+
+  

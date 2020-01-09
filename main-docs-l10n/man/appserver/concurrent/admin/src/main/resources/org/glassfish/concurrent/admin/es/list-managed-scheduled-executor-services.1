@@ -1,0 +1,66 @@
+list-managed-scheduled-eSubcomandoslist-managed-scheduled-executor-services(1)
+
+NOMBRE DE REFERENCIA
+       list-managed-scheduled-executor-services - Muestra los recursos del
+       servicio de ejecutor programado gestionado.
+
+SINOPSIS
+           list-managed-scheduled-executor-services [--help]
+           [target]
+
+DESCRIPCIÓN
+       El subcomando list-managed-scheduled-executor-services muestra los
+       recursos del servicio de ejecutor programado gestionado.
+
+       Este subcomando sólo está soportado en modo remoto.
+
+OPCIONES
+       --help, -?
+           Muestra el texto de ayuda para el subcomando.
+
+OPERANDOS
+       target
+           Especifica el destino para el que se van a mostrar los recursos del
+           servicio de ejecutor programado gestionado. Los destinos válidos
+           son:
+
+           server
+               Muestra los recursos en la instancia de servidor por defecto.
+               Este es el valor por defecto.
+
+           domain
+               Muestra los recursos para el dominio.
+
+           cluster-name
+               Muestra los recursos en todas las instancias de servidor del
+               cluster especificado.
+
+           instance-name
+               Muestra los recursos en la instancia de servidor especificada.
+
+EJEMPLOS
+       Ejemplo 1, Lista de recursos del servicio de ejecutor programado
+       gestionado
+           En este ejemplo se muestran los recursos del servicio de ejecutor
+           programado gestionado en la instancia de servidor por defecto.
+
+               asadmin> list-managed-scheduled-executor-services
+               concurrent/__defaultManagedScheduledExecutorService
+               concurrent/myScheduledExecutor1
+               concurrent/myScheduledExecutor2
+               Command list-managed-scheduled-executor-services executed successfully.
+
+ESTADO DE SALIDA
+       0
+           Subcomando ejecutado correctamente
+
+       1
+           Error al ejecutar el subcomando
+
+CONSULTE TAMBIÉN
+       create-managed-scheduled-executor-service(1),
+       delete-managed-scheduled-executor-service(1)
+
+       asadmin(1M)
+
+Java EE 7                    09 de list-managed-scheduled-executor-services(1)

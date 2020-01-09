@@ -1,0 +1,62 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-logging-max-logfiles" name="task-logging-max-logfiles"></a></p>
+
+<h4><a id="sthref75" name="sthref75"></a><a id="sthref76" name="sthref76"></a><a id="sthref77" name="sthref77"></a>Modification du nombre limite de fichiers journaux d&eacute;plac&eacute;s</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Lorsque GlassFish Server change de fichier journal, il cr&eacute;e un fichier vide nomm&eacute; <code>server.log</code> et renomme l'ancien fichier <code>server.log_</code><i>date</i>, o&ugrave; <i>date</i> indique la date et l'heure auxquelles le fichier est d&eacute;plac&eacute;.</p>
+<p>Par d&eacute;faut, GlassFish Server limite le nombre de fichiers journaux d&eacute;plac&eacute;s &agrave; 10. Lorsque cette limite est atteinte, le fichier journal le plus ancien est supprim&eacute; au prochain changement de fichier journal de GlassFish Server.</p>
+<p>Si n&eacute;cessaire, vous pouvez modifier le nombre limite de fichiers journaux d&eacute;plac&eacute;s. Toute nouvelle limite d&eacute;finie s'applique aux fichiers journaux d&eacute;plac&eacute;s pour la journalisation des acc&egrave;s et le journal du serveur.</p>
+<ol>
+<li>
+<p>D&eacute;finissez la propri&eacute;t&eacute; syst&egrave;me <code>com.sun.enterprise.server.logging.max_history_files</code> sur le nombre maximal de fichiers journaux d&eacute;plac&eacute;s &agrave; conserver.</p>
+<p>Pour plus d'informations sur la d&eacute;finition d'une propri&eacute;t&eacute; syst&egrave;me, reportez-vous &agrave; <a href="task-systemproperties.html">Gestion des propri&eacute;t&eacute;s syst&egrave;me</a>.</p>
+<p>Le comportement de la propri&eacute;t&eacute; syst&egrave;me <code>com.sun.enterprise.server.logging.max_history_files</code> est le suivant :</p>
+<ul>
+<li>
+<p>Si la propri&eacute;t&eacute; n'est pas d&eacute;finie, GlassFish Server conserve jusqu'&agrave; 10 fichiers journaux d&eacute;plac&eacute;s.</p>
+</li>
+<li>
+<p>Si la propri&eacute;t&eacute; est d&eacute;finie sur un nombre non valide ou NULL, GlassFish Server conserve jusqu'&agrave; 10 fichiers journaux d&eacute;plac&eacute;s.</p>
+</li>
+<li>
+<p>Si la propri&eacute;t&eacute; est d&eacute;finie sur 0, GlassFish Server ne conserve aucun fichier journal d&eacute;plac&eacute;.</p>
+</li>
+</ul>
+</li>
+</ol>
+<a id="GHCOM278" name="GHCOM278"></a>
+<h5>Voir aussi</h5>
+<ul>
+<li>
+<p><a href="task-eelogging.html">Configuration de param&egrave;tres de journalisation g&eacute;n&eacute;raux</a></p>
+</li>
+<li>
+<p><a href="task-eelogginglevels.html">Configuration de niveaux de journalisation</a></p>
+</li>
+<li>
+<p><a href="task-logviewer.html">Affichage de fichiers journaux pour le serveur DAS</a></p>
+</li>
+<li>
+<p><a href="task-collectdomainlogs.html">Collecte et t&eacute;l&eacute;chargement de journaux de domaine</a></p>
+</li>
+<li>
+<p><a href="task-systemproperties.html">Gestion des propri&eacute;t&eacute;s syst&egrave;me</a></p>
+</li>
+</ul>
+
+
+
+  

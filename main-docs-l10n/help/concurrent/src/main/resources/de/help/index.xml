@@ -1,0 +1,53 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="Kontextservices">
+    <indexitem text="anzeigen (Referenz)" target="ref-contextservices"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-contextserviceedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-contextserviceedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-contextservicenew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-contextservicecreate"></indexitem>
+    <indexitem text="l&#246;schen (Referenz)" target="ref-contextservices"></indexitem>
+    <indexitem text="l&#246;schen (Task)" target="task-contextservicedelete"></indexitem>
+  </indexitem>
+  <indexitem text="Managed Executor-Services">
+    <indexitem text="anzeigen (Referenz)" target="ref-executorservices"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-executorserviceedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-managedexecutorserviceedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-executorservicenew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-managedexecutorservicecreate"></indexitem>
+    <indexitem text="L&#246;schen (Referenz)" target="ref-executorservices"></indexitem>
+    <indexitem text="l&#246;schen (Task)" target="task-managedexecutorservicedelete"></indexitem>
+  </indexitem>
+  <indexitem text="Managed Scheduled Executor-Services">
+    <indexitem text="anzeigen (Referenz)" target="ref-scheduledexecutorservices"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-scheduledexecutorserviceedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-managedscheduledexecutorserviceedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-scheduledexecutorservicenew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-managedscheduledexecutorservicecreate"></indexitem>
+    <indexitem text="l&#246;schen (Referenz)" target="ref-scheduledexecutorservices"></indexitem>
+    <indexitem text="l&#246;schen (Task)" target="task-managedscheduledexecutorservicedelete"></indexitem>
+  </indexitem>
+  <indexitem text="Managed Thread-Factorys">
+    <indexitem text="anzeigen (Referenz)" target="ref-threadfactories"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-threadfactoryedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-managedthreadfactoryedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-threadfactorynew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-managedthreadfactorynew"></indexitem>
+    <indexitem text="l&#246;schen (Referenz)" target="ref-threadfactories"></indexitem>
+    <indexitem text="l&#246;schen (Task)" target="task-managedthreadfactorydelete"></indexitem>
+  </indexitem>
+</index>

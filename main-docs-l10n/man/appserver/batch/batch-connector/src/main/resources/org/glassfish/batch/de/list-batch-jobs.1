@@ -1,0 +1,116 @@
+list-batch-jobs(1)      Unterbefehle des asadmin-Utili      list-batch-jobs(1)
+
+NAME
+       list-batch-jobs - listet Batchjobs auf
+
+ZUSAMMENFASSUNG
+           list-batch-jobs [--help]
+           [--target target]
+           [--long={false|true}]
+           [--output output]
+           [--header={false|true}]
+           [job_name]
+
+BESCHREIBUNG
+       Der Unterbefehl list-batch-jobs listet Batchjobs und Jobdetails auf.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+       --target
+           Gibt das Ziel an, für das Batchjobs und Jobdetails aufgelistet
+           werden sollen. Folgende Werte sind gültig:
+
+           server
+               Listet Batchjobs für die standardmäßige Serverinstanz server
+               auf und ist der Standardwert.
+
+           cluster-name
+               Listet Batchjobs für jede Serverinstanz im Cluster auf.
+
+           instance-name
+               Listet Batchjobs für eine bestimmte Serverinstanz auf.
+
+       --long, -l
+           Zeigt detaillierte Informationen zu Batchjobs an. Der Standardwert
+           ist false.
+
+       --output, -o
+           Zeigt bestimmte Details zu Batchjobs an. Mithilfe einer durch Komma
+           getrennten Liste können Sie die anzuzeigenden Details und deren
+           Reihenfolge festlegen. Die Werte sind von Groß- und Kleinschreibung
+           unabhängig. Die Spaltenüberschriften jobname und instancecount
+           werden standardmäßig angezeigt.
+
+           Mögliche Werte:
+
+           jobname
+               Zeigt den Namen des Jobs an.
+
+           appname
+               Zeigt den Namen der Anwendung an.
+
+           instancecount
+               Zeigt die Anzahl von Jobinstanzen an.
+
+           instanceid
+               Zeigt die ID an, die der Jobinstanz zugewiesen ist.
+
+           executionid
+               Zeigt die ID an, die der Ausführung des Batchjobs zugewiesen
+               ist. Beim erstmaligen Starten eines Jobs und bei jedem Neustart
+               der vorhandenen Ausführung wird eine neue Ausführung erstellt.
+
+           batchstatus
+               Zeigt den von der Batchlaufzeit festgelegten Status des Jobs
+               an.
+
+           starttime
+               Zeigt die Startzeit des Jobs an.
+
+           endtime
+               Zeigt die Beendigungszeit des Jobs an.
+
+           exitstatus
+               Zeigt den Status des Jobs an, der von der Job-XML für den Job
+               oder von der Batchanwendung festgelegt wurde. Standardmäßig
+               sind Beendigungsstatus und Batchstatus identisch, es sei denn,
+               der Beendigungsstatus wird explizit überschrieben.
+
+       --header, -h
+           Legt fest, ob bei Verwendung der Option --long Spaltenüberschriften
+           angezeigt werden. Der Standardwert ist true. Um die Überschriften
+           zu unterdrücken, legen Sie für die Option --header den Wert false
+           fest.
+
+OPERANDEN
+       job_name
+           Der Name des Jobs, für den Ausführungsdetails aufgelistet werden
+           sollen.
+
+BEISPIELE
+       Beispiel 1, Batchjobs auflisten
+           In diesem Beispiel werden Batchjobs für die standardmäßige
+           Serverinstanz aufgelistet.
+
+               asadmin> list-batch-jobs
+               JOBNAME  INSTANCECOUNT
+               payroll  9
+               bonus    6
+               Command list-batch-jobs executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       list-batch-job-executions(1), list-batch-job-steps(1),
+       set-batch-runtime-configuration(1), list-batch-runtime-configuration(1)
+
+       asadmin(1M)
+
+Java EE 7                        13. Feb. 2013              list-batch-jobs(1)

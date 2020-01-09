@@ -1,0 +1,101 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-jdbcresourceedit" name="ref-jdbcresourceedit"></a></p>
+
+<h4><a id="sthref35" name="sthref35"></a>Modifier une ressource JDBC</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>La page Modifier une ressource JDBC permet de modifier une ressource JDBC existante.</p>
+<p>Elle contient les options ci-apr&egrave;s.</p>
+<dl>
+<dt>Charger les valeurs par d&eacute;faut</dt>
+<dd>
+<p>Bouton permettant de restaurer les valeurs par d&eacute;faut des param&egrave;tres qui en ont. Les param&egrave;tres qui n'ont pas de valeurs par d&eacute;faut ne sont pas modifi&eacute;s.</p>
+</dd>
+<dt>Nom JNDI</dt>
+<dd>
+<p>Nom JNDI unique identifiant la ressource. Par convention, le nom commence par un indicateur de type de ressource et une barre oblique, comme concurrent/, jdbc/ ou jms/. Le champ Nom JNDI est en lecture seule. Vous ne pouvez sp&eacute;cifier le nom JNDI qu'&agrave; la cr&eacute;ation d'une ressource</p>
+</dd>
+<dt>Nom JNDI logique</dt>
+<dd>
+<p>Nom JNDI logique pour la ressource. Nom standard Java EE permettant d'acc&eacute;der &agrave; la ressource. Le champ Nom JNDI logique est en lecture seule. Pour plus d'informations, reportez-vous &agrave; <a href="../../../common/en/help/ref-logicaljndinames.html">Noms JNDI logiques</a>.</p>
+</dd>
+<dt>Nom du pool</dt>
+<dd>
+<p>Pool de connexions associ&eacute; &agrave; la ressource JDBC.</p>
+</dd>
+<dt>Ordre de d&eacute;ploiement</dt>
+<dd>
+<p>Ordre de d&eacute;ploiement de la ressource JDBC.</p>
+</dd>
+<dt>Description</dt>
+<dd>
+<p>Br&egrave;ve description de la ressource JDBC.</p>
+</dd>
+<dt>Statut</dt>
+<dd>
+<p>Indique si la ressource est disponible lors de l'ex&eacute;cution.</p>
+<p>Si seule l'instance de serveur par d&eacute;faut <code>server</code>, existe dans le domaine, la disponibilit&eacute; d'ex&eacute;cution de la ressource peut &ecirc;tre activ&eacute;e ou d&eacute;sactiv&eacute;e. La disponibilit&eacute; d'ex&eacute;cution est activ&eacute;e par d&eacute;faut.</p>
+<p>Si des clusters ou des instances autonomes ont &eacute;t&eacute; cr&eacute;&eacute;s dans le domaine, utilisez l'onglet Cible pour contr&ocirc;ler la disponibilit&eacute; d'ex&eacute;cution de la ressource sur ses cibles.</p>
+</dd>
+<dt>Autres propri&eacute;t&eacute;s</dt>
+<dd>
+<p>Propri&eacute;t&eacute;s suppl&eacute;mentaires de la ressource JDBC. GlassFish Server ne d&eacute;finit aucune autre propri&eacute;t&eacute; pour les ressources JDBC.</p>
+</dd>
+</dl>
+<a id="sthref36" name="sthref36"></a>
+<h5>T&acirc;ches connexes</h5>
+<ul>
+<li>
+<p><a href="task-setdbaccess.html">Configuration de l'acc&egrave;s aux bases de donn&eacute;es</a></p>
+</li>
+<li>
+<p><a href="task-integratejdbcdriver.html">Int&eacute;gration d'un pilote JDBC</a></p>
+</li>
+<li>
+<p><a href="task-jdbcresourcenew.html">Cr&eacute;ation d'une ressource JDBC</a></p>
+</li>
+<li>
+<p><a href="task-jdbcresourcesedit.html">Modification d'une ressource JDBC</a></p>
+</li>
+<li>
+<p><a href="task-jdbcresourcesdelete.html">Suppression d'une ressource JDBC</a></p>
+</li>
+</ul>
+<a id="sthref37" name="sthref37"></a>
+<h5>Commandes asadmin connexes</h5>
+<ul>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00001"><code>add-resources</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00037"><code>create-jdbc-resource</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00089"><code>delete-jdbc-resource</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00174"><code>list-jdbc-resources</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00234"><code>start-database</code>(1)</a></p>
+</li>
+<li>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=E26576_01&id=GSRFM00239"><code>stop-database</code>(1)</a></p>
+</li>
+</ul>
+
+
+
+  

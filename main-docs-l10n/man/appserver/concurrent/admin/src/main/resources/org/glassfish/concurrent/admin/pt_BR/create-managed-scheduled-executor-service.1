@@ -1,0 +1,141 @@
+create-managed-scheduledSubcomandocreate-managed-scheduled-executor-service(1)
+
+NOME
+       create-managed-scheduled-executor-service - cria um recurso de serviço
+       do executor programado gerenciado
+
+SINOPSE
+           create-managed-scheduled-executor-service [--help]
+           [--enabled={false|true}]
+           [--contextinfoenabled={false|true}]
+           [--contextinfo={Classloader|JNDI|Security|WorkArea}]
+           [--threadpriority threadpriority]
+           [--longrunningtasks={false|true}]
+           [--hungafterseconds hungafterseconds]
+           [--corepoolsize corepoolsize]
+           [--keepaliveseconds keepaliveseconds]
+           [--threadlifetimeseconds threadlifetimeseconds]
+           [--description description]
+           [--property property]
+           [--target target]
+           jndi_name
+
+DESCRIçãO
+       O subcomando create-managed-scheduled-executor-service cria um recurso
+       de serviço do executor programado gerenciado.
+
+       Esse subcomando só é suportado no modo remoto.
+
+OPçõES
+       --help, -?
+           Exibe o texto de ajuda do subcomando.
+
+       --enabled
+           Determina se o recurso é ativado durante o runtime. O valor default
+           é verdadeiro.
+
+       --contextinfoenabled
+           Determina se contextos de contêiner são propagados a threads. Se a
+           opção estiver definida como true, os contextos especificados na
+           opção --contextinfo serão propagados. Se a opção for definida como
+           false, nenhum contexto será propagado e a opção --contextinfo será
+           ignorada. O valor default é verdadeiro.
+
+       --contextinfo
+           Especifica contextos de contêiner individuais a serem propagados a
+           threads. Os valores válidos são Classloader; JNDI, Security e
+           WorkArea. Os valores são especificados em uma lista separada por
+           vírgulas e fazem distinção entre maiúsculas e minúsculas. Todos os
+           contextos são propagados por default.
+
+       --threadpriority
+           Especifica a prioridade a ser designada a threads criados. O valor
+           default é 5.
+
+       --longrunningtasks
+           Especifica se o recurso deve ser usado para tarefas de longa
+           execução. O valor default é false. Se a opção for definida como
+           true, as tarefas de longa execução não serão relatadas como
+           paradas.
+
+       --hungafterseconds
+           Especifica o tempo em segundos durante os quais uma tarefa pode ser
+           executada antes de ser considerada sem resposta. O valor padrão é
+           0, o que significa que as tarefas nunca são consideradas sem
+           resposta.
+
+       --corepoolsize
+           Especifica o número de threads a serem mantidos em um pool de
+           threads, mesmo que eles estejam inativos. O valor default é 0, o
+           que significa que um thread é criado quando a primeiro tarefa é
+           programada.
+
+       --keepaliveseconds
+           Especifica o número de segundos durante os quais os threads podem
+           permanecer inativos quando o número de threads é maior que
+           corepoolsize. O valor default é 60.
+
+       --threadlifetimeseconds
+           Especifica o número de segundos durante os quais os threads podem
+           permanecer em um pool de threads antes de serem expurgados,
+           independentemente de o número de threads ser maior que corepoolsize
+           ou de se os threads estão inativos. O valor default é 0, o que
+           significa que os threads nunca são expurgados.
+
+       --description
+           Detalhes descritivos sobre o recurso.
+
+       --property
+           Pares opcionais do valor/nome do atributo para configurar o
+           recurso.
+
+           O ProductName; não define propriedades adicionais para este
+           recurso. Além disso, este recurso não usa atualmente propriedades
+           adicionais.
+
+       --target
+           Especifica o alvo para o qual você está criando o recurso. Os alvos
+           válidos são:
+
+           server
+               Cria o recurso para a instância de servidor default. Este é o
+               valor default.
+
+           domain
+               Cria o recurso para o domínio.
+
+           cluster_name
+               Cria o recurso para cada instância do servidor no cluster
+               especificado.
+
+           instance_name
+               Cria o recurso para a instância de servidor especificada.
+
+OPERANDOS
+       jndi_name
+           Nome da JNDI deste recurso.
+
+EXEMPLOS
+       Example 1, Criando um Recurso de Serviço do Executor Programado
+       Gerenciado
+           Este exemplo cria um recurso de serviço executor gerenciado
+           programado denominado concurrent/myScheduledExecutor.
+
+               asadmin> create-managed-scheduled-executor-service concurrent/myScheduledExecutor
+               Managed scheduled executor service concurrent/myScheduledExecutor created successfully.
+               Command create-managed-scheduled-executor-service executed successfully.
+
+STATUS DE SAíDA
+       0
+           subcomando executado com sucesso
+
+       1
+           erro na execução do subcomando
+
+CONSULTE TAMBéM
+       delete-managed-scheduled-executor-service(1),
+       list-managed-scheduled-executor-services(1)
+
+       asadmin(1M)
+
+Java EE 7                   9 de fcreate-managed-scheduled-executor-service(1)

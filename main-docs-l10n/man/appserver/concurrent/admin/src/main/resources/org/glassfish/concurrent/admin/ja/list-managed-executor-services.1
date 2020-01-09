@@ -1,0 +1,58 @@
+list-managed-executor-asadminユ
+
+名前
+       list-managed-executor-services -
+       管理対象エグゼキュータ・サービス・リソースをリストします
+
+概要
+           list-managed-executor-services [--help]
+           [target]
+
+説明
+       list-managed-executor-servicesサブコマンドは、管理対象エグゼキュータ・サービス・リソースをリストします。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+オペランド
+       target
+           管理対象エグゼキュータ・サービス・リソースをリストするターゲットを指定します。有効なターゲットは次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンス上のリソースをリストします。これがデフォルト値です。
+
+           domain
+               ドメインのリソースをリストします。
+
+           cluster-name
+               指定したクラスタにあるすべてのサーバー・インスタンスのリソースをリストします。
+
+           instance-name
+               指定したサーバー・インスタンスのリソースをリストします。
+
+例
+       例 1, 管理対象エグゼキュータ・サービス・リソースのリスト
+           この例では、デフォルトのサーバー・インスタンスの管理対象エグゼキュータ・サービス・リソースをリストします。
+
+               asadmin> list-managed-executor-services
+               concurrent/__defaultManagedExecutorService
+               concurrent/myExecutor1
+               concurrent/myExecutor2
+               Command list-managed-executor-services executed successfully.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       create-managed-executor-service(1), delete-managed-executor-service(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月9日list-managed-executor-services(1)

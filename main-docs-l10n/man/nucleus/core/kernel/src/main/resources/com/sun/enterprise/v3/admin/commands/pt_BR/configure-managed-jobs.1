@@ -1,0 +1,68 @@
+configure-managed-jobs(1Subcomandos do utilitário asaconfigure-managed-jobs(1)
+
+NOME
+       configure-managed-jobs - configura por quanto tempo são mantidas as
+       informações sobre subcomandos que foram inicializados com asadmin
+       --detach ou que contêm informações sobre andamento
+
+SINOPSE
+           configure-managed-jobs [--help]
+           [--in-memory-retention-period in-memory-retention-period]
+           [--job-retention-period job-retention-period]
+           [--cleanup-initial-delay cleanup-initial-delay]
+           [--cleanup-poll-interval cleanup-poll-interval]
+
+DESCRIçãO
+       O subcomando configure-managed-jobs configura por quanto tempo são
+       mantidas as informações sobre subcomandos (jobs) que foram iniciados
+       usando a opção do utilitário asadmin --detach ou que contêm informações
+       sobre andamento. A opção --detach desassocia subcomandos de execução
+       longa e os executa no segundo plano no modo desanexar. As informações
+       do job incluem o andamento e o status do subcomando.
+
+       Esse subcomando só é suportado no modo remoto.
+
+OPçõES
+       --help, -?
+           Exibe o texto de ajuda do subcomando.
+
+       in-memory-retention-period
+           Especifica por quanto tempo um job concluído é mantido na memória
+           depois que o job é finalizado. O valor default é 1 hora.
+
+       --job-retention-period
+           Especifica por quanto tempo um job é armazenado. O valor default é
+           24 horas.
+
+       --cleanup-initial-delay
+           Após a inicialização do servidor, especifica o atraso inicial após
+           o qual a limpeza serviço inicia a expurgação dos jobs. O valor
+           default é 5 minutos.
+
+       --cleanup-poll-interval
+           Especifica o intervalo de tempo após o qual o serviço de limpeza
+           efetua polling para jobs expirados. O valor default é de 20
+           minutos.
+
+EXEMPLOS
+       Example 1, Configurando o Período de Retenção do Job
+           Esse exemplo define o período de retenção do job para até 36 horas.
+           Os períodos podem ser especificados em Hh|Mm|Ss para horas, minutos
+           ou segundos.
+
+               asadmin> configure-managed-jobs --job-retention-period=36h
+               Command configure-managed-jobs executed successfully.
+
+STATUS DE SAíDA
+       0
+           subcomando executado com sucesso
+
+       1
+           erro na execução do subcomando
+
+CONSULTE TAMBéM
+       list-jobs(1)
+
+       asadmin(1M)
+
+Java EE 7                   6 de fevereiro de 2013   configure-managed-jobs(1)

@@ -1,0 +1,54 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<toc version="2.0">
+  <tocitem target="tasks-topic-group" text="Tarefas da Console de Administra&#231;&#227;o do GlassFish Server" expand="false">
+    <tocitem target="task-group-jdbc" text="Conectando Aplica&#231;&#245;es com Bancos de Dados por Meio da Tecnologia JDBC" expand="false">
+      <tocitem target="task-setdbaccess" text="Para Configurar Acesso ao Banco de Dados" expand="false"></tocitem>
+      <tocitem target="task-integratejdbcdriver" text="Para Integrar um Driver JDBC" expand="false"></tocitem>
+      <tocitem target="task-jdbcresourcenew" text="Para Criar um Recurso do JDBC" expand="false"></tocitem>
+      <tocitem target="task-jdbcresourcesedit" text="Para Editar um Recurso do JDBC" expand="false"></tocitem>
+      <tocitem target="task-jdbcresourcetargets" text="Para Editar Alvos do Recurso do JDBC" expand="false"></tocitem>
+      <tocitem target="task-jdbcresourcesdelete" text="Para Deletar um Recurso do JDBC" expand="false"></tocitem>
+      <tocitem target="task-jdbcconnectionpoolnew" text="Para Criar um Pool de Conex&#245;es do JDBC" expand="false"></tocitem>
+      <tocitem target="task-jdbcconnectionpooledit" text="Para Editar Defini&#231;&#245;es Gerais do Pool de Conex&#245;es do JDBC" expand="false"></tocitem>
+      <tocitem target="task-jdbcconnectionpooladvance" text="Editar Atributos Avan&#231;ados do Pool de Conex&#245;es do JDBC" expand="false"></tocitem>
+      <tocitem target="task-verifyconnpoolsettings" text="Para Verificar as Defini&#231;&#245;es do Pool de Conex&#245;es" expand="false"></tocitem>
+      <tocitem target="task-jdbcconnectionpoolproperty" text="Editar Propriedades do Pool de Conex&#245;es do JDBC" expand="false"></tocitem>
+      <tocitem target="task-jdbcconnectionpooldelete" text="Para Deletar um Pool de Conex&#245;es JDBC" expand="false"></tocitem>
+    </tocitem>
+  </tocitem>
+  <tocitem target="ref-topic-group" text="Refer&#234;ncia de Console de Administra&#231;&#227;o do GlassFish Server" expand="false">
+    <tocitem target="ref-group-resources" text="Recursos" expand="false">
+      <tocitem target="ref-group-jdbc" text="JDBC" expand="false">
+        <tocitem target="ref-jdbc" text="JDBC" expand="false"></tocitem>
+        <tocitem target="ref-group-jdbcresources" text="Recursos JDBC" expand="false">
+          <tocitem target="ref-jdbcresources" text="Recursos JDBC" expand="false"></tocitem>
+          <tocitem target="ref-jdbcresourcenew" text="Novo Recurso do JDBC" expand="false"></tocitem>
+          <tocitem target="ref-jdbcresourceedit" text="Editar Recurso do JDBC" expand="false"></tocitem>
+        </tocitem>
+        <tocitem target="ref-group-jdbcconnectionpools" text="Pools de Conex&#245;es" expand="false">
+          <tocitem target="ref-jdbcconnectionpools" text="Pools de Conex&#245;es" expand="false"></tocitem>
+          <tocitem target="ref-jdbcconnectionpoolnew1" text="Novo Pool de Conex&#245;es do JDBC (etapa 1 de 2)" expand="false"></tocitem>
+          <tocitem target="ref-jdbcconnectionpoolnew2" text="Novo Pool de Conex&#245;es do JDBC (etapa 2 de 2)" expand="false"></tocitem>
+          <tocitem target="ref-jdbcconnectionpooledittab" text="Editar Pool de Conex&#245;es" expand="false"></tocitem>
+          <tocitem target="ref-jdbcconnpooladvanceattrtab" text="Editar Atributos Avan&#231;ados do Pool de Conex&#245;es" expand="false"></tocitem>
+          <tocitem target="ref-jdbcconnpoolproptab" text="Editar Propriedades do Pool de Conex&#245;es" expand="false"></tocitem>
+          <tocitem target="ref-jdbc-properties" text="Propriedades Espec&#237;ficas para os Pools de Conex&#245;es JDBC" expand="false"></tocitem>
+        </tocitem>
+      </tocitem>
+    </tocitem>
+  </tocitem>
+</toc>

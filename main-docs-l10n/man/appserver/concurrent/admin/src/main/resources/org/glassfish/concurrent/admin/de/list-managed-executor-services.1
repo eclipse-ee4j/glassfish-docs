@@ -1,0 +1,63 @@
+list-managed-executor-seUnterbefehle des asadlist-managed-executor-services(1)
+
+NAME
+       list-managed-executor-services - listet Managed
+       Executor-Serviceressourcen auf
+
+ZUSAMMENFASSUNG
+           list-managed-executor-services [--help]
+           [target]
+
+BESCHREIBUNG
+       Der Unterbefehl list-managed-executor-services listet Managed
+       Executor-Serviceressourcen auf.
+
+       Dieser Unterbefehl wird nur im Remote-Modus unterstützt.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+OPERANDEN
+       target
+           Gibt das Ziel an, für das Managed Executor-Serviceressourcen
+           aufgelistet werden sollen. Gültige Ziele sind:
+
+           server
+               Listet die Ressourcen der standardmäßigen Serverinstanz auf.
+               Dies ist der Standardwert.
+
+           domain
+               Listet die Ressourcen für die Domain auf.
+
+           cluster-name
+               Listet die Ressourcen auf allen Serverinstanzen im angegebenen
+               Cluster auf.
+
+           instance-name
+               Listet die Ressourcen auf einer angegebenen Serverinstanz auf.
+
+BEISPIELE
+       Beispiel 1, Managed Executor-Serviceressourcen auflisten
+           In diesem Beispiel werden Managed Executor-Serviceressourcen in der
+           standardmäßigen Serverinstanz aufgelistet.
+
+               asadmin> list-managed-executor-services
+               concurrent/__defaultManagedExecutorService
+               concurrent/myExecutor1
+               concurrent/myExecutor2
+               Command list-managed-executor-services executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       create-managed-executor-service(1), delete-managed-executor-service(1)
+
+       asadmin(1M)
+
+Java EE 7                        09. Feb. 201list-managed-executor-services(1)

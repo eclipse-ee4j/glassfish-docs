@@ -1,0 +1,90 @@
+list-batch-runtime-confiSous-commandes de llist-batch-runtime-configuration(1)
+
+NOM
+       list-batch-runtime-configuration - affiche la configuration de
+       l'exécution du batch
+
+SYNTAXE
+           list-batch-runtime-configuration [--help]
+           [--target target]
+           [--output output]
+           [--header={false|true}]
+
+DESCRIPTION
+       La sous-commande list-batch-runtime-configuration affiche la
+       configuration de l'exécution du batch. Les données de configuration de
+       l'exécution du batch sont stockées dans l'élément config du fichier
+       domain.xml.
+
+OPTIONS
+       --help, -?
+           Cette option affiche le texte d'aide de la sous-commande.
+
+       --target
+           Cette option indique la cible pour laquelle répertorier la
+           configuration d'exécution de batch. Les valeurs valides sont les
+           suivantes :
+
+           server
+               Répertorie la configuration d'exécution de batch pour
+               l'instance de serveur par défaut (server). Il s'agit de la
+               valeur par défaut.
+
+           cluster-name
+               Répertorie la configuration d'exécution de batch pour chaque
+               instance de serveur du cluster.
+
+           instance-name
+               Répertorie la configuration d'exécution de batch pour une
+               instance de serveur donnée.
+
+       --output, -o
+           Affiche des détails spécifiques relatifs à la configuration
+           d'exécution de batch. Utilisez une liste séparée par des virgules
+           pour indiquer les détails à afficher et leur ordre. Les valeurs ne
+           respectent pas les majuscules/minuscules. Les en-têtes de colonne
+           datasourcelookupname et executorservicelookupname sont affichés par
+           défaut.
+
+           Les valeurs possibles sont les suivantes :
+
+           datasourcelookupname
+               Nom de recherche JNDI de la source de données utilisée pour
+               stocker les informations de travail. Par défaut, l'exécution de
+               batch utilise la source de données par défaut jdbc/__TimerPool.
+
+           executorservicelookupname
+               Nom de recherche JNDI du service exécuteur géré utilisé pour
+               fournir des threads aux travaux. Par défaut, l'exécution de
+               batch utilise le service exécuteur géré par défaut
+               concurrent/__defaultManagedExecutorService.
+
+       --header, -h
+           Indique si les en-têtes de colonne sont affichés lorsque l'option
+           --long est utilisée. La valeur par défaut est true. Pour supprimer
+           les en-têtes, définissez l'option --header sur false.
+
+EXEMPLES
+       Exemple 1, Liste de la configuration d'exécution de batch
+           Dans cet exemple, la configuration de l'exécution de batch est
+           répertoriée pour l'instance de serveur par défaut.
+
+               asadmin> list-batch-runtime-configuration
+               DATASOURCELOOKUPNAME     EXECUTORSERVICELOOKUPNAME
+               jdbc/_default            concurrent/__defaultManagedExecutorService
+               Command list-batch-runtime-configuration executed successfully.
+
+STATUT DE SORTIE
+       0
+           sous-commande correctement exécutée
+
+       1
+           erreur lors de l'exécution de la sous-commande
+
+VOIR AUSSI
+       set-batch-runtime-configuration(1), list-batch-jobs(1),
+       list-batch-job-executions(1), list-batch-job-steps(1)
+
+       asadmin(1M)
+
+Java EE 7                        13 fév. 20list-batch-runtime-configuration(1)

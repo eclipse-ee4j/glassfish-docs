@@ -1,0 +1,79 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="ejecuciones de trabajo por lotes">
+    <indexitem text="visualizaci&#243;n (tarea)" target="tasks-topic-group002"></indexitem>
+  </indexitem>
+  <indexitem text="f&#225;bricas de objetos de recursos">
+    <indexitem text="creaci&#243;n (referencia)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="creaci&#243;n (tarea)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="edici&#243;n (referencia)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="edici&#243;n (tarea)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="supresi&#243;n" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="visualizaci&#243;n y configuraci&#243;n" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="Interfaz de directorios y nomenclatura Java">
+    <indexitem text="&lt;em&gt;See &lt;/em&gt;JNDI">
+    </indexitem>
+  </indexitem>
+  <indexitem text="recursos externos">
+    <indexitem text="&lt;em&gt;See &lt;/em&gt;recursos JNDI externos">
+    </indexitem>
+  </indexitem>
+  <indexitem text="recursos externos JNDI">
+    <indexitem text="creaci&#243;n (referencia)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="creaci&#243;n (tarea)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="edici&#243;n (referencia)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="edici&#243;n (tarea)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="supresi&#243;n" target="task-jndiexternalresourcedelete"></indexitem>
+    <indexitem text="visualizaci&#243;n y configuraci&#243;n" target="ref-jndiexternalresources"></indexitem>
+  </indexitem>
+  <indexitem text="recursos JNDI externos">
+    <indexitem text="creaci&#243;n (referencia)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="creaci&#243;n (tarea)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="edici&#243;n (referencia)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="edici&#243;n (tarea)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="supresi&#243;n" target="task-jndiexternalresourcedelete"></indexitem>
+    <indexitem text="visualizaci&#243;n y configuraci&#243;n" target="ref-jndiexternalresources"></indexitem>
+  </indexitem>
+  <indexitem text="recursos personalizados">
+    <indexitem text="creaci&#243;n (referencia)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="creaci&#243;n (tarea)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="edici&#243;n (referencia)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="edici&#243;n (tarea)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="supresi&#243;n" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="visualizaci&#243;n y configuraci&#243;n" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="recursos personalizados JNDI">
+    <indexitem text="creaci&#243;n (referencia)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="creaci&#243;n (tarea)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="edici&#243;n (referencia)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="edici&#243;n (tarea)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="supresi&#243;n" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="visualizaci&#243;n y configuraci&#243;n" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="sesiones JavaMail">
+    <indexitem text="creaci&#243;n (referencia)" target="ref-javamailsessioncreate"></indexitem>
+    <indexitem text="creaci&#243;n (tarea)" target="task-javamailsessioncreate"></indexitem>
+    <indexitem text="edici&#243;n (referencia)" target="ref-javamailsessionsedit"></indexitem>
+    <indexitem text="edici&#243;n (tarea)" target="task-javamailsessionsedit"></indexitem>
+    <indexitem text="supresi&#243;n" target="task-javamailsessionsdelete"></indexitem>
+    <indexitem text="visualizaci&#243;n y configuraci&#243;n" target="ref-javamailsessions"></indexitem>
+  </indexitem>
+  <indexitem text="tiempo de ejecuci&#243;n por lotes">
+    <indexitem text="configuraci&#243;n (tarea)" target="tasks-topic-group004"></indexitem>
+  </indexitem>
+</index>

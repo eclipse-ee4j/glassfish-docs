@@ -1,0 +1,79 @@
+get-active-module-configSubcomandos de la Utilidad get-active-module-config(1)
+
+NOMBRE DE REFERENCIA
+       get-active-module-config - Muestra la configuración activa actual de un
+       servicio o instancia.
+
+SINOPSIS
+           get-active-module-config [--help]
+           [--target target]
+           [--all={false|true}]
+           [service_name]
+
+DESCRIPCIÓN
+       El subcomando get-active-module-config muestra la configuración activa
+       actual de una instancia o servicio.
+
+       Este subcomando sólo está soportado en modo remoto.
+
+OPCIONES
+       --help, -?
+           Muestra el texto de ayuda para el subcomando.
+
+       --target
+           Especifica el destino para el que desea ver la configuración activa
+           actual de un servicio específico o una instancia completa.
+
+           Los valores posibles son los siguientes:
+
+           server
+               Muestra la configuración activa actual para la instancia de
+               servidor por defecto. Este es el valor por defecto.
+
+           domain
+               Muestra la configuración activa actual para el dominio por
+               defecto.
+
+           cluster-name
+               Muestra la configuración activa actual para el cluster
+               especificado.
+
+           instance-name
+               Muestra la configuración activa actual para la instancia
+               especificada.
+
+       --all
+           Muestra todas las configuraciones activas actuales.
+
+           El valor por defecto es false.
+
+OPERANDOS
+       service_name
+           Nombre del módulo para el que desea mostrar la configuración activa
+           actual.
+
+EJEMPLOS
+       Ejemplo 1, Visualización de la configuración activa actual
+           En este ejemplo se muestra la configuración activa actual del
+           servicio de JMS en server-config (la configuración por defecto).
+
+               asadmin> get-active-module-config jms-service
+               At location: domain/configs/config[server-config]
+               <jms-service default-jms-host="default_JMS_host" type="EMBEDDED"
+                 <jms-host port="7676" host="localhost" name="default_JMS_host"/>
+               </jms-service>
+               Command get-active-module-config executed successfully.
+
+ESTADO DE SALIDA
+       0
+           Subcomando ejecutado correctamente
+
+       1
+           Error al ejecutar el subcomando
+
+CONSULTE TAMBIÉN
+       create-module-config(1), delete-module-config(1)
+
+       asadmin(1M)
+
+Java EE 7                    06 de febrero de 2013 get-active-module-config(1)

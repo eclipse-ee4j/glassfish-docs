@@ -1,0 +1,73 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-threadpooledit" name="task-threadpooledit"></a></p>
+
+<h4><a id="sthref75" name="sthref75"></a>So wird ein Threadpool bearbeitet</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<ol>
+<li>
+<p>Blenden Sie in der Navigationsbaumstruktur den Knoten "Konfiguration" ein.</p>
+</li>
+<li>
+<p>W&auml;hlen Sie unter dem Konfigurationsknoten den Knoten "Threadpools".</p>
+<p>Die Seite "Threadpools" wird ge&ouml;ffnet.</p>
+</li>
+<li>
+<p>Klicken Sie auf der Seite "Threadpools" auf den Namen des zu bearbeitenden Threadpools.</p>
+<p>Die Seite "Threadpool bearbeiten" wird ge&ouml;ffnet.</p>
+</li>
+<li>
+<p>Geben Sie auf der Seite "Threadpool bearbeiten" im Feld "Klassenname" den vollst&auml;ndig angegebenen Namen der Klasse ein, die den Threadpool implementiert.</p>
+<p>Der Standardwert ist <code>com.sun.grizzly.http.StatsThreadPool</code>.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Maximale Zahl in der Queue" die maximale Anzahl von Meldungen ein, die in die Queue gestellt werden k&ouml;nnen, bis Threads f&uuml;r ihre Verarbeitung zur Verf&uuml;gung stehen.</p>
+<p>Der Wert -1 zeigt an, dass die Queuegr&ouml;&szlig;e unbegrenzt ist. Der Standardwert ist 4096.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Maximale Gr&ouml;&szlig;e des Threadpools" die H&ouml;chstzahl an Threads ein, die ein Threadpool enthalten soll.</p>
+<p>Der Standardwert ist 5. Dies ist der empfohlene Wert f&uuml;r Threadpools von Netzwerk-Listenern.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Minimale Gr&ouml;&szlig;e des Threadpools" die Mindestzahl an Threads ein, die ein Threadpool enthalten soll.</p>
+<p>Diese Threads werden bei der Instanziierung des Threadpools erstellt. Der Standardwert ist 2.</p>
+</li>
+<li>
+<p>Geben Sie im Feld "Leerlauftimeout" die maximale Dauer (in Sekunden) an, die ein Thread im Pool im Leerlauf bleiben kann.</p>
+<p>Nach Ablauf dieser Zeitspanne wird der Thread aus dem Pool entfernt. Der Standardwert ist 900.</p>
+</li>
+<li>
+<p>Klicken Sie auf "Speichern".</p>
+
+<hr>
+<p><b>Tipp:</b></p>
+Um zu den Standardeinstellungen zur&uuml;ckzukehren, klicken Sie auf die Schaltfl&auml;che "Standardwerte laden" und anschlie&szlig;end auf "Speichern".
+<hr>
+
+</li>
+</ol>
+<a id="sthref76" name="sthref76"></a>
+<h5>Siehe auch</h5>
+<ul>
+<li>
+<p><a href="task-threadpoolnew.html">So wird ein Threadpool erstellt</a></p>
+</li>
+<li>
+<p><a href="task-threadpooldelete.html">So wird ein Threadpool gel&ouml;scht</a></p>
+</li>
+</ul>
+
+
+  

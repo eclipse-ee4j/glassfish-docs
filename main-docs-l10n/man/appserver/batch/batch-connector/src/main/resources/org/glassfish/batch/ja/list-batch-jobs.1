@@ -1,0 +1,98 @@
+list-batch-jobs(1)    asadminユーティリティのサブコマンド   list-batch-jobs(1)
+
+名前
+       list-batch-jobs - バッチ・ジョブをリストします
+
+概要
+           list-batch-jobs [--help]
+           [--target target]
+           [--long={false|true}]
+           [--output output]
+           [--header={false|true}]
+           [job_name]
+
+説明
+       list-batch-jobsサブコマンドは、バッチ・ジョブおよびジョブの詳細を表示します。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+       --target
+           バッチ・ジョブとジョブの詳細をリストするターゲットを指定します。有効な値は次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンスserverのバッチ・ジョブをリストします。これがデフォルト値です。
+
+           cluster-name
+               クラスタ内のすべてのサーバー・インスタンスのバッチ・ジョブをリストします。
+
+           instance-name
+               特定のサーバー・インスタンスのバッチ・ジョブをリストします。
+
+       --long, -l
+           バッチ・ジョブの詳細を表示します。デフォルト値はfalseです。
+
+       --output, -o
+           バッチ・ジョブの特定の詳細を表示します。表示する詳細とその順序を指定するには、カンマ区切りのリストを使用します。この値では大文字と小文字が区別されません。jobnameおよびinstancecountの列ヘッダーは、デフォルトで表示されます。
+
+           使用可能な値は次のとおりです:
+
+           jobname
+               ジョブの名前を表示します。
+
+           appname
+               アプリケーションの名前が表示されます。
+
+           instancecount
+               ジョブ・インスタンス数を表示します。
+
+           instanceid
+               ジョブ・インスタンスに割り当てられたIDを表示します。
+
+           executionid
+               バッチ・ジョブの実行に割り当てられたIDを表示します。ジョブが初めて開始されたときと、既存の実行が再開されるたびに、実行が新規作成されます。
+
+           batchstatus
+               バッチ実行時に設定されたジョブのステータスを表示します。
+
+           starttime
+               ジョブの開始時間を表示します。
+
+           endtime
+               ジョブの終了時間を表示します。
+
+           exitstatus
+               ジョブのジョブXMLまたはバッチ・アプリケーションで設定されたジョブのステータスを表示します。デフォルトでは、終了ステータスが明示的にオーバーライドされないかぎり、終了ステータスとバッチ・ステータスは同じです。
+
+       --header, -h
+           --longオプションが使用されている場合に、列ヘッダーを表示するかどうかを指定します。デフォルト値はtrueです。ヘッダーを表示しないようにするには、--headerオプションをfalseに設定します。
+
+オペランド
+       job_name
+           詳細をリストするジョブの名前。
+
+例
+       例 1, バッチ・ジョブのリスト
+           この例では、デフォルトのサーバー・インスタンスのバッチ・ジョブをリストします。
+
+               asadmin> list-batch-jobs
+               JOBNAME  INSTANCECOUNT
+               payroll  9
+               bonus    6
+               Command list-batch-jobs executed successfully.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       list-batch-job-executions(1), list-batch-job-steps(1),
+       set-batch-runtime-configuration(1), list-batch-runtime-configuration(1)
+
+       asadmin(1M)
+
+Java EE 7                        2013年2月13日              list-batch-jobs(1)

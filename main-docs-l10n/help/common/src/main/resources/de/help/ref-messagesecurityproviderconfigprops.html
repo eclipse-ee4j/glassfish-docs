@@ -1,0 +1,44 @@
+<!--
+ 	Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="ref-messagesecurityproviderconfigprops" name="ref-messagesecurityproviderconfigprops"></a></p>
+
+<h4><a id="sthref232" name="sthref232"></a><a id="sthref233" name="sthref233"></a>F&uuml;r die Konfiguration von Nachrichtensicherheitsprovidern spezifische Eigenschaften</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<p>Die folgenden Eigenschaften stehen f&uuml;r eine Nachrichtensicherheitsprovider-Konfiguration zur Verf&uuml;gung.</p>
+<dl>
+<dt><code>server.config</code></dt>
+<dd>
+<p>Das Verzeichnis und der Dateiname einer XML-Datei mit den Serverkonfigurationsdaten. Der Standardwert ist domain-dir<code>/config/wss-server-config-1.0.xml</code>.</p>
+</dd>
+<dt><code>debug</code></dt>
+<dd>
+<p>Bei <code>True</code> wird das Dumping der Serverprovider-Debugmeldungen zum Serverlog aktiviert. Der Standardwert ist <code>False</code>.</p>
+</dd>
+<dt><code>dynamic.username.password</code></dt>
+<dd>
+<p>Bei <code>True</code> wird der Providerlaufzeit signalisiert, den Benutzernamen und das Kennwort vom <code>CallbackHandler</code> f&uuml;r jede Anforderung zu erfassen. Bei "False" werden Benutzername und Kennwort f&uuml;r <code>wsse:UsernameToken(s)</code> einmal w&auml;hrend der Modulinitialisierung gesammelt. Diese Eigenschaft ist nur auf ein <code>ClientAuthModule</code> anwendbar. Der Standardwert ist <code>False</code>.</p>
+</dd>
+<dt><code>encryption.key.alias</code></dt>
+<dd>
+<p>Legt den vom Provider verwendeten Verschl&uuml;sselungsschl&uuml;ssel fest. Der Schl&uuml;ssel wird durch den <code>Keystore-</code>Alias gekennzeichnet. Der Standardwert ist <code>s1as</code>.</p>
+</dd>
+<dt><code>signature.key.alias</code></dt>
+<dd>
+<p>Legt den vom Provider verwendeten Signaturschl&uuml;ssel fest. Der Schl&uuml;ssel wird durch den <code>Keystore-</code>Alias gekennzeichnet. Der Standardwert ist <code>s1as</code>.</p>
+</dd>
+</dl>
+
+
+  
