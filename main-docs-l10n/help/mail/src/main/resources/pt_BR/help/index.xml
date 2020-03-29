@@ -1,0 +1,77 @@
+<!--
+ 	Copyright (c) 2019, 2020 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="execu&#231;&#245;es de jobs em lote">
+    <indexitem text="exibindo (tarefa)" target="tasks-topic-group002"></indexitem>
+  </indexitem>
+  <indexitem text="f&#225;bricas do objeto do recurso">
+    <indexitem text="criando (refer&#234;ncia)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="criando (tarefa)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="deletando" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="editando (refer&#234;ncia)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="editando (tarefa)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="exibindo e configurando" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="JNDI (Java Naming and Directory Interface)">
+    <indexitem text="&lt;em&gt;Consulte &lt;/em&gt;JNDI">
+    </indexitem>
+  </indexitem>
+  <indexitem text="recursos externos">
+    <indexitem text="&lt;em&gt;Consulte &lt;/em&gt;recursos JNDI externos">
+    </indexitem>
+  </indexitem>
+  <indexitem text="recursos JNDI externos">
+    <indexitem text="criando (refer&#234;ncia)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="criando (refer&#234;ncia)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="criando (tarefa)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="criando (tarefa)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="deletando" target="task-jndiexternalresourcedelete"></indexitem>
+    <indexitem text="deletando" target="task-jndiexternalresourcedelete"></indexitem>
+    <indexitem text="editando (refer&#234;ncia)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="editando (refer&#234;ncia)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="editando (tarefa)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="editando (tarefa)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="exibindo e configurando" target="ref-jndiexternalresources"></indexitem>
+    <indexitem text="exibindo e configurando" target="ref-jndiexternalresources"></indexitem>
+  </indexitem>
+  <indexitem text="recursos personalizados">
+    <indexitem text="criando (refer&#234;ncia)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="criando (tarefa)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="deletando" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="editando (refer&#234;ncia)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="editando (tarefa)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="exibindo e configurando" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="recursos personalizados da JNDI">
+    <indexitem text="criando (refer&#234;ncia)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="criando (tarefa)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="deletando" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="editando (refer&#234;ncia)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="editando (tarefa)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="exibindo e configurando" target="ref-jndicustomresources"></indexitem>
+  </indexitem>
+  <indexitem text="Sess&#245;es Jakarta Mail">
+    <indexitem text="criando (refer&#234;ncia)" target="ref-mailsessioncreate"></indexitem>
+    <indexitem text="criando (tarefa)" target="task-mailsessioncreate"></indexitem>
+    <indexitem text="deletando" target="task-mailsessionsdelete"></indexitem>
+    <indexitem text="editando (refer&#234;ncia)" target="ref-mailsessionsedit"></indexitem>
+    <indexitem text="editando (tarefa)" target="task-mailsessionsedit"></indexitem>
+    <indexitem text="exibindo e configurando" target="ref-mailsessions"></indexitem>
+  </indexitem>
+  <indexitem text="tempo de execu&#231;&#227;o em batch">
+    <indexitem text="configurar (tarefa)" target="tasks-topic-group004"></indexitem>
+  </indexitem>
+</index>

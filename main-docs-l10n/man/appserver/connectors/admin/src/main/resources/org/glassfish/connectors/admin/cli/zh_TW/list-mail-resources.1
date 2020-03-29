@@ -1,0 +1,54 @@
+list-mail-resources(1)  asadmin 公用程式子命令  list-mail-resources(1)
+
+參考名
+       list-mail-resources - 列出現有的 Jakarta Mail 階段作業資源
+
+概要
+           list-mail-resources [--help] [target]
+
+描述
+       list-mail-resources 子命令會列出現有的 Jakarta Mail 階段作業資源。
+
+       只有遠端模式支援這個子命令。
+
+選項
+       --help, -?
+           顯示子命令的說明文字。
+
+運算元
+       target
+           此運算元會指定列出 Jakarta Mail 階段作業資源的目標。有效值包括
+
+           server
+               列出預設伺服器執行處理的資源。此為預設值。
+
+           domain
+               列出網域的資源。
+
+           cluster_name
+               列出指定叢集的資源。
+
+           instance_name
+               列出特定伺服器執行處理的資源。
+
+範例
+       範例 1, 列出 Jakarta Mail 資源
+           此範例會列出伺服器執行處理的 Jakarta Mail 階段作業資源。
+
+               asadmin> list-mail-resources
+               mail/MyMailSession
+               Command list-mail-resources executed successfuly.
+
+結束狀態
+       0
+           已成功執行子命令
+
+       1
+           執行子命令時發生錯誤
+
+另請參閱
+       create-mail-resource(1), delete-mail-resource(1)
+
+       asadmin(1M)
+
+Java EE 7                     2010 年 12 月 22 日   list-mail-resources(1)

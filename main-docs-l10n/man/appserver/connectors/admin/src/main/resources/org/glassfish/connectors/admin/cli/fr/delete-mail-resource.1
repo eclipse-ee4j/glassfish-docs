@@ -1,0 +1,61 @@
+delete-mail-resourceSous-commandes de l'utilitadelete-mail-resource(1)
+
+NOM
+       delete-mail-resource - enlève une ressource de session Jakarta Mail
+
+SYNTAXE
+           delete-mail-resource [--help] [--target target] jndi_name
+
+DESCRIPTION
+       La sous-commande delete-mail-resource enlève la ressource de
+       session Jakarta Mail spécifiée. Veillez à enlever toutes les références à
+       cette ressource avant d'exécuter cette sous-commande.
+
+       Cette sous-commande est prise en charge en mode distant uniquement.
+
+OPTIONS
+       --help, -?
+           Cette option affiche le texte d'aide de la sous-commande.
+
+       --target
+           Cette option spécifie la cible de laquelle supprimer la ressource
+           de session Jakarta Mail. Les valeurs valides sont les suivantes :
+
+           server
+               Supprime la ressource de l'instance de serveur par défaut. Il
+               s'agit de la valeur par défaut.
+
+           domain
+               Supprime la ressource du domaine.
+
+           cluster_name
+               Supprime la ressource de chaque instance de serveur du cluster.
+
+           instance_name
+               Supprime la ressource d'une instance de serveur donnée.
+
+OPÉRANDES
+       jndi_name
+           Nom JNDI de la ressource de session Jakarta Mail à supprimer.
+
+EXEMPLES
+       Exemple 1, Suppression d'une ressource Jakarta Mail
+           Dans cet exemple, la ressource de session Jakarta Mail nommée
+           mail/MyMailSession est supprimée.
+
+               asadmin> delete-mail-resource mail/MyMailSession
+               Command delete-mail-resource executed successfully.
+
+STATUT DE SORTIE
+       0
+           sous-commande correctement exécutée
+
+       1
+           erreur lors de l'exécution de la sous-commande
+
+VOIR AUSSI
+       create-mail-resource(1), list-mail-resources(1)
+
+       asadmin(1M)
+
+Java EE 7                         22 déc 2010      delete-mail-resource(1)

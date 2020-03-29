@@ -1,0 +1,75 @@
+<!--
+ 	Copyright (c) 2019, 2020 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="Java &#21629;&#21517;&#33287;&#30446;&#37636;&#20171;&#38754;">
+    <indexitem text="&lt;em&gt;&#35531;&#21443;&#38321; &lt;/em&gt;JNDI">
+    </indexitem>
+  </indexitem>
+  <indexitem text="Jakarta Mail &#38542;&#27573;&#20316;&#26989;">
+    <indexitem text="&#27298;&#35222;&#21644;&#32068;&#24907;" target="ref-mailsessions"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-mailsessioncreate"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-mailsessionsedit"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-mailsessioncreate"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-mailsessionsedit"></indexitem>
+    <indexitem text="&#21034;&#38500;" target="task-mailsessionsdelete"></indexitem>
+  </indexitem>
+  <indexitem text="JNDI &#33258;&#35330;&#36039;&#28304;">
+    <indexitem text="&#27298;&#35222;&#21644;&#32068;&#24907;" target="ref-jndicustomresources"></indexitem>
+    <indexitem text="&#27298;&#35222;&#21644;&#32068;&#24907;" target="ref-jndiexternalresources"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="&#21034;&#38500;" target="task-jndicustomresourcedelete"></indexitem>
+    <indexitem text="&#21034;&#38500;" target="task-jndiexternalresourcedelete"></indexitem>
+  </indexitem>
+  <indexitem text="&#36039;&#28304;&#29289;&#20214;&#24037;&#24288;">
+    <indexitem text="&#27298;&#35222;&#21644;&#32068;&#24907;" target="ref-jndicustomresources"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="&#21034;&#38500;" target="task-jndicustomresourcedelete"></indexitem>
+  </indexitem>
+  <indexitem text="&#25209;&#27425;&#22519;&#34892;&#38542;&#27573;">
+    <indexitem text="&#32068;&#24907; (&#20316;&#26989;)" target="tasks-topic-group004"></indexitem>
+  </indexitem>
+  <indexitem text="&#22806;&#37096; JDNI &#36039;&#28304;">
+    <indexitem text="&#27298;&#35222;&#21644;&#32068;&#24907;" target="ref-jndiexternalresources"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="&#21034;&#38500;" target="task-jndiexternalresourcedelete"></indexitem>
+  </indexitem>
+  <indexitem text="&#33258;&#35330;&#36039;&#28304;">
+    <indexitem text="&#27298;&#35222;&#21644;&#32068;&#24907;" target="ref-jndicustomresources"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#20316;&#26989;)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="&lt;em&gt;&#35531;&#21443;&#38321; &lt;/em&gt;&#22806;&#37096; JDNI &#36039;&#28304;">
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="&#24314;&#31435; (&#21443;&#29031;)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="&#21034;&#38500;" target="task-jndicustomresourcedelete"></indexitem>
+    </indexitem>
+  </indexitem>
+  <indexitem text="&#25209;&#27425;&#24037;&#20316;&#22519;&#34892;">
+    <indexitem text="&#27298;&#35222; (&#20316;&#26989;)" target="tasks-topic-group002"></indexitem>
+  </indexitem>
+</index>

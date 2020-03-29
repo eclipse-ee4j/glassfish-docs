@@ -1,0 +1,55 @@
+list-mail-resourceasadminユーティリティのサブコマ
+
+名前
+       list-mail-resources -
+       既存のJakarta Mailセッション・リソースをリストします
+
+概要
+           list-mail-resources [--help] [target]
+
+説明
+       list-mail-resourcesサブコマンドは、既存のJakarta Mailセッション・リソースをリストします。
+
+       このサブコマンドは、リモート・モードでのみサポートされています。
+
+オプション
+       --help, -?
+           サブコマンドに関するヘルプ・テキストが表示されます。
+
+オペランド
+       target
+           このオペランドは、Jakarta Mailセッション・リソースをリストするターゲットを指定します。有効な値は次のとおりです:
+
+           server
+               デフォルトのサーバー・インスタンスのリソースをリストします。これがデフォルト値です。
+
+           domain
+               ドメインのリソースをリストします。
+
+           cluster_name
+               指定したクラスタのリソースをリストします。
+
+           instance_name
+               特定のサーバー・インスタンスのリソースをリストします。
+
+例
+       例 1, Jakarta Mailリソースのリスト
+           この例では、サーバー・インスタンスのJakarta Mailセッション・リソースをリストします。
+
+               asadmin> list-mail-resources
+               mail/MyMailSession
+               Command list-mail-resources executed successfuly.
+
+終了ステータス
+       0
+           サブコマンドは正常に実行されました
+
+       1
+           サブコマンドの実行時にエラーが発生しました
+
+関連項目
+       create-mail-resource(1), delete-mail-resource(1)
+
+       asadmin(1M)
+
+Java EE 7                       2010年12月22日      list-mail-resources(1)
