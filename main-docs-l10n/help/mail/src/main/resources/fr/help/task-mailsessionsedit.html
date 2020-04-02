@@ -1,0 +1,111 @@
+<!--
+ 	Copyright (c) 2019, 2020 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+--><p><a id="task-mailsessionsedit" name="task-mailsessionsedit"></a></p>
+
+<h4><a id="sthref9" name="sthref9"></a>Modification d'une session Jakarta Mail</h4>
+<a name="BEGIN" id="BEGIN"></a>
+<ol>
+<li>
+<p>Dans l'arborescence de navigation, d&eacute;veloppez le noeud Ressources.</p>
+</li>
+<li>
+<p>Sous le noeud Ressources, s&eacute;lectionnez Sessions Jakarta Mail.</p>
+<p>La page Sessions Jakarta Mail appara&icirc;t.</p>
+</li>
+<li>
+<p>Sur la page Sessions Jakarta Mail, cliquez sur le nom de la session &agrave; modifier.</p>
+<p>La page Modifier une session Jakarta Mail appara&icirc;t.</p>
+</li>
+<li>
+<p>Dans le champ H&ocirc;te de messagerie, sp&eacute;cifiez le nom d'h&ocirc;te du serveur de messagerie par d&eacute;faut.</p>
+<p>Les m&eacute;thodes de connexion des objets Store et Transport utilisent cette valeur si aucune propri&eacute;t&eacute; d'h&ocirc;te propre &agrave; un protocole n'est indiqu&eacute;e. Le nom doit pouvoir &ecirc;tre r&eacute;solu en un nom d'h&ocirc;te r&eacute;el.</p>
+</li>
+<li>
+<p>Dans le champ Utilisateur par d&eacute;faut, entrez un autre nom utilisateur &agrave; indiquer lors de la connexion &agrave; un serveur de messagerie.</p>
+<p>Les m&eacute;thodes de connexion des objets Store et Transport utilisent cette valeur si aucune propri&eacute;t&eacute; de nom utilisateur propre &agrave; un protocole n'est fournie. Le nom utilisateur ne peut contenir que des caract&egrave;res alphanum&eacute;riques, des traits de soulignement, des tirets ou des points.</p>
+</li>
+<li>
+<p>Dans le champ Adresse de l'exp&eacute;diteur par d&eacute;faut, entrez l'adresse &eacute;lectronique de l'utilisateur par d&eacute;faut.</p>
+<p>Le format est <i>nom utilisateur</i><code>@</code><i>h&ocirc;te</i>.<i>domaine</i>.</p>
+</li>
+<li>
+<p>Dans le champ Ordre de d&eacute;ploiement, saisissez un nombre pour indiquer l'ordre de d&eacute;ploiement de la ressource de session Jakarta Mail.</p>
+<p>Les ressources avec les plus petits num&eacute;ros sont charg&eacute;s en premier au d&eacute;marrage du serveur. La valeur par d&eacute;faut est 100.</p>
+</li>
+<li>
+<p>Dans le champ Description, modifiez la description de la session de messagerie.</p>
+</li>
+<li>
+<p>Cochez la case Activ&eacute; du champ Statut pour activer la session de messagerie.</p>
+<p>La valeur par d&eacute;faut est Activ&eacute;.</p>
+</li>
+<li>
+<p>Dans le champ Protocole de stockage, indiquez la m&eacute;thode de communication des objets Store &agrave; utiliser.</p>
+<p>Par d&eacute;faut, le protocole de stockage est <code>imap</code>.</p>
+</li>
+<li>
+<p>Dans le champ Classe de protocole de stockage, sp&eacute;cifiez la classe de la m&eacute;thode de communication de stockage impl&eacute;mentant le protocole de stockage requis.</p>
+<p>Par d&eacute;faut, la classe de protocole de stockage est <code>com.sun.mail.imap.IMAPStore</code>.</p>
+</li>
+<li>
+<p>Dans le champ Protocole de transport, sp&eacute;cifiez la m&eacute;thode de communication de transport.</p>
+<p>Par d&eacute;faut, le protocole de transport est <code>smtp</code>.</p>
+</li>
+<li>
+<p>Dans le champ Classe de protocole de transport, sp&eacute;cifiez la m&eacute;thode de communication de la classe de transport.</p>
+<p>Par d&eacute;faut, la classe de protocole de transport est <code>com.sun.mail.smtp.SMTPTransport</code> .</p>
+</li>
+<li>
+<p>Cochez la case D&eacute;boguer pour activer une sortie de d&eacute;bogage suppl&eacute;mentaire, notamment une trace de protocole, pour cette session de messagerie.</p>
+<p>Si le niveau de journalisation Jakarta Mail a la valeur <code>FINE</code> ou une valeur plus fine, la sortie de d&eacute;bogage est cr&eacute;&eacute;e et incluse dans le fichier journal du syst&egrave;me. Pour plus d'informations sur la d&eacute;finition du niveau de journalisation, reportez-vous &agrave; <a href="../../../common/en/help/task-eelogginglevels.html">Configuration des niveaux de journalisation</a>.</p>
+</li>
+<li>
+<p>Dans la table Autres propri&eacute;t&eacute;s, sp&eacute;cifiez les propri&eacute;t&eacute;s suppl&eacute;mentaires requises par les applications, notamment une propri&eacute;t&eacute; d'h&ocirc;te ou de nom utilisateur propre &agrave; un protocole.</p>
+<p>Pour obtenir la liste des propri&eacute;t&eacute;s disponibles, reportez-vous &agrave; la documentation de l'API Jakarta Mail (<code><a href="http://java.sun.com/products/mail/javadocs/index.html">http://java.sun.com/products/mail/javadocs/index.html</a></code>). Les propri&eacute;t&eacute;s suppl&eacute;mentaires doivent commencer par <code>mail-</code> et des traits d'union doivent &ecirc;tre utilis&eacute;s comme s&eacute;parateurs &agrave; la place des points. Par exemple, <code>mail-debug</code> est correct mais <code>mail.debug</code> ne l'est pas. Le back-end GlassFish Server convertit les traits d'union en points, attendus par l'API Jakarta Mail.</p>
+<ul>
+<li>
+<p>Pour ajouter une propri&eacute;t&eacute;, cliquez sur le bouton Ajouter une propri&eacute;t&eacute;. Sur la ligne vide qui appara&icirc;t, saisissez le nom de la propri&eacute;t&eacute; dans le champ Nom et la valeur de la propri&eacute;t&eacute; dans le champ Valeur.</p>
+</li>
+<li>
+<p>Pour modifier une propri&eacute;t&eacute;, modifiez le champ Valeur de cette propri&eacute;t&eacute;.</p>
+</li>
+<li>
+<p>Pour supprimer une propri&eacute;t&eacute;, s&eacute;lectionnez la case situ&eacute;e &agrave; gauche du champ Nom de la propri&eacute;t&eacute; &agrave; supprimer, puis cliquez sur le bouton Supprimer des propri&eacute;t&eacute;s.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Cliquez sur Enregistrer.</p>
+
+<hr>
+<p><b>Conseil:</b></p>
+Pour revenir aux param&egrave;tres par d&eacute;faut, cliquez sur le bouton Charger les valeurs par d&eacute;faut, puis sur Enregistrer.
+<hr>
+
+</li>
+</ol>
+<a id="GHJML104" name="GHJML104"></a>
+<h5>Voir aussi</h5>
+<ul>
+<li>
+<p><a href="task-mailsessioncreate.html">Cr&eacute;ation d'une session Jakarta Mail</a></p>
+</li>
+<li>
+<p><a href="task-mailsessionsdelete.html">Suppression d'une session Jakarta Mail</a></p>
+</li>
+</ul>
+
+
+  

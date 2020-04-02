@@ -1,0 +1,63 @@
+delete-mail-resourceUnterbefehle des asadmin-Utdelete-mail-resource(1)
+
+NAME
+       delete-mail-resource - entfernt eine Jakarta Mail-Sessionressource
+
+ZUSAMMENFASSUNG
+           delete-mail-resource [--help] [--target target] jndi_name
+
+BESCHREIBUNG
+       Der Unterbefehl delete-mail-resource entfernt die angegebene
+       Jakarta Mail-Sessionressource. Stellen Sie sicher, dass Sie alle Referenzen
+       zu dieser Ressource entfernt haben, bevor Sie diesen Unterbefehl
+       ausführen.
+
+       Dieser Unterbefehl wird nur im Remote-Modus unterstützt.
+
+OPTIONEN
+       --help, -?
+           Zeigt den Hilfetext für den Unterbefehl an.
+
+       --target
+           Diese Option gibt das Ziel an, aus dem Sie die
+           Jakarta Mail-Sessionressource löschen. Gültige Werte sind:
+
+           server
+               Löscht die Ressource aus der standardmäßigen Serverinstanz.
+               Dies ist der Standardwert.
+
+           domain
+               Löscht die Ressource aus der Domain.
+
+           cluster_name
+               Löscht die Ressource aus jeder Serverinstanz im Cluster.
+
+           instance_name
+               Löscht die Ressource aus einer bestimmten Serverinstanz.
+
+OPERANDEN
+       jndi_name
+           Der JNDI-Name der Jakarta Mail-Sessionressource, die gelöscht werden
+           soll.
+
+BEISPIELE
+       Beispiel 1, Jakarta Mail-Ressourcen löschen
+           In diesem Beispiel wird die Jakarta Mail-Sessionressource namens
+           mail/MyMailSession gelöscht.
+
+               asadmin> delete-mail-resource mail/MyMailSession
+               Command delete-mail-resource executed successfully.
+
+BEENDIGUNGSSTATUS
+       0
+           Unterbefehl erfolgreich ausgeführt
+
+       1
+           Fehler beim Ausführen des Unterbefehls
+
+SIEHE AUCH
+       create-mail-resource(1), list-mail-resources(1)
+
+       asadmin(1M)
+
+Java EE 7                        22. Dez. 2010     delete-mail-resource(1)

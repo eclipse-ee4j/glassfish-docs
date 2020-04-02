@@ -1,0 +1,79 @@
+<!--
+ 	Copyright (c) 2019, 2020 Oracle and/or its affiliates. All rights reserved.
+	
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v. 2.0, which is available at
+	http://www.eclipse.org/legal/epl-2.0.
+	
+	This Source Code may also be made available under the following Secondary
+	Licenses when the conditions for such availability set forth in the
+	Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+	version 2 with the GNU Classpath Exception, which is available at
+	https://www.gnu.org/software/classpath/license.html.
+	
+	SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+-->
+<index version="2.0">
+  <indexitem text="Batchjobausf&#252;hrungen">
+    <indexitem text="anzeigen (Task)" target="tasks-topic-group002"></indexitem>
+  </indexitem>
+  <indexitem text="Batchlaufzeit">
+    <indexitem text="konfigurieren (Task)" target="tasks-topic-group004"></indexitem>
+  </indexitem>
+  <indexitem text="Externe JNDI-Ressourcen">
+    <indexitem text="anzeigen und konfigurieren" target="ref-jndiexternalresources"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="L&#246;schen" target="task-jndiexternalresourcedelete"></indexitem>
+  </indexitem>
+  <indexitem text="Externe Ressourcen">
+    <indexitem text="&lt;em&gt;Siehe &lt;/em&gt;JNDI-Ressourcen - externe">
+    </indexitem>
+  </indexitem>
+  <indexitem text="Java Naming and Directory Interface">
+    <indexitem text="&lt;em&gt;Siehe &lt;/em&gt;JNDI">
+    </indexitem>
+  </indexitem>
+  <indexitem text="Jakarta Mail-Sessions">
+    <indexitem text="anzeigen und konfigurieren" target="ref-mailsessions"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-mailsessionsedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-mailsessionsedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-mailsessioncreate"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-mailsessioncreate"></indexitem>
+    <indexitem text="L&#246;schen" target="task-mailsessionsdelete"></indexitem>
+  </indexitem>
+  <indexitem text="JNDI-Ressourcen - benutzerdefinierte">
+    <indexitem text="anzeigen und konfigurieren" target="ref-jndicustomresources"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="L&#246;schen" target="task-jndicustomresourcedelete"></indexitem>
+  </indexitem>
+  <indexitem text="JNDI-Ressourcen - externe">
+    <indexitem text="anzeigen und konfigurieren" target="ref-jndiexternalresources"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-jndiexternalresourceedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-jndiexternalresourceedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-jndiexternalresourcenew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-jndiexternalresourcecreate"></indexitem>
+    <indexitem text="L&#246;schen" target="task-jndiexternalresourcedelete"></indexitem>
+  </indexitem>
+  <indexitem text="Ressourcen - benutzerdefinierte">
+    <indexitem text="anzeigen und konfigurieren" target="ref-jndicustomresources"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="L&#246;schen" target="task-jndicustomresourcedelete"></indexitem>
+  </indexitem>
+  <indexitem text="Ressourcenobjekt-Factorys">
+    <indexitem text="anzeigen und konfigurieren" target="ref-jndicustomresources"></indexitem>
+    <indexitem text="bearbeiten (Referenz)" target="ref-jndicustomresourceedit"></indexitem>
+    <indexitem text="Bearbeiten (Task)" target="task-jndicustomresourceedit"></indexitem>
+    <indexitem text="erstellen (Referenz)" target="ref-jndicustomresourcenew"></indexitem>
+    <indexitem text="erstellen (Task)" target="task-jndicustomresourcenew"></indexitem>
+    <indexitem text="L&#246;schen" target="task-jndicustomresourcedelete"></indexitem>
+  </indexitem>
+</index>

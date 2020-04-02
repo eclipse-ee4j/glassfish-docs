@@ -1,0 +1,58 @@
+list-mail-resources(1)asadmin Utility Subcommandlist-mail-resources(1)
+
+NAME
+       list-mail-resources - lists the existing Mail session resources
+
+SYNOPSIS
+           list-mail-resources [--help] [target]
+
+DESCRIPTION
+       The list-mail-resources subcommand lists the existing Mail
+       session resources.
+
+       This subcommand is supported in remote mode only.
+
+OPTIONS
+       --help, -?
+           Displays the help text for the subcommand.
+
+OPERANDS
+       target
+           This operand specifies the target for which the Mail session
+           resources are to be listed. Valid values are:
+
+           server
+               Lists the resources for the default server instance. This is
+               the default value.
+
+           domain
+               Lists the resources for the domain.
+
+           cluster_name
+               Lists the resources for the specified cluster.
+
+           instance_name
+               Lists the resources for a particular server instance.
+
+EXAMPLES
+       Example 1, Listing Mail Resources
+           This example lists the Mail session resources for the server
+           instance.
+
+               asadmin> list-mail-resources
+               mail/MyMailSession
+               Command list-mail-resources executed successfuly.
+
+EXIT STATUS
+       0
+           subcommand executed successfully
+
+       1
+           error in executing the subcommand
+
+SEE ALSO
+       create-mail-resource(1), delete-mail-resource(1)
+
+       asadmin(1M)
+
+Jakarta EE 9                     28 Mar 2020       list-mail-resources(1)

@@ -1,0 +1,63 @@
+delete-mail-resourceSubcomandos de la Utilidad delete-mail-resource(1)
+
+NOMBRE DE REFERENCIA
+       delete-mail-resource - Elimina un recurso de sesión de Jakarta Mail.
+
+SINOPSIS
+           delete-mail-resource [--help] [--target target] jndi_name
+
+DESCRIPCIÓN
+       El subcomando delete-mail-resource elimina el recurso de sesión de
+       Jakarta Mail especificado. Asegúrese de eliminar todas las referencias a
+       este recurso antes de ejecutar este subcomando.
+
+       Este subcomando sólo está soportado en modo remoto.
+
+OPCIONES
+       --help, -?
+           Muestra el texto de ayuda para el subcomando.
+
+       --target
+           Esta opción especifica el destino para el que se va a suprimir el
+           recurso de sesión de Jakarta Mail. Los valores válidos son:
+
+           server
+               Suprime el recurso de la instancia de servidor por defecto.
+               Este es el valor por defecto.
+
+           domain
+               Suprime el recurso del dominio.
+
+           cluster_name
+               Suprime el recurso de todas las instancias de servidor del
+               cluster.
+
+           instance_name
+               Suprime el recurso de una instancia de servidor específica.
+
+OPERANDOS
+       jndi_name
+           Nombre de JNDI del recurso de sesión de Jakarta Mail que se va a
+           suprimir.
+
+EJEMPLOS
+       Ejemplo 1, Supresión de un Recurso de Jakarta Mail
+           En este ejemplo se suprime el recurso de sesión de Jakarta Mail
+           denominado mail/MyMailSession.
+
+               asadmin> delete-mail-resource mail/MyMailSession
+               Command delete-mail-resource executed successfully.
+
+ESTADO DE SALIDA
+       0
+           Subcomando ejecutado correctamente
+
+       1
+           Error al ejecutar el subcomando
+
+CONSULTE TAMBIÉN
+       create-mail-resource(1), list-mail-resources(1)
+
+       asadmin(1M)
+
+Java EE 7                   23 de diciembre de 2010delete-mail-resource(1)
